@@ -1,0 +1,1 @@
+# Tests email formatting and send simulation

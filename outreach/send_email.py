@@ -1,0 +1,1 @@
+# Sends personalized emails using SendGrid/Mailgun

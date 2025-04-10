@@ -1,0 +1,1 @@
+# Column names, industry mappings, email templates etc.
