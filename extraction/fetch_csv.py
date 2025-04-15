@@ -5,14 +5,16 @@ from datetime import datetime
 from bs4 import BeautifulSoup
 from utils.logger import logging
 
-# URL of the page with the CSV download link
-page_url = os.getenv("GOVT_PAGE_URL", None)
+
 
 def get_csv_download_link():
     """
     Extracts the CSV download link from the UK Government's page.
     Returns the URL to the CSV file.
     """
+
+    # URL of the page with the CSV download link
+    page_url = os.getenv("GOVT_PAGE_URL", None)
     logging.info(f"Scraping the page for the CSV download link: {page_url}")
 
     try:

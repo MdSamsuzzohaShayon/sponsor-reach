@@ -415,3 +415,648 @@ pandas.errors.EmptyDataError: No columns to parse from file
 2025-04-13 13:52:54,940 - INFO - 🔍 Starting enrichment for new sponsors...
 2025-04-13 13:52:54,940 - INFO - ✅ Enriched 66 companies successfully.
 2025-04-13 13:53:06,242 - INFO - 🔄 Syncing with Salesforce CRM...
+2025-04-15 17:32:16,466 - INFO - Logger set up successfully!
+2025-04-15 17:32:44,254 - INFO - Logger set up successfully!
+2025-04-15 17:32:44,254 - INFO - Logger set up successfully!
+2025-04-15 17:32:46,122 - INFO - 🚀 Starting UK Sponsor Reach daily pipeline
+2025-04-15 17:32:46,122 - INFO - 🚀 Starting UK Sponsor Reach daily pipeline
+2025-04-15 17:33:11,267 - INFO - ⬇️ Downloading latest sponsor CSV
+2025-04-15 17:33:11,267 - INFO - ⬇️ Downloading latest sponsor CSV
+2025-04-15 17:34:08,075 - CRITICAL - ❌ Unexpected error: Invalid URL 'None': No scheme supplied. Perhaps you meant https://None?
+Traceback (most recent call last):
+  File "/home/shayon/Documents/web/sponsor-reach/scheduler/daily_workflow.py", line 38, in daily_pipeline
+    raw_csv_path = download_latest_csv()
+  File "/home/shayon/Documents/web/sponsor-reach/extraction/fetch_csv.py", line 84, in download_latest_csv
+    csv_url = get_csv_download_link()
+  File "/home/shayon/Documents/web/sponsor-reach/extraction/fetch_csv.py", line 20, in get_csv_download_link
+    response = requests.get(page_url, timeout=10)
+  File "/home/shayon/Documents/web/sponsor-reach/.venv/lib64/python3.13/site-packages/requests/api.py", line 73, in get
+    return request("get", url, params=params, **kwargs)
+  File "/home/shayon/Documents/web/sponsor-reach/.venv/lib64/python3.13/site-packages/requests/api.py", line 59, in request
+    return session.request(method=method, url=url, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/shayon/Documents/web/sponsor-reach/.venv/lib64/python3.13/site-packages/requests/sessions.py", line 575, in request
+    prep = self.prepare_request(req)
+  File "/home/shayon/Documents/web/sponsor-reach/.venv/lib64/python3.13/site-packages/requests/sessions.py", line 484, in prepare_request
+    p.prepare(
+    ~~~~~~~~~^
+        method=request.method.upper(),
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<10 lines>...
+        hooks=merge_hooks(request.hooks, self.hooks),
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home/shayon/Documents/web/sponsor-reach/.venv/lib64/python3.13/site-packages/requests/models.py", line 367, in prepare
+    self.prepare_url(url, params)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "/home/shayon/Documents/web/sponsor-reach/.venv/lib64/python3.13/site-packages/requests/models.py", line 438, in prepare_url
+    raise MissingSchema(
+    ...<2 lines>...
+    )
+requests.exceptions.MissingSchema: Invalid URL 'None': No scheme supplied. Perhaps you meant https://None?
+2025-04-15 17:34:08,075 - CRITICAL - ❌ Unexpected error: Invalid URL 'None': No scheme supplied. Perhaps you meant https://None?
+Traceback (most recent call last):
+  File "/home/shayon/Documents/web/sponsor-reach/scheduler/daily_workflow.py", line 38, in daily_pipeline
+    raw_csv_path = download_latest_csv()
+  File "/home/shayon/Documents/web/sponsor-reach/extraction/fetch_csv.py", line 84, in download_latest_csv
+    csv_url = get_csv_download_link()
+  File "/home/shayon/Documents/web/sponsor-reach/extraction/fetch_csv.py", line 20, in get_csv_download_link
+    response = requests.get(page_url, timeout=10)
+  File "/home/shayon/Documents/web/sponsor-reach/.venv/lib64/python3.13/site-packages/requests/api.py", line 73, in get
+    return request("get", url, params=params, **kwargs)
+  File "/home/shayon/Documents/web/sponsor-reach/.venv/lib64/python3.13/site-packages/requests/api.py", line 59, in request
+    return session.request(method=method, url=url, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/shayon/Documents/web/sponsor-reach/.venv/lib64/python3.13/site-packages/requests/sessions.py", line 575, in request
+    prep = self.prepare_request(req)
+  File "/home/shayon/Documents/web/sponsor-reach/.venv/lib64/python3.13/site-packages/requests/sessions.py", line 484, in prepare_request
+    p.prepare(
+    ~~~~~~~~~^
+        method=request.method.upper(),
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<10 lines>...
+        hooks=merge_hooks(request.hooks, self.hooks),
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home/shayon/Documents/web/sponsor-reach/.venv/lib64/python3.13/site-packages/requests/models.py", line 367, in prepare
+    self.prepare_url(url, params)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "/home/shayon/Documents/web/sponsor-reach/.venv/lib64/python3.13/site-packages/requests/models.py", line 438, in prepare_url
+    raise MissingSchema(
+    ...<2 lines>...
+    )
+requests.exceptions.MissingSchema: Invalid URL 'None': No scheme supplied. Perhaps you meant https://None?
+2025-04-15 17:35:43,770 - INFO - Logger set up successfully!
+2025-04-15 17:35:51,015 - INFO - Logger set up successfully!
+2025-04-15 17:35:51,015 - INFO - Logger set up successfully!
+2025-04-15 17:35:51,017 - INFO - 🚀 Starting UK Sponsor Reach daily pipeline
+2025-04-15 17:35:51,017 - INFO - 🚀 Starting UK Sponsor Reach daily pipeline
+2025-04-15 17:35:51,018 - INFO - ⬇️ Downloading latest sponsor CSV
+2025-04-15 17:35:51,018 - INFO - ⬇️ Downloading latest sponsor CSV
+2025-04-15 17:38:51,749 - INFO - 🔍 Preprocessing and comparing with previous data
+2025-04-15 17:38:51,749 - INFO - 🔍 Preprocessing and comparing with previous data
+2025-04-15 17:39:38,437 - CRITICAL - ❌ Unexpected error: Missing columns in CSV: Contact Name, Email
+Traceback (most recent call last):
+  File "/home/shayon/Documents/web/sponsor-reach/scheduler/daily_workflow.py", line 44, in daily_pipeline
+    df_sponsors = preprocess_sponsor_data(raw_csv_path)
+  File "/home/shayon/Documents/web/sponsor-reach/extraction/parse_sponsors.py", line 31, in preprocess_sponsor_data
+    raise ValueError(f"Missing columns in CSV: {', '.join(missing_cols)}")
+ValueError: Missing columns in CSV: Contact Name, Email
+2025-04-15 17:39:38,437 - CRITICAL - ❌ Unexpected error: Missing columns in CSV: Contact Name, Email
+Traceback (most recent call last):
+  File "/home/shayon/Documents/web/sponsor-reach/scheduler/daily_workflow.py", line 44, in daily_pipeline
+    df_sponsors = preprocess_sponsor_data(raw_csv_path)
+  File "/home/shayon/Documents/web/sponsor-reach/extraction/parse_sponsors.py", line 31, in preprocess_sponsor_data
+    raise ValueError(f"Missing columns in CSV: {', '.join(missing_cols)}")
+ValueError: Missing columns in CSV: Contact Name, Email
+2025-04-15 17:42:25,978 - INFO - Logger set up successfully!
+2025-04-15 17:42:25,978 - INFO - Logger set up successfully!
+2025-04-15 17:42:25,978 - INFO - Logger set up successfully!
+2025-04-15 17:42:25,978 - INFO - 🚀 Starting UK Sponsor Reach daily pipeline
+2025-04-15 17:42:25,978 - INFO - 🚀 Starting UK Sponsor Reach daily pipeline
+2025-04-15 17:42:25,978 - INFO - ⬇️ Downloading latest sponsor CSV
+2025-04-15 17:42:25,978 - INFO - ⬇️ Downloading latest sponsor CSV
+2025-04-15 17:42:40,198 - INFO - 🔍 Preprocessing and comparing with previous data
+2025-04-15 17:42:40,198 - INFO - 🔍 Preprocessing and comparing with previous data
+2025-04-15 17:46:48,776 - INFO - Logger set up successfully!
+2025-04-15 17:46:48,776 - INFO - Logger set up successfully!
+2025-04-15 17:46:48,776 - INFO - Logger set up successfully!
+2025-04-15 17:46:48,776 - INFO - 🚀 Starting UK Sponsor Reach daily pipeline
+2025-04-15 17:46:48,776 - INFO - 🚀 Starting UK Sponsor Reach daily pipeline
+2025-04-15 17:46:48,776 - INFO - ⬇️ Downloading latest sponsor CSV
+2025-04-15 17:46:48,776 - INFO - ⬇️ Downloading latest sponsor CSV
+2025-04-15 17:46:48,776 - INFO - 🔍 Preprocessing and comparing with previous data
+2025-04-15 17:46:48,776 - INFO - 🔍 Preprocessing and comparing with previous data
+2025-04-15 17:49:06,097 - INFO - Logger set up successfully!
+2025-04-15 17:49:06,097 - INFO - Logger set up successfully!
+2025-04-15 17:49:06,097 - INFO - Logger set up successfully!
+2025-04-15 17:49:06,097 - INFO - 🚀 Starting UK Sponsor Reach daily pipeline
+2025-04-15 17:49:06,097 - INFO - 🚀 Starting UK Sponsor Reach daily pipeline
+2025-04-15 17:49:06,097 - INFO - ⬇️ Downloading latest sponsor CSV
+2025-04-15 17:49:06,097 - INFO - ⬇️ Downloading latest sponsor CSV
+2025-04-15 17:49:06,098 - INFO - 🔍 Preprocessing and comparing with previous data
+2025-04-15 17:49:06,098 - INFO - 🔍 Preprocessing and comparing with previous data
+2025-04-15 17:54:36,404 - INFO - Logger set up successfully!
+2025-04-15 17:54:36,404 - INFO - Logger set up successfully!
+2025-04-15 17:54:36,404 - INFO - Logger set up successfully!
+2025-04-15 17:54:36,405 - INFO - 🚀 Starting UK Sponsor Reach daily pipeline
+2025-04-15 17:54:36,405 - INFO - 🚀 Starting UK Sponsor Reach daily pipeline
+2025-04-15 17:54:36,405 - INFO - ⬇️ Downloading latest sponsor CSV
+2025-04-15 17:54:36,405 - INFO - ⬇️ Downloading latest sponsor CSV
+2025-04-15 17:54:36,405 - INFO - 🔍 Preprocessing and comparing with previous data
+2025-04-15 17:54:36,405 - INFO - 🔍 Preprocessing and comparing with previous data
+2025-04-15 17:55:42,674 - INFO - Logger set up successfully!
+2025-04-15 17:55:42,674 - INFO - Logger set up successfully!
+2025-04-15 17:55:42,674 - INFO - Logger set up successfully!
+2025-04-15 17:55:42,674 - INFO - 🚀 Starting UK Sponsor Reach daily pipeline
+2025-04-15 17:55:42,674 - INFO - 🚀 Starting UK Sponsor Reach daily pipeline
+2025-04-15 17:55:42,675 - INFO - ⬇️ Downloading latest sponsor CSV
+2025-04-15 17:55:42,675 - INFO - ⬇️ Downloading latest sponsor CSV
+2025-04-15 17:55:42,675 - INFO - 🔍 Preprocessing and comparing with previous data
+2025-04-15 17:55:42,675 - INFO - 🔍 Preprocessing and comparing with previous data
+2025-04-15 17:56:20,069 - CRITICAL - ❌ Unexpected error: argument of type 'method' is not iterable
+Traceback (most recent call last):
+  File "/home/shayon/Documents/web/sponsor-reach/scheduler/daily_workflow.py", line 45, in daily_pipeline
+    new_sponsors = get_new_sponsors(df_sponsors)
+  File "/home/shayon/Documents/web/sponsor-reach/extraction/compare_csv.py", line 78, in get_new_sponsors
+    df_latest = pd.read_csv(latest_csv_path)
+  File "/home/shayon/Documents/web/sponsor-reach/.venv/lib64/python3.13/site-packages/pandas/io/parsers/readers.py", line 1026, in read_csv
+    return _read(filepath_or_buffer, kwds)
+  File "/home/shayon/Documents/web/sponsor-reach/.venv/lib64/python3.13/site-packages/pandas/io/parsers/readers.py", line 620, in _read
+    parser = TextFileReader(filepath_or_buffer, **kwds)
+  File "/home/shayon/Documents/web/sponsor-reach/.venv/lib64/python3.13/site-packages/pandas/io/parsers/readers.py", line 1620, in __init__
+    self._engine = self._make_engine(f, self.engine)
+                   ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "/home/shayon/Documents/web/sponsor-reach/.venv/lib64/python3.13/site-packages/pandas/io/parsers/readers.py", line 1880, in _make_engine
+    self.handles = get_handle(
+                   ~~~~~~~~~~^
+        f,
+        ^^
+    ...<6 lines>...
+        storage_options=self.options.get("storage_options", None),
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home/shayon/Documents/web/sponsor-reach/.venv/lib64/python3.13/site-packages/pandas/io/common.py", line 719, in get_handle
+    if _is_binary_mode(path_or_buf, mode) and "b" not in mode:
+       ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+  File "/home/shayon/Documents/web/sponsor-reach/.venv/lib64/python3.13/site-packages/pandas/io/common.py", line 1181, in _is_binary_mode
+    return isinstance(handle, _get_binary_io_classes()) or "b" in getattr(
+                                                           ^^^^^^^^^^^^^^^
+        handle, "mode", mode
+        ^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+TypeError: argument of type 'method' is not iterable
+2025-04-15 17:56:20,069 - CRITICAL - ❌ Unexpected error: argument of type 'method' is not iterable
+Traceback (most recent call last):
+  File "/home/shayon/Documents/web/sponsor-reach/scheduler/daily_workflow.py", line 45, in daily_pipeline
+    new_sponsors = get_new_sponsors(df_sponsors)
+  File "/home/shayon/Documents/web/sponsor-reach/extraction/compare_csv.py", line 78, in get_new_sponsors
+    df_latest = pd.read_csv(latest_csv_path)
+  File "/home/shayon/Documents/web/sponsor-reach/.venv/lib64/python3.13/site-packages/pandas/io/parsers/readers.py", line 1026, in read_csv
+    return _read(filepath_or_buffer, kwds)
+  File "/home/shayon/Documents/web/sponsor-reach/.venv/lib64/python3.13/site-packages/pandas/io/parsers/readers.py", line 620, in _read
+    parser = TextFileReader(filepath_or_buffer, **kwds)
+  File "/home/shayon/Documents/web/sponsor-reach/.venv/lib64/python3.13/site-packages/pandas/io/parsers/readers.py", line 1620, in __init__
+    self._engine = self._make_engine(f, self.engine)
+                   ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "/home/shayon/Documents/web/sponsor-reach/.venv/lib64/python3.13/site-packages/pandas/io/parsers/readers.py", line 1880, in _make_engine
+    self.handles = get_handle(
+                   ~~~~~~~~~~^
+        f,
+        ^^
+    ...<6 lines>...
+        storage_options=self.options.get("storage_options", None),
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home/shayon/Documents/web/sponsor-reach/.venv/lib64/python3.13/site-packages/pandas/io/common.py", line 719, in get_handle
+    if _is_binary_mode(path_or_buf, mode) and "b" not in mode:
+       ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+  File "/home/shayon/Documents/web/sponsor-reach/.venv/lib64/python3.13/site-packages/pandas/io/common.py", line 1181, in _is_binary_mode
+    return isinstance(handle, _get_binary_io_classes()) or "b" in getattr(
+                                                           ^^^^^^^^^^^^^^^
+        handle, "mode", mode
+        ^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+TypeError: argument of type 'method' is not iterable
+2025-04-15 17:56:24,466 - INFO - Logger set up successfully!
+2025-04-15 17:56:24,466 - INFO - Logger set up successfully!
+2025-04-15 17:56:24,466 - INFO - Logger set up successfully!
+2025-04-15 17:56:24,466 - INFO - 🚀 Starting UK Sponsor Reach daily pipeline
+2025-04-15 17:56:24,466 - INFO - 🚀 Starting UK Sponsor Reach daily pipeline
+2025-04-15 17:56:24,466 - INFO - ⬇️ Downloading latest sponsor CSV
+2025-04-15 17:56:24,466 - INFO - ⬇️ Downloading latest sponsor CSV
+2025-04-15 17:56:24,466 - INFO - 🔍 Preprocessing and comparing with previous data
+2025-04-15 17:56:24,466 - INFO - 🔍 Preprocessing and comparing with previous data
+2025-04-15 18:03:25,574 - INFO - Logger set up successfully!
+2025-04-15 18:03:25,574 - INFO - Logger set up successfully!
+2025-04-15 18:03:25,574 - INFO - Logger set up successfully!
+2025-04-15 18:03:25,574 - INFO - 🚀 Starting UK Sponsor Reach daily pipeline
+2025-04-15 18:03:25,574 - INFO - 🚀 Starting UK Sponsor Reach daily pipeline
+2025-04-15 18:03:25,574 - INFO - ⬇️ Downloading latest sponsor CSV
+2025-04-15 18:03:25,574 - INFO - ⬇️ Downloading latest sponsor CSV
+2025-04-15 18:03:25,574 - INFO - 🔍 Preprocessing and comparing with previous data
+2025-04-15 18:03:25,574 - INFO - 🔍 Preprocessing and comparing with previous data
+2025-04-15 18:03:54,005 - INFO - Logger set up successfully!
+2025-04-15 18:03:54,005 - INFO - Logger set up successfully!
+2025-04-15 18:03:54,005 - INFO - Logger set up successfully!
+2025-04-15 18:03:54,005 - INFO - 🚀 Starting UK Sponsor Reach daily pipeline
+2025-04-15 18:03:54,005 - INFO - 🚀 Starting UK Sponsor Reach daily pipeline
+2025-04-15 18:03:54,005 - INFO - ⬇️ Downloading latest sponsor CSV
+2025-04-15 18:03:54,005 - INFO - ⬇️ Downloading latest sponsor CSV
+2025-04-15 18:03:54,005 - INFO - 🔍 Preprocessing and comparing with previous data
+2025-04-15 18:03:54,005 - INFO - 🔍 Preprocessing and comparing with previous data
+2025-04-15 18:04:12,957 - ERROR - ❌ File error: No CSV file from yesterday found in either archive or raw directories.
+Traceback (most recent call last):
+  File "/home/shayon/Documents/web/sponsor-reach/scheduler/daily_workflow.py", line 45, in daily_pipeline
+    new_sponsors = get_new_sponsors(df_sponsors)
+  File "/home/shayon/Documents/web/sponsor-reach/extraction/compare_csv.py", line 80, in get_new_sponsors
+    previous_csv_path = get_yesterday_file(archive_dir)
+  File "/home/shayon/Documents/web/sponsor-reach/extraction/compare_csv.py", line 69, in get_yesterday_file
+    raise FileNotFoundError("No CSV file from yesterday found in either archive or raw directories.")
+FileNotFoundError: No CSV file from yesterday found in either archive or raw directories.
+2025-04-15 18:04:12,957 - ERROR - ❌ File error: No CSV file from yesterday found in either archive or raw directories.
+Traceback (most recent call last):
+  File "/home/shayon/Documents/web/sponsor-reach/scheduler/daily_workflow.py", line 45, in daily_pipeline
+    new_sponsors = get_new_sponsors(df_sponsors)
+  File "/home/shayon/Documents/web/sponsor-reach/extraction/compare_csv.py", line 80, in get_new_sponsors
+    previous_csv_path = get_yesterday_file(archive_dir)
+  File "/home/shayon/Documents/web/sponsor-reach/extraction/compare_csv.py", line 69, in get_yesterday_file
+    raise FileNotFoundError("No CSV file from yesterday found in either archive or raw directories.")
+FileNotFoundError: No CSV file from yesterday found in either archive or raw directories.
+2025-04-15 18:04:30,503 - INFO - Logger set up successfully!
+2025-04-15 18:04:30,503 - INFO - Logger set up successfully!
+2025-04-15 18:04:30,503 - INFO - Logger set up successfully!
+2025-04-15 18:04:30,504 - INFO - 🚀 Starting UK Sponsor Reach daily pipeline
+2025-04-15 18:04:30,504 - INFO - 🚀 Starting UK Sponsor Reach daily pipeline
+2025-04-15 18:04:30,504 - INFO - ⬇️ Downloading latest sponsor CSV
+2025-04-15 18:04:30,504 - INFO - ⬇️ Downloading latest sponsor CSV
+2025-04-15 18:04:30,504 - INFO - 🔍 Preprocessing and comparing with previous data
+2025-04-15 18:04:30,504 - INFO - 🔍 Preprocessing and comparing with previous data
+2025-04-15 18:33:18,031 - INFO - Logger set up successfully!
+2025-04-15 18:33:18,032 - INFO - Logger set up successfully!
+2025-04-15 18:33:18,032 - INFO - Logger set up successfully!
+2025-04-15 18:33:18,032 - INFO - 🚀 Starting UK Sponsor Reach daily pipeline
+2025-04-15 18:33:18,032 - INFO - 🚀 Starting UK Sponsor Reach daily pipeline
+2025-04-15 18:33:18,032 - INFO - ⬇️ Downloading latest sponsor CSV
+2025-04-15 18:33:18,032 - INFO - ⬇️ Downloading latest sponsor CSV
+2025-04-15 18:33:18,032 - INFO - 🔍 Preprocessing and comparing with previous data
+2025-04-15 18:33:18,032 - INFO - 🔍 Preprocessing and comparing with previous data
+2025-04-15 18:33:42,887 - INFO - Logger set up successfully!
+2025-04-15 18:33:42,888 - INFO - Logger set up successfully!
+2025-04-15 18:33:42,888 - INFO - Logger set up successfully!
+2025-04-15 18:33:42,888 - INFO - 🚀 Starting UK Sponsor Reach daily pipeline
+2025-04-15 18:33:42,888 - INFO - 🚀 Starting UK Sponsor Reach daily pipeline
+2025-04-15 18:33:42,888 - INFO - ⬇️ Downloading latest sponsor CSV
+2025-04-15 18:33:42,888 - INFO - ⬇️ Downloading latest sponsor CSV
+2025-04-15 18:33:42,889 - INFO - 🔍 Preprocessing and comparing with previous data
+2025-04-15 18:33:42,889 - INFO - 🔍 Preprocessing and comparing with previous data
+2025-04-15 18:48:48,324 - INFO - Logger set up successfully!
+2025-04-15 18:48:48,324 - INFO - Logger set up successfully!
+2025-04-15 18:48:48,324 - INFO - Logger set up successfully!
+2025-04-15 18:48:48,324 - INFO - 🚀 Starting UK Sponsor Reach daily pipeline
+2025-04-15 18:48:48,324 - INFO - 🚀 Starting UK Sponsor Reach daily pipeline
+2025-04-15 18:48:48,324 - INFO - ⬇️ Downloading latest sponsor CSV
+2025-04-15 18:48:48,324 - INFO - ⬇️ Downloading latest sponsor CSV
+2025-04-15 18:48:48,324 - INFO - 🔍 Preprocessing and comparing with previous data
+2025-04-15 18:48:48,324 - INFO - 🔍 Preprocessing and comparing with previous data
+2025-04-15 18:51:12,416 - INFO - Logger set up successfully!
+2025-04-15 18:51:12,416 - INFO - Logger set up successfully!
+2025-04-15 18:51:12,416 - INFO - Logger set up successfully!
+2025-04-15 18:51:12,416 - INFO - 🚀 Starting UK Sponsor Reach daily pipeline
+2025-04-15 18:51:12,416 - INFO - 🚀 Starting UK Sponsor Reach daily pipeline
+2025-04-15 18:51:12,417 - INFO - ⬇️ Downloading latest sponsor CSV
+2025-04-15 18:51:12,417 - INFO - ⬇️ Downloading latest sponsor CSV
+2025-04-15 18:51:12,417 - INFO - 🔍 Preprocessing and comparing with previous data
+2025-04-15 18:51:12,417 - INFO - 🔍 Preprocessing and comparing with previous data
+2025-04-15 18:54:34,555 - INFO - Logger set up successfully!
+2025-04-15 18:54:34,556 - INFO - Logger set up successfully!
+2025-04-15 18:54:34,556 - INFO - Logger set up successfully!
+2025-04-15 18:54:34,556 - INFO - 🚀 Starting UK Sponsor Reach daily pipeline
+2025-04-15 18:54:34,556 - INFO - 🚀 Starting UK Sponsor Reach daily pipeline
+2025-04-15 18:54:34,556 - INFO - ⬇️ Downloading latest sponsor CSV
+2025-04-15 18:54:34,556 - INFO - ⬇️ Downloading latest sponsor CSV
+2025-04-15 18:54:34,556 - INFO - 🔍 Preprocessing and comparing with previous data
+2025-04-15 18:54:34,556 - INFO - 🔍 Preprocessing and comparing with previous data
+2025-04-15 18:55:23,025 - INFO - 🎯 Found 276 new sponsors
+2025-04-15 18:55:23,025 - INFO - 🎯 Found 276 new sponsors
+2025-04-15 18:55:23,586 - INFO - ✨ Enriching new sponsor data
+2025-04-15 18:55:23,586 - INFO - ✨ Enriching new sponsor data
+2025-04-15 18:55:26,753 - INFO - 🔍 Starting enrichment for new sponsors...
+2025-04-15 18:55:26,753 - INFO - 🔍 Starting enrichment for new sponsors...
+2025-04-15 18:55:26,762 - INFO - ✅ Enriched 276 companies successfully.
+2025-04-15 18:55:26,762 - INFO - ✅ Enriched 276 companies successfully.
+2025-04-15 18:55:35,517 - INFO - 📧 Sending outreach emails
+2025-04-15 18:55:35,517 - INFO - 📧 Sending outreach emails
+2025-04-15 18:59:45,718 - INFO - 📨 Email sent to info@73stringsltd.co.uk
+2025-04-15 18:59:45,718 - INFO - 📨 Email sent to info@73stringsltd.co.uk
+2025-04-15 19:04:00,384 - INFO - Logger set up successfully!
+2025-04-15 19:04:00,384 - INFO - Logger set up successfully!
+2025-04-15 19:04:00,384 - INFO - Logger set up successfully!
+2025-04-15 19:04:00,384 - INFO - 🚀 Starting UK Sponsor Reach daily pipeline
+2025-04-15 19:04:00,384 - INFO - 🚀 Starting UK Sponsor Reach daily pipeline
+2025-04-15 19:04:00,384 - INFO - ⬇️ Downloading latest sponsor CSV
+2025-04-15 19:04:00,384 - INFO - ⬇️ Downloading latest sponsor CSV
+2025-04-15 19:04:00,385 - INFO - 🔍 Preprocessing and comparing with previous data
+2025-04-15 19:04:00,385 - INFO - 🔍 Preprocessing and comparing with previous data
+2025-04-15 19:04:17,768 - INFO - 🎯 Found 276 new sponsors
+2025-04-15 19:04:17,768 - INFO - 🎯 Found 276 new sponsors
+2025-04-15 19:04:17,769 - INFO - ✨ Enriching new sponsor data
+2025-04-15 19:04:17,769 - INFO - ✨ Enriching new sponsor data
+2025-04-15 19:04:17,771 - INFO - 🔍 Starting enrichment for new sponsors...
+2025-04-15 19:04:17,771 - INFO - 🔍 Starting enrichment for new sponsors...
+2025-04-15 19:04:17,776 - INFO - ✅ Enriched 276 companies successfully.
+2025-04-15 19:04:17,776 - INFO - ✅ Enriched 276 companies successfully.
+2025-04-15 19:04:18,838 - INFO - 📧 Sending outreach emails
+2025-04-15 19:04:18,838 - INFO - 📧 Sending outreach emails
+2025-04-15 19:05:54,355 - INFO - Logger set up successfully!
+2025-04-15 19:05:54,355 - INFO - Logger set up successfully!
+2025-04-15 19:05:54,355 - INFO - Logger set up successfully!
+2025-04-15 19:05:54,355 - INFO - 🚀 Starting UK Sponsor Reach daily pipeline
+2025-04-15 19:05:54,355 - INFO - 🚀 Starting UK Sponsor Reach daily pipeline
+2025-04-15 19:05:54,356 - INFO - ⬇️ Downloading latest sponsor CSV
+2025-04-15 19:05:54,356 - INFO - ⬇️ Downloading latest sponsor CSV
+2025-04-15 19:05:54,356 - INFO - 🔍 Preprocessing and comparing with previous data
+2025-04-15 19:05:54,356 - INFO - 🔍 Preprocessing and comparing with previous data
+2025-04-15 19:05:57,114 - INFO - 🎯 Found 276 new sponsors
+2025-04-15 19:05:57,114 - INFO - 🎯 Found 276 new sponsors
+2025-04-15 19:05:57,115 - INFO - ✨ Enriching new sponsor data
+2025-04-15 19:05:57,115 - INFO - ✨ Enriching new sponsor data
+2025-04-15 19:05:57,115 - INFO - 🔍 Starting enrichment for new sponsors...
+2025-04-15 19:05:57,115 - INFO - 🔍 Starting enrichment for new sponsors...
+2025-04-15 19:05:57,115 - INFO - ✅ Enriched 276 companies successfully.
+2025-04-15 19:05:57,115 - INFO - ✅ Enriched 276 companies successfully.
+2025-04-15 19:05:57,116 - INFO - 📧 Sending outreach emails
+2025-04-15 19:05:57,116 - INFO - 📧 Sending outreach emails
+2025-04-15 19:08:13,550 - INFO - Logger set up successfully!
+2025-04-15 19:08:13,550 - INFO - Logger set up successfully!
+2025-04-15 19:08:13,550 - INFO - Logger set up successfully!
+2025-04-15 19:08:13,550 - INFO - 🚀 Starting UK Sponsor Reach daily pipeline
+2025-04-15 19:08:13,550 - INFO - 🚀 Starting UK Sponsor Reach daily pipeline
+2025-04-15 19:08:13,550 - INFO - ⬇️ Downloading latest sponsor CSV
+2025-04-15 19:08:13,550 - INFO - ⬇️ Downloading latest sponsor CSV
+2025-04-15 19:08:13,551 - INFO - 🔍 Preprocessing and comparing with previous data
+2025-04-15 19:08:13,551 - INFO - 🔍 Preprocessing and comparing with previous data
+2025-04-15 19:08:16,255 - INFO - 🎯 Found 276 new sponsors
+2025-04-15 19:08:16,255 - INFO - 🎯 Found 276 new sponsors
+2025-04-15 19:08:16,255 - INFO - ✨ Enriching new sponsor data
+2025-04-15 19:08:16,255 - INFO - ✨ Enriching new sponsor data
+2025-04-15 19:08:16,255 - INFO - 🔍 Starting enrichment for new sponsors...
+2025-04-15 19:08:16,255 - INFO - 🔍 Starting enrichment for new sponsors...
+2025-04-15 19:08:16,256 - INFO - ✅ Enriched 276 companies successfully.
+2025-04-15 19:08:16,256 - INFO - ✅ Enriched 276 companies successfully.
+2025-04-15 19:08:16,256 - INFO - 📧 Sending outreach emails
+2025-04-15 19:08:16,256 - INFO - 📧 Sending outreach emails
+2025-04-15 19:09:05,282 - INFO - Logger set up successfully!
+2025-04-15 19:09:05,283 - INFO - Logger set up successfully!
+2025-04-15 19:09:05,283 - INFO - Logger set up successfully!
+2025-04-15 19:09:05,283 - INFO - 🚀 Starting UK Sponsor Reach daily pipeline
+2025-04-15 19:09:05,283 - INFO - 🚀 Starting UK Sponsor Reach daily pipeline
+2025-04-15 19:09:05,283 - INFO - ⬇️ Downloading latest sponsor CSV
+2025-04-15 19:09:05,283 - INFO - ⬇️ Downloading latest sponsor CSV
+2025-04-15 19:09:05,283 - INFO - 🔍 Preprocessing and comparing with previous data
+2025-04-15 19:09:05,283 - INFO - 🔍 Preprocessing and comparing with previous data
+2025-04-15 19:09:07,949 - INFO - 🎯 Found 276 new sponsors
+2025-04-15 19:09:07,949 - INFO - 🎯 Found 276 new sponsors
+2025-04-15 19:09:07,949 - INFO - ✨ Enriching new sponsor data
+2025-04-15 19:09:07,949 - INFO - ✨ Enriching new sponsor data
+2025-04-15 19:09:07,949 - INFO - 🔍 Starting enrichment for new sponsors...
+2025-04-15 19:09:07,949 - INFO - 🔍 Starting enrichment for new sponsors...
+2025-04-15 19:09:07,950 - INFO - ✅ Enriched 276 companies successfully.
+2025-04-15 19:09:07,950 - INFO - ✅ Enriched 276 companies successfully.
+2025-04-15 19:09:07,950 - INFO - 📧 Sending outreach emails
+2025-04-15 19:09:07,950 - INFO - 📧 Sending outreach emails
+2025-04-15 19:09:28,136 - INFO - Logger set up successfully!
+2025-04-15 19:09:28,136 - INFO - Logger set up successfully!
+2025-04-15 19:09:28,136 - INFO - Logger set up successfully!
+2025-04-15 19:09:28,136 - INFO - 🚀 Starting UK Sponsor Reach daily pipeline
+2025-04-15 19:09:28,136 - INFO - 🚀 Starting UK Sponsor Reach daily pipeline
+2025-04-15 19:09:28,136 - INFO - ⬇️ Downloading latest sponsor CSV
+2025-04-15 19:09:28,136 - INFO - ⬇️ Downloading latest sponsor CSV
+2025-04-15 19:09:28,137 - INFO - 🔍 Preprocessing and comparing with previous data
+2025-04-15 19:09:28,137 - INFO - 🔍 Preprocessing and comparing with previous data
+2025-04-15 19:09:30,875 - INFO - 🎯 Found 276 new sponsors
+2025-04-15 19:09:30,875 - INFO - 🎯 Found 276 new sponsors
+2025-04-15 19:09:30,875 - INFO - ✨ Enriching new sponsor data
+2025-04-15 19:09:30,875 - INFO - ✨ Enriching new sponsor data
+2025-04-15 19:09:30,876 - INFO - 🔍 Starting enrichment for new sponsors...
+2025-04-15 19:09:30,876 - INFO - 🔍 Starting enrichment for new sponsors...
+2025-04-15 19:09:30,876 - INFO - ✅ Enriched 276 companies successfully.
+2025-04-15 19:09:30,876 - INFO - ✅ Enriched 276 companies successfully.
+2025-04-15 19:09:30,876 - INFO - 📧 Sending outreach emails
+2025-04-15 19:09:30,876 - INFO - 📧 Sending outreach emails
+2025-04-15 19:10:49,675 - INFO - Logger set up successfully!
+2025-04-15 19:10:49,675 - INFO - Logger set up successfully!
+2025-04-15 19:10:49,675 - INFO - Logger set up successfully!
+2025-04-15 19:10:49,675 - INFO - 🚀 Starting UK Sponsor Reach daily pipeline
+2025-04-15 19:10:49,675 - INFO - 🚀 Starting UK Sponsor Reach daily pipeline
+2025-04-15 19:10:49,676 - INFO - ⬇️ Downloading latest sponsor CSV
+2025-04-15 19:10:49,676 - INFO - ⬇️ Downloading latest sponsor CSV
+2025-04-15 19:10:49,676 - INFO - 🔍 Preprocessing and comparing with previous data
+2025-04-15 19:10:49,676 - INFO - 🔍 Preprocessing and comparing with previous data
+2025-04-15 19:10:53,055 - INFO - Logger set up successfully!
+2025-04-15 19:10:53,056 - INFO - Logger set up successfully!
+2025-04-15 19:10:53,056 - INFO - Logger set up successfully!
+2025-04-15 19:10:53,056 - INFO - 🚀 Starting UK Sponsor Reach daily pipeline
+2025-04-15 19:10:53,056 - INFO - 🚀 Starting UK Sponsor Reach daily pipeline
+2025-04-15 19:10:53,056 - INFO - ⬇️ Downloading latest sponsor CSV
+2025-04-15 19:10:53,056 - INFO - ⬇️ Downloading latest sponsor CSV
+2025-04-15 19:10:53,056 - INFO - 🔍 Preprocessing and comparing with previous data
+2025-04-15 19:10:53,056 - INFO - 🔍 Preprocessing and comparing with previous data
+2025-04-15 19:10:55,928 - INFO - 🎯 Found 276 new sponsors
+2025-04-15 19:10:55,928 - INFO - 🎯 Found 276 new sponsors
+2025-04-15 19:10:55,928 - INFO - ✨ Enriching new sponsor data
+2025-04-15 19:10:55,928 - INFO - ✨ Enriching new sponsor data
+2025-04-15 19:10:55,929 - INFO - 🔍 Starting enrichment for new sponsors...
+2025-04-15 19:10:55,929 - INFO - 🔍 Starting enrichment for new sponsors...
+2025-04-15 19:10:55,929 - INFO - ✅ Enriched 276 companies successfully.
+2025-04-15 19:10:55,929 - INFO - ✅ Enriched 276 companies successfully.
+2025-04-15 19:10:55,929 - INFO - 📧 Sending outreach emails
+2025-04-15 19:10:55,929 - INFO - 📧 Sending outreach emails
+2025-04-15 19:13:18,007 - INFO - Logger set up successfully!
+2025-04-15 19:13:18,008 - INFO - Logger set up successfully!
+2025-04-15 19:13:18,008 - INFO - Logger set up successfully!
+2025-04-15 19:13:18,008 - INFO - 🚀 Starting UK Sponsor Reach daily pipeline
+2025-04-15 19:13:18,008 - INFO - 🚀 Starting UK Sponsor Reach daily pipeline
+2025-04-15 19:13:18,008 - INFO - ⬇️ Downloading latest sponsor CSV
+2025-04-15 19:13:18,008 - INFO - ⬇️ Downloading latest sponsor CSV
+2025-04-15 19:13:18,008 - INFO - 🔍 Preprocessing and comparing with previous data
+2025-04-15 19:13:18,008 - INFO - 🔍 Preprocessing and comparing with previous data
+2025-04-15 19:13:20,750 - INFO - 🎯 Found 276 new sponsors
+2025-04-15 19:13:20,750 - INFO - 🎯 Found 276 new sponsors
+2025-04-15 19:13:20,750 - INFO - ✨ Enriching new sponsor data
+2025-04-15 19:13:20,750 - INFO - ✨ Enriching new sponsor data
+2025-04-15 19:13:20,750 - INFO - 🔍 Starting enrichment for new sponsors...
+2025-04-15 19:13:20,750 - INFO - 🔍 Starting enrichment for new sponsors...
+2025-04-15 19:13:20,751 - INFO - ✅ Enriched 276 companies successfully.
+2025-04-15 19:13:20,751 - INFO - ✅ Enriched 276 companies successfully.
+2025-04-15 19:13:20,751 - INFO - 📧 Sending outreach emails
+2025-04-15 19:13:20,751 - INFO - 📧 Sending outreach emails
+2025-04-15 19:15:03,790 - INFO - Logger set up successfully!
+2025-04-15 19:15:03,790 - INFO - Logger set up successfully!
+2025-04-15 19:15:03,790 - INFO - Logger set up successfully!
+2025-04-15 19:15:03,790 - INFO - 🚀 Starting UK Sponsor Reach daily pipeline
+2025-04-15 19:15:03,790 - INFO - 🚀 Starting UK Sponsor Reach daily pipeline
+2025-04-15 19:15:03,790 - INFO - ⬇️ Downloading latest sponsor CSV
+2025-04-15 19:15:03,790 - INFO - ⬇️ Downloading latest sponsor CSV
+2025-04-15 19:15:03,791 - INFO - 🔍 Preprocessing and comparing with previous data
+2025-04-15 19:15:03,791 - INFO - 🔍 Preprocessing and comparing with previous data
+2025-04-15 19:15:06,470 - INFO - 🎯 Found 276 new sponsors
+2025-04-15 19:15:06,470 - INFO - 🎯 Found 276 new sponsors
+2025-04-15 19:15:06,471 - INFO - ✨ Enriching new sponsor data
+2025-04-15 19:15:06,471 - INFO - ✨ Enriching new sponsor data
+2025-04-15 19:15:06,471 - INFO - 🔍 Starting enrichment for new sponsors...
+2025-04-15 19:15:06,471 - INFO - 🔍 Starting enrichment for new sponsors...
+2025-04-15 19:15:06,471 - INFO - ✅ Enriched 276 companies successfully.
+2025-04-15 19:15:06,471 - INFO - ✅ Enriched 276 companies successfully.
+2025-04-15 19:15:06,471 - INFO - 📧 Sending outreach emails
+2025-04-15 19:15:06,471 - INFO - 📧 Sending outreach emails
+2025-04-15 19:15:21,268 - INFO - Logger set up successfully!
+2025-04-15 19:15:21,269 - INFO - Logger set up successfully!
+2025-04-15 19:15:21,269 - INFO - Logger set up successfully!
+2025-04-15 19:15:21,269 - INFO - 🚀 Starting UK Sponsor Reach daily pipeline
+2025-04-15 19:15:21,269 - INFO - 🚀 Starting UK Sponsor Reach daily pipeline
+2025-04-15 19:15:21,269 - INFO - ⬇️ Downloading latest sponsor CSV
+2025-04-15 19:15:21,269 - INFO - ⬇️ Downloading latest sponsor CSV
+2025-04-15 19:15:21,269 - INFO - 🔍 Preprocessing and comparing with previous data
+2025-04-15 19:15:21,269 - INFO - 🔍 Preprocessing and comparing with previous data
+2025-04-15 19:15:24,045 - INFO - 🎯 Found 276 new sponsors
+2025-04-15 19:15:24,045 - INFO - 🎯 Found 276 new sponsors
+2025-04-15 19:15:24,046 - INFO - ✨ Enriching new sponsor data
+2025-04-15 19:15:24,046 - INFO - ✨ Enriching new sponsor data
+2025-04-15 19:15:24,046 - INFO - 🔍 Starting enrichment for new sponsors...
+2025-04-15 19:15:24,046 - INFO - 🔍 Starting enrichment for new sponsors...
+2025-04-15 19:15:24,046 - INFO - ✅ Enriched 276 companies successfully.
+2025-04-15 19:15:24,046 - INFO - ✅ Enriched 276 companies successfully.
+2025-04-15 19:15:24,046 - INFO - 📧 Sending outreach emails
+2025-04-15 19:15:24,046 - INFO - 📧 Sending outreach emails
+2025-04-15 19:19:21,825 - INFO - Logger set up successfully!
+2025-04-15 19:19:21,825 - INFO - Logger set up successfully!
+2025-04-15 19:19:21,825 - INFO - Logger set up successfully!
+2025-04-15 19:19:21,825 - INFO - 🚀 Starting UK Sponsor Reach daily pipeline
+2025-04-15 19:19:21,825 - INFO - 🚀 Starting UK Sponsor Reach daily pipeline
+2025-04-15 19:19:21,825 - INFO - ⬇️ Downloading latest sponsor CSV
+2025-04-15 19:19:21,825 - INFO - ⬇️ Downloading latest sponsor CSV
+2025-04-15 19:19:21,826 - INFO - 🔍 Preprocessing and comparing with previous data
+2025-04-15 19:19:21,826 - INFO - 🔍 Preprocessing and comparing with previous data
+2025-04-15 19:19:24,850 - INFO - 🎯 Found 276 new sponsors
+2025-04-15 19:19:24,850 - INFO - 🎯 Found 276 new sponsors
+2025-04-15 19:19:24,850 - INFO - ✨ Enriching new sponsor data
+2025-04-15 19:19:24,850 - INFO - ✨ Enriching new sponsor data
+2025-04-15 19:19:24,851 - INFO - 🔍 Starting enrichment for new sponsors...
+2025-04-15 19:19:24,851 - INFO - 🔍 Starting enrichment for new sponsors...
+2025-04-15 19:19:24,851 - INFO - ✅ Enriched 276 companies successfully.
+2025-04-15 19:19:24,851 - INFO - ✅ Enriched 276 companies successfully.
+2025-04-15 19:19:24,851 - INFO - 📧 Sending outreach emails
+2025-04-15 19:19:24,851 - INFO - 📧 Sending outreach emails
+2025-04-15 19:21:08,386 - INFO - Logger set up successfully!
+2025-04-15 19:21:08,386 - INFO - Logger set up successfully!
+2025-04-15 19:21:08,386 - INFO - Logger set up successfully!
+2025-04-15 19:21:08,386 - INFO - 🚀 Starting UK Sponsor Reach daily pipeline
+2025-04-15 19:21:08,386 - INFO - 🚀 Starting UK Sponsor Reach daily pipeline
+2025-04-15 19:21:08,386 - INFO - ⬇️ Downloading latest sponsor CSV
+2025-04-15 19:21:08,386 - INFO - ⬇️ Downloading latest sponsor CSV
+2025-04-15 19:21:08,387 - INFO - 🔍 Preprocessing and comparing with previous data
+2025-04-15 19:21:08,387 - INFO - 🔍 Preprocessing and comparing with previous data
+2025-04-15 19:21:11,327 - INFO - 🎯 Found 276 new sponsors
+2025-04-15 19:21:11,327 - INFO - 🎯 Found 276 new sponsors
+2025-04-15 19:21:11,327 - INFO - ✨ Enriching new sponsor data
+2025-04-15 19:21:11,327 - INFO - ✨ Enriching new sponsor data
+2025-04-15 19:21:11,327 - INFO - 🔍 Starting enrichment for new sponsors...
+2025-04-15 19:21:11,327 - INFO - 🔍 Starting enrichment for new sponsors...
+2025-04-15 19:21:15,153 - INFO - ✅ Enriched 276 companies successfully.
+2025-04-15 19:21:15,153 - INFO - ✅ Enriched 276 companies successfully.
+2025-04-15 19:21:15,154 - INFO - 📧 Sending outreach emails
+2025-04-15 19:21:15,154 - INFO - 📧 Sending outreach emails
+2025-04-15 19:22:29,464 - INFO - 📨 Email sent to 276 sponsors: ['info@73stringsltd.co.uk', 'info@a&ntrimmingslimited.co.uk', 'info@abacus-69holdingslimited.co.uk', 'info@aberdeenassociationofsocialservice.co.uk', 'info@acumaticauklimited.co.uk', 'info@adaptivefinancialconsultingltd.co.uk', 'info@afc-halalmeatltd.co.uk', 'info@affle(uk)ltd..co.uk', 'info@agalretailltd.co.uk', 'info@airfiltrationsolutionsltd.co.uk', 'info@airfiltrationsolutionsltd.co.uk', 'info@airdshotel.co.uk', 'info@ajvpropertyservices(uk)ltd.co.uk', 'info@alhadisupermarketltd.co.uk', 'info@alanseliflimited.co.uk', 'info@alphaukpropertieslimited.co.uk', 'info@amvintageretailuklimited.co.uk', 'info@am2pmqualitycarelimited.co.uk', 'info@amandathompsoncoutureltd.co.uk', 'info@anacapawavepowerltd..co.uk', 'info@anacapawavepowerltd..co.uk', 'info@anotherboxstoryltd.co.uk', 'info@approvedpowerserviceslimited.co.uk', 'info@aquilainteractivelimited.co.uk', 'info@arbroathmedicalpracticellp.co.uk', 'info@artezzan.co.uk', 'info@asaexpresslimited.co.uk', 'info@ascendionengineeringsolutionseuropelimited.co.uk', 'info@ascendionengineeringsolutionseuropelimited.co.uk', 'info@asterosadvisers.co.uk', 'info@aviator75ltd.co.uk', 'info@balmoralcomteclimited.co.uk', 'info@bbfinteriorsltd.co.uk', 'info@beaconhealthkensingtonlimited.co.uk', 'info@becomfylimited.co.uk', 'info@berryworldltd.co.uk', 'info@berryworldltd.co.uk', 'info@bigleapconsultingltd.co.uk', "info@bingi'skitchenltd.co.uk", 'info@bistro1.co.uk', 'info@bizzleentertainmentltd.co.uk', 'info@blakehillhealthcarelimited.co.uk', 'info@bluestrawberryailtd.co.uk', 'info@bradfordroadcarsalesltd.co.uk', 'info@broadfieldlawukllp.co.uk', 'info@bxtechnologiesltd.co.uk', 'info@calabashmintlimited.co.uk', 'info@camberleyvisionpluslimitedt/aspecsavers.co.uk', 'info@carestaffservicesltd.co.uk', 'info@carenestsolutionsltd.co.uk', 'info@caresurelimited.co.uk', 'info@carltoncricketclub.co.uk', 'info@caruniversalltd.co.uk', 'info@caudaliegrouplimited.co.uk', 'info@caudaliegrouplimited.co.uk', 'info@centricbrandsinternationaleurope.co.uk', 'info@centricbrandsinternationaleurope.co.uk', 'info@centryserviceslimited.co.uk', 'info@ceonmachinerycontrolltd.co.uk', 'info@cggrillltd.co.uk', 'info@chaselodgehospitalltd.co.uk', 'info@chelsfieldelectricalltd.co.uk', 'info@cherrytwoltdt/abistrotpierre.co.uk', 'info@chestnutcourtcarehome.co.uk', 'info@ciaroltd.co.uk', 'info@cityleisuremanagementlimitedt/arosatwelve.co.uk', 'info@citygateautomotiveltd.co.uk', 'info@clearwatereventsltd.co.uk', 'info@cloudkeeperslondonltd.co.uk', 'info@cmtelecomukltd.co.uk', 'info@cmtelecomukltd.co.uk', 'info@countyfoodingredientsltd.co.uk', 'info@d.mcghee&sonsltd.co.uk', 'info@daclimited.co.uk', 'info@darbarartscultureheritagetrust.co.uk', 'info@defichiltd.co.uk', 'info@digitalinnklimited.co.uk', 'info@dovergrammarschoolforboys.co.uk', 'info@drinksonuslimited.co.uk', 'info@eastlancashiremoneyline(ips)ltd.co.uk', 'info@ecoalbalimited.co.uk', 'info@edgeratelimited.co.uk', 'info@ekniwas.co.uk', 'info@emergencyone.co.uk', 'info@equalexpertsuklimited.co.uk', 'info@equalexpertsuklimited.co.uk', 'info@erlystagestudiosltd.co.uk', 'info@evolution(radlett)ltd.co.uk', 'info@farnworthbaptistchurch/tlgbolton.co.uk', 'info@fdlawlimitedt/ahayesconnorsolicitors.co.uk', 'info@fieldviewcarehomeltd.co.uk', 'info@foundershealthholdinglimited.co.uk', 'info@frobelindependentservices.co.uk', 'info@fronhaulandbrookfieldcarehomeltd.co.uk', 'info@fusionfleetautos(falkirk)ltd.co.uk', 'info@glasgowrepairsltd.co.uk', 'info@glenmoreconsortiumltd.co.uk', 'info@greenbirdsconstructionltd.co.uk', 'info@greytowndentalpracticeltd.co.uk', 'info@gruberlogistics(uk)limited.co.uk', 'info@gwactiveltd.co.uk', 'info@h.w.woodlimited.co.uk', 'info@h.w.woodlimited.co.uk', 'info@hahhospitalitylimitedt/aindianaffairancoats.co.uk', 'info@haliogenpowerlimited.co.uk', 'info@happyrugbyltd.co.uk', 'info@harlandservicesltd.co.uk', 'info@harveymedicalconsultinglimited.co.uk', 'info@hasthcultltdtaartoonsworld.co.uk', 'info@herculesenterprisesltd.co.uk', 'info@hhproductionsltd.co.uk', 'info@hillsidecareltd.co.uk', 'info@hobsonssoholtd.co.uk', 'info@holcimuklimited.co.uk', 'info@holcimuklimited.co.uk', 'info@holtretirementlimited.co.uk', 'info@horizonphonessalesandrepairsukltd.co.uk', 'info@houghtonpharmacyltd.co.uk', 'info@hrmot&servicesltd.co.uk', 'info@iaguk&europe.co.uk', 'info@iaguk&europe.co.uk', 'info@iaguk&europe.co.uk', 'info@iaguk&europe.co.uk', 'info@inspirationsleicestershireltd.co.uk', 'info@integratedmediasolutionsltd.co.uk', 'info@invoxbelgiumukltd.co.uk', 'info@janeplan.co.uk', 'info@jmd(london)ltdt/afratellideli.co.uk', 'info@jollyscoffeeltd.co.uk', 'info@jonathanlulimited.co.uk', 'info@joysmilelimited.co.uk', 'info@joysmotorsltd.co.uk', 'info@jpccare&supportdaycentre.co.uk', 'info@jugandbottle.co.uk', 'info@jumoukltd.co.uk', "info@junior'sdaynursery.co.uk", 'info@juretransltd.co.uk', 'info@kemsholtd.co.uk', 'info@khawajahalalpoultry(soletrader)t/akhppoultry.co.uk', 'info@khnmsltd.co.uk', 'info@kokorohounslowltd.co.uk', 'info@konesh&coltd.co.uk', 'info@ksppharmaltdt/anewroadpharmacy.co.uk', 'info@lasaluteltd.co.uk', 'info@lampardinvestmentslimited.co.uk', 'info@ldcarelimited.co.uk', 'info@leiths(scotland)ltd.co.uk', 'info@leojetgroupltd.co.uk', 'info@levelweblimited.co.uk', 'info@lgmgmachineryu.k.limited.co.uk', 'info@lgmgmachineryu.k.limited.co.uk', 'info@lifestyleflooringlimited.co.uk', 'info@lillibethouseltd.co.uk', 'info@logixfmltd.co.uk', 'info@londonbctourismandconstructiontradingcompanyltd.co.uk', 'info@londoncomputerrecycling.co.uk', 'info@lotuslounge2023ltdt/alotuslounge.co.uk', 'info@lpsdseventysixlimited.co.uk', 'info@manorinteriorsolutionslimited.co.uk', 'info@maxgconstructionltd.co.uk', 'info@maxvalelimitedt/afledgelingsdaynursery.co.uk', 'info@mdemachinerylimited.co.uk', 'info@medefineeducationgroupltd.co.uk', 'info@mintconsulting(crm)ltd.co.uk', 'info@mitchampropertiesltd.co.uk', 'info@mksupermarketstoreltd.co.uk', 'info@mobiletechcentrelimited.co.uk', 'info@montpelierhealth.co.uk', 'info@naactivityparklimited.co.uk', 'info@naagaaltd.co.uk', 'info@newlocal.co.uk', 'info@nintendoofeuropese,ukbranch.co.uk', 'info@nintendoofeuropese,ukbranch.co.uk', 'info@northrowltd.co.uk', 'info@nufoxrubberlimited.co.uk', 'info@nxpower(uk)ltdt/acyberpower.co.uk', 'info@online24/7ltd.co.uk', 'info@opendateequipmentlimited.co.uk', 'info@orangeicecreamanddessertparlourltd.co.uk', 'info@oxfordimmunoteclimitedt/arevvity.co.uk', 'info@oxfordimmunoteclimitedt/arevvity.co.uk', 'info@paradicedessertslimited.co.uk', 'info@parthserviceslimited.co.uk', 'info@peterbesttradelimited.co.uk', 'info@pingonlinecommunicationsltd.co.uk', 'info@pizzawilmslowplusltd.co.uk', 'info@ppmprojectslimited.co.uk', 'info@privilegesupportedcareltd.co.uk', 'info@pukkaartlimited.co.uk', 'info@purpledragonplaylimited.co.uk', 'info@pvdretailltd.co.uk', 'info@raccagreennews.co.uk', 'info@ramgarhiaboardnorthampton.co.uk', 'info@reactengineering.co.uk', 'info@representclothinglimited.co.uk', 'info@richlandhomesltd.co.uk', 'info@risingmedicaltechnologieslimited.co.uk', 'info@riversidelinen&laundryltd.co.uk', 'info@rowanpharmaltd.co.uk', 'info@roytoncivilandstructuralltd.co.uk', 'info@s&dsupermarketwolverhamptonltdt/as&dsupermarket.co.uk', 'info@sabacapitalmanagement(uk)limited.co.uk', 'info@safariukbidcolimited.co.uk', 'info@safeguardpmsltd.co.uk', 'info@sagatruck&vanlimited.co.uk', 'info@sahbaacademyltd.co.uk', 'info@sdrcareservices.co.uk', 'info@seachilluklimitedtradingashiltonseafooduk.co.uk', 'info@shivsailtd.co.uk', 'info@shreejisupermarketlimitedt/anisalocal.co.uk', 'info@signaturehealthcareserviceslimited.co.uk', 'info@signatureofthailtd.co.uk', 'info@skprotectionlimited.co.uk', 'info@slowtouchltd.co.uk', 'info@smallworldconsultingltd.co.uk', 'info@smartcityconsultancyltd.co.uk', 'info@smartpointgroupuklimited.co.uk', 'info@sofinishtechnologieslimited.co.uk', 'info@soloagencyltd.co.uk', 'info@specialisedpolymerengineeringltd.co.uk', "info@speed'sjuiceukltd.co.uk", 'info@springstaffinglimited.co.uk', 'info@sturrockandrobsonservicesltd.co.uk', 'info@sudburyedgelimitedt/ajilani.co.uk', 'info@surethingconstructionsltd.co.uk', "info@suthaharannadesapillait/atoday'sexpress-inglemire.co.uk", "info@sutharshantharmasekarant/asmorley's.co.uk", 'info@swspiceltdt/abombayblue.co.uk', 'info@swallowsmeadowcourt.co.uk', 'info@swiftgrouplondonlimited.co.uk', 'info@taalstoresltd.co.uk', 'info@tagaviation(uk)limited.co.uk', 'info@tapcoenproukltd.co.uk', 'info@taxeffectiveltd.co.uk', 'info@tekuchilimited.co.uk', 'info@thebatterseacliniclimited.co.uk', 'info@thegalleyfish&chipshopltd.co.uk', 'info@themaryhillgrouppractice.co.uk', 'info@theoaksspecialistcollege.co.uk', 'info@thepizzahousepeterboroughlimited.co.uk', 'info@theriversidepublichouselimited.co.uk', 'info@tierneyhomesltdt/aslieveleague.co.uk', 'info@tiyanltd.co.uk', 'info@tlscareltd.co.uk', 'info@tmtfinance.co.uk', 'info@touchofloveoutreach.co.uk', 'info@touchofloveoutreach.co.uk', 'info@towerbridgelegalltdt/atowerbridgelegal.co.uk', 'info@treeoflifeministries.co.uk', 'info@trustedtechnologylimited.co.uk', 'info@umadalimitedt/aheavenlydessertshull.co.uk', 'info@universalserviceslondonlimited.co.uk', 'info@universityhealthservicesouthampton.co.uk', 'info@universityoflancashire.co.uk', 'info@universityoflancashire.co.uk', 'info@ustmlimited.co.uk', 'info@valorhospitalityeuropelimited.co.uk', 'info@valuechainmanagementltd.co.uk', 'info@violettastarlinkltd.co.uk', 'info@watlingstreetpractice.co.uk', 'info@wbcsduk.co.uk', 'info@wedgwoodcricketclub.co.uk', 'info@windrushsurgery.co.uk', "info@wolverhamptongirls'highschool.co.uk", 'info@woodhouseconvenienceltdt/awoodhouseconveniencestore&premier.co.uk', 'info@wrenlaboratorieslimited.co.uk', 'info@wsmpartnersllp.co.uk', 'info@wysefoodltd.co.uk', 'info@yaarhaulagelimited.co.uk', 'info@ygfedinburghltd.co.uk', 'info@yghplimited.co.uk', 'info@yologrouprestaurantslimited.co.uk', 'info@y-yito(uk)ltd.co.uk', 'info@zeeconsultinglimited.co.uk', 'info@zincnetworklimited.co.uk', 'info@zpgroupltd.co.uk']
+2025-04-15 19:22:29,464 - INFO - 📨 Email sent to 276 sponsors: ['info@73stringsltd.co.uk', 'info@a&ntrimmingslimited.co.uk', 'info@abacus-69holdingslimited.co.uk', 'info@aberdeenassociationofsocialservice.co.uk', 'info@acumaticauklimited.co.uk', 'info@adaptivefinancialconsultingltd.co.uk', 'info@afc-halalmeatltd.co.uk', 'info@affle(uk)ltd..co.uk', 'info@agalretailltd.co.uk', 'info@airfiltrationsolutionsltd.co.uk', 'info@airfiltrationsolutionsltd.co.uk', 'info@airdshotel.co.uk', 'info@ajvpropertyservices(uk)ltd.co.uk', 'info@alhadisupermarketltd.co.uk', 'info@alanseliflimited.co.uk', 'info@alphaukpropertieslimited.co.uk', 'info@amvintageretailuklimited.co.uk', 'info@am2pmqualitycarelimited.co.uk', 'info@amandathompsoncoutureltd.co.uk', 'info@anacapawavepowerltd..co.uk', 'info@anacapawavepowerltd..co.uk', 'info@anotherboxstoryltd.co.uk', 'info@approvedpowerserviceslimited.co.uk', 'info@aquilainteractivelimited.co.uk', 'info@arbroathmedicalpracticellp.co.uk', 'info@artezzan.co.uk', 'info@asaexpresslimited.co.uk', 'info@ascendionengineeringsolutionseuropelimited.co.uk', 'info@ascendionengineeringsolutionseuropelimited.co.uk', 'info@asterosadvisers.co.uk', 'info@aviator75ltd.co.uk', 'info@balmoralcomteclimited.co.uk', 'info@bbfinteriorsltd.co.uk', 'info@beaconhealthkensingtonlimited.co.uk', 'info@becomfylimited.co.uk', 'info@berryworldltd.co.uk', 'info@berryworldltd.co.uk', 'info@bigleapconsultingltd.co.uk', "info@bingi'skitchenltd.co.uk", 'info@bistro1.co.uk', 'info@bizzleentertainmentltd.co.uk', 'info@blakehillhealthcarelimited.co.uk', 'info@bluestrawberryailtd.co.uk', 'info@bradfordroadcarsalesltd.co.uk', 'info@broadfieldlawukllp.co.uk', 'info@bxtechnologiesltd.co.uk', 'info@calabashmintlimited.co.uk', 'info@camberleyvisionpluslimitedt/aspecsavers.co.uk', 'info@carestaffservicesltd.co.uk', 'info@carenestsolutionsltd.co.uk', 'info@caresurelimited.co.uk', 'info@carltoncricketclub.co.uk', 'info@caruniversalltd.co.uk', 'info@caudaliegrouplimited.co.uk', 'info@caudaliegrouplimited.co.uk', 'info@centricbrandsinternationaleurope.co.uk', 'info@centricbrandsinternationaleurope.co.uk', 'info@centryserviceslimited.co.uk', 'info@ceonmachinerycontrolltd.co.uk', 'info@cggrillltd.co.uk', 'info@chaselodgehospitalltd.co.uk', 'info@chelsfieldelectricalltd.co.uk', 'info@cherrytwoltdt/abistrotpierre.co.uk', 'info@chestnutcourtcarehome.co.uk', 'info@ciaroltd.co.uk', 'info@cityleisuremanagementlimitedt/arosatwelve.co.uk', 'info@citygateautomotiveltd.co.uk', 'info@clearwatereventsltd.co.uk', 'info@cloudkeeperslondonltd.co.uk', 'info@cmtelecomukltd.co.uk', 'info@cmtelecomukltd.co.uk', 'info@countyfoodingredientsltd.co.uk', 'info@d.mcghee&sonsltd.co.uk', 'info@daclimited.co.uk', 'info@darbarartscultureheritagetrust.co.uk', 'info@defichiltd.co.uk', 'info@digitalinnklimited.co.uk', 'info@dovergrammarschoolforboys.co.uk', 'info@drinksonuslimited.co.uk', 'info@eastlancashiremoneyline(ips)ltd.co.uk', 'info@ecoalbalimited.co.uk', 'info@edgeratelimited.co.uk', 'info@ekniwas.co.uk', 'info@emergencyone.co.uk', 'info@equalexpertsuklimited.co.uk', 'info@equalexpertsuklimited.co.uk', 'info@erlystagestudiosltd.co.uk', 'info@evolution(radlett)ltd.co.uk', 'info@farnworthbaptistchurch/tlgbolton.co.uk', 'info@fdlawlimitedt/ahayesconnorsolicitors.co.uk', 'info@fieldviewcarehomeltd.co.uk', 'info@foundershealthholdinglimited.co.uk', 'info@frobelindependentservices.co.uk', 'info@fronhaulandbrookfieldcarehomeltd.co.uk', 'info@fusionfleetautos(falkirk)ltd.co.uk', 'info@glasgowrepairsltd.co.uk', 'info@glenmoreconsortiumltd.co.uk', 'info@greenbirdsconstructionltd.co.uk', 'info@greytowndentalpracticeltd.co.uk', 'info@gruberlogistics(uk)limited.co.uk', 'info@gwactiveltd.co.uk', 'info@h.w.woodlimited.co.uk', 'info@h.w.woodlimited.co.uk', 'info@hahhospitalitylimitedt/aindianaffairancoats.co.uk', 'info@haliogenpowerlimited.co.uk', 'info@happyrugbyltd.co.uk', 'info@harlandservicesltd.co.uk', 'info@harveymedicalconsultinglimited.co.uk', 'info@hasthcultltdtaartoonsworld.co.uk', 'info@herculesenterprisesltd.co.uk', 'info@hhproductionsltd.co.uk', 'info@hillsidecareltd.co.uk', 'info@hobsonssoholtd.co.uk', 'info@holcimuklimited.co.uk', 'info@holcimuklimited.co.uk', 'info@holtretirementlimited.co.uk', 'info@horizonphonessalesandrepairsukltd.co.uk', 'info@houghtonpharmacyltd.co.uk', 'info@hrmot&servicesltd.co.uk', 'info@iaguk&europe.co.uk', 'info@iaguk&europe.co.uk', 'info@iaguk&europe.co.uk', 'info@iaguk&europe.co.uk', 'info@inspirationsleicestershireltd.co.uk', 'info@integratedmediasolutionsltd.co.uk', 'info@invoxbelgiumukltd.co.uk', 'info@janeplan.co.uk', 'info@jmd(london)ltdt/afratellideli.co.uk', 'info@jollyscoffeeltd.co.uk', 'info@jonathanlulimited.co.uk', 'info@joysmilelimited.co.uk', 'info@joysmotorsltd.co.uk', 'info@jpccare&supportdaycentre.co.uk', 'info@jugandbottle.co.uk', 'info@jumoukltd.co.uk', "info@junior'sdaynursery.co.uk", 'info@juretransltd.co.uk', 'info@kemsholtd.co.uk', 'info@khawajahalalpoultry(soletrader)t/akhppoultry.co.uk', 'info@khnmsltd.co.uk', 'info@kokorohounslowltd.co.uk', 'info@konesh&coltd.co.uk', 'info@ksppharmaltdt/anewroadpharmacy.co.uk', 'info@lasaluteltd.co.uk', 'info@lampardinvestmentslimited.co.uk', 'info@ldcarelimited.co.uk', 'info@leiths(scotland)ltd.co.uk', 'info@leojetgroupltd.co.uk', 'info@levelweblimited.co.uk', 'info@lgmgmachineryu.k.limited.co.uk', 'info@lgmgmachineryu.k.limited.co.uk', 'info@lifestyleflooringlimited.co.uk', 'info@lillibethouseltd.co.uk', 'info@logixfmltd.co.uk', 'info@londonbctourismandconstructiontradingcompanyltd.co.uk', 'info@londoncomputerrecycling.co.uk', 'info@lotuslounge2023ltdt/alotuslounge.co.uk', 'info@lpsdseventysixlimited.co.uk', 'info@manorinteriorsolutionslimited.co.uk', 'info@maxgconstructionltd.co.uk', 'info@maxvalelimitedt/afledgelingsdaynursery.co.uk', 'info@mdemachinerylimited.co.uk', 'info@medefineeducationgroupltd.co.uk', 'info@mintconsulting(crm)ltd.co.uk', 'info@mitchampropertiesltd.co.uk', 'info@mksupermarketstoreltd.co.uk', 'info@mobiletechcentrelimited.co.uk', 'info@montpelierhealth.co.uk', 'info@naactivityparklimited.co.uk', 'info@naagaaltd.co.uk', 'info@newlocal.co.uk', 'info@nintendoofeuropese,ukbranch.co.uk', 'info@nintendoofeuropese,ukbranch.co.uk', 'info@northrowltd.co.uk', 'info@nufoxrubberlimited.co.uk', 'info@nxpower(uk)ltdt/acyberpower.co.uk', 'info@online24/7ltd.co.uk', 'info@opendateequipmentlimited.co.uk', 'info@orangeicecreamanddessertparlourltd.co.uk', 'info@oxfordimmunoteclimitedt/arevvity.co.uk', 'info@oxfordimmunoteclimitedt/arevvity.co.uk', 'info@paradicedessertslimited.co.uk', 'info@parthserviceslimited.co.uk', 'info@peterbesttradelimited.co.uk', 'info@pingonlinecommunicationsltd.co.uk', 'info@pizzawilmslowplusltd.co.uk', 'info@ppmprojectslimited.co.uk', 'info@privilegesupportedcareltd.co.uk', 'info@pukkaartlimited.co.uk', 'info@purpledragonplaylimited.co.uk', 'info@pvdretailltd.co.uk', 'info@raccagreennews.co.uk', 'info@ramgarhiaboardnorthampton.co.uk', 'info@reactengineering.co.uk', 'info@representclothinglimited.co.uk', 'info@richlandhomesltd.co.uk', 'info@risingmedicaltechnologieslimited.co.uk', 'info@riversidelinen&laundryltd.co.uk', 'info@rowanpharmaltd.co.uk', 'info@roytoncivilandstructuralltd.co.uk', 'info@s&dsupermarketwolverhamptonltdt/as&dsupermarket.co.uk', 'info@sabacapitalmanagement(uk)limited.co.uk', 'info@safariukbidcolimited.co.uk', 'info@safeguardpmsltd.co.uk', 'info@sagatruck&vanlimited.co.uk', 'info@sahbaacademyltd.co.uk', 'info@sdrcareservices.co.uk', 'info@seachilluklimitedtradingashiltonseafooduk.co.uk', 'info@shivsailtd.co.uk', 'info@shreejisupermarketlimitedt/anisalocal.co.uk', 'info@signaturehealthcareserviceslimited.co.uk', 'info@signatureofthailtd.co.uk', 'info@skprotectionlimited.co.uk', 'info@slowtouchltd.co.uk', 'info@smallworldconsultingltd.co.uk', 'info@smartcityconsultancyltd.co.uk', 'info@smartpointgroupuklimited.co.uk', 'info@sofinishtechnologieslimited.co.uk', 'info@soloagencyltd.co.uk', 'info@specialisedpolymerengineeringltd.co.uk', "info@speed'sjuiceukltd.co.uk", 'info@springstaffinglimited.co.uk', 'info@sturrockandrobsonservicesltd.co.uk', 'info@sudburyedgelimitedt/ajilani.co.uk', 'info@surethingconstructionsltd.co.uk', "info@suthaharannadesapillait/atoday'sexpress-inglemire.co.uk", "info@sutharshantharmasekarant/asmorley's.co.uk", 'info@swspiceltdt/abombayblue.co.uk', 'info@swallowsmeadowcourt.co.uk', 'info@swiftgrouplondonlimited.co.uk', 'info@taalstoresltd.co.uk', 'info@tagaviation(uk)limited.co.uk', 'info@tapcoenproukltd.co.uk', 'info@taxeffectiveltd.co.uk', 'info@tekuchilimited.co.uk', 'info@thebatterseacliniclimited.co.uk', 'info@thegalleyfish&chipshopltd.co.uk', 'info@themaryhillgrouppractice.co.uk', 'info@theoaksspecialistcollege.co.uk', 'info@thepizzahousepeterboroughlimited.co.uk', 'info@theriversidepublichouselimited.co.uk', 'info@tierneyhomesltdt/aslieveleague.co.uk', 'info@tiyanltd.co.uk', 'info@tlscareltd.co.uk', 'info@tmtfinance.co.uk', 'info@touchofloveoutreach.co.uk', 'info@touchofloveoutreach.co.uk', 'info@towerbridgelegalltdt/atowerbridgelegal.co.uk', 'info@treeoflifeministries.co.uk', 'info@trustedtechnologylimited.co.uk', 'info@umadalimitedt/aheavenlydessertshull.co.uk', 'info@universalserviceslondonlimited.co.uk', 'info@universityhealthservicesouthampton.co.uk', 'info@universityoflancashire.co.uk', 'info@universityoflancashire.co.uk', 'info@ustmlimited.co.uk', 'info@valorhospitalityeuropelimited.co.uk', 'info@valuechainmanagementltd.co.uk', 'info@violettastarlinkltd.co.uk', 'info@watlingstreetpractice.co.uk', 'info@wbcsduk.co.uk', 'info@wedgwoodcricketclub.co.uk', 'info@windrushsurgery.co.uk', "info@wolverhamptongirls'highschool.co.uk", 'info@woodhouseconvenienceltdt/awoodhouseconveniencestore&premier.co.uk', 'info@wrenlaboratorieslimited.co.uk', 'info@wsmpartnersllp.co.uk', 'info@wysefoodltd.co.uk', 'info@yaarhaulagelimited.co.uk', 'info@ygfedinburghltd.co.uk', 'info@yghplimited.co.uk', 'info@yologrouprestaurantslimited.co.uk', 'info@y-yito(uk)ltd.co.uk', 'info@zeeconsultinglimited.co.uk', 'info@zincnetworklimited.co.uk', 'info@zpgroupltd.co.uk']
+2025-04-15 19:23:21,435 - INFO - Logger set up successfully!
+2025-04-15 19:23:21,435 - INFO - Logger set up successfully!
+2025-04-15 19:23:21,435 - INFO - Logger set up successfully!
+2025-04-15 19:23:21,435 - INFO - 🚀 Starting UK Sponsor Reach daily pipeline
+2025-04-15 19:23:21,435 - INFO - 🚀 Starting UK Sponsor Reach daily pipeline
+2025-04-15 19:23:21,435 - INFO - ⬇️ Downloading latest sponsor CSV
+2025-04-15 19:23:21,435 - INFO - ⬇️ Downloading latest sponsor CSV
+2025-04-15 19:23:21,436 - INFO - 🔍 Preprocessing and comparing with previous data
+2025-04-15 19:23:21,436 - INFO - 🔍 Preprocessing and comparing with previous data
+2025-04-15 19:23:24,432 - INFO - 🎯 Found 276 new sponsors
+2025-04-15 19:23:24,432 - INFO - 🎯 Found 276 new sponsors
+2025-04-15 19:23:24,433 - INFO - ✨ Enriching new sponsor data
+2025-04-15 19:23:24,433 - INFO - ✨ Enriching new sponsor data
+2025-04-15 19:23:24,433 - INFO - 🔍 Starting enrichment for new sponsors...
+2025-04-15 19:23:24,433 - INFO - 🔍 Starting enrichment for new sponsors...
+2025-04-15 19:23:24,433 - INFO - ✅ Enriched 276 companies successfully.
+2025-04-15 19:23:24,433 - INFO - ✅ Enriched 276 companies successfully.
+2025-04-15 19:23:24,433 - INFO - 📧 Sending outreach emails
+2025-04-15 19:23:24,433 - INFO - 📧 Sending outreach emails
+2025-04-15 19:25:04,885 - INFO - 📨 Email sent to 276 sponsors: ['info@73stringsltd.co.uk', 'info@a&ntrimmingslimited.co.uk', 'info@abacus-69holdingslimited.co.uk', 'info@aberdeenassociationofsocialservice.co.uk', 'info@acumaticauklimited.co.uk', 'info@adaptivefinancialconsultingltd.co.uk', 'info@afc-halalmeatltd.co.uk', 'info@affle(uk)ltd..co.uk', 'info@agalretailltd.co.uk', 'info@airfiltrationsolutionsltd.co.uk', 'info@airfiltrationsolutionsltd.co.uk', 'info@airdshotel.co.uk', 'info@ajvpropertyservices(uk)ltd.co.uk', 'info@alhadisupermarketltd.co.uk', 'info@alanseliflimited.co.uk', 'info@alphaukpropertieslimited.co.uk', 'info@amvintageretailuklimited.co.uk', 'info@am2pmqualitycarelimited.co.uk', 'info@amandathompsoncoutureltd.co.uk', 'info@anacapawavepowerltd..co.uk', 'info@anacapawavepowerltd..co.uk', 'info@anotherboxstoryltd.co.uk', 'info@approvedpowerserviceslimited.co.uk', 'info@aquilainteractivelimited.co.uk', 'info@arbroathmedicalpracticellp.co.uk', 'info@artezzan.co.uk', 'info@asaexpresslimited.co.uk', 'info@ascendionengineeringsolutionseuropelimited.co.uk', 'info@ascendionengineeringsolutionseuropelimited.co.uk', 'info@asterosadvisers.co.uk', 'info@aviator75ltd.co.uk', 'info@balmoralcomteclimited.co.uk', 'info@bbfinteriorsltd.co.uk', 'info@beaconhealthkensingtonlimited.co.uk', 'info@becomfylimited.co.uk', 'info@berryworldltd.co.uk', 'info@berryworldltd.co.uk', 'info@bigleapconsultingltd.co.uk', "info@bingi'skitchenltd.co.uk", 'info@bistro1.co.uk', 'info@bizzleentertainmentltd.co.uk', 'info@blakehillhealthcarelimited.co.uk', 'info@bluestrawberryailtd.co.uk', 'info@bradfordroadcarsalesltd.co.uk', 'info@broadfieldlawukllp.co.uk', 'info@bxtechnologiesltd.co.uk', 'info@calabashmintlimited.co.uk', 'info@camberleyvisionpluslimitedt/aspecsavers.co.uk', 'info@carestaffservicesltd.co.uk', 'info@carenestsolutionsltd.co.uk', 'info@caresurelimited.co.uk', 'info@carltoncricketclub.co.uk', 'info@caruniversalltd.co.uk', 'info@caudaliegrouplimited.co.uk', 'info@caudaliegrouplimited.co.uk', 'info@centricbrandsinternationaleurope.co.uk', 'info@centricbrandsinternationaleurope.co.uk', 'info@centryserviceslimited.co.uk', 'info@ceonmachinerycontrolltd.co.uk', 'info@cggrillltd.co.uk', 'info@chaselodgehospitalltd.co.uk', 'info@chelsfieldelectricalltd.co.uk', 'info@cherrytwoltdt/abistrotpierre.co.uk', 'info@chestnutcourtcarehome.co.uk', 'info@ciaroltd.co.uk', 'info@cityleisuremanagementlimitedt/arosatwelve.co.uk', 'info@citygateautomotiveltd.co.uk', 'info@clearwatereventsltd.co.uk', 'info@cloudkeeperslondonltd.co.uk', 'info@cmtelecomukltd.co.uk', 'info@cmtelecomukltd.co.uk', 'info@countyfoodingredientsltd.co.uk', 'info@d.mcghee&sonsltd.co.uk', 'info@daclimited.co.uk', 'info@darbarartscultureheritagetrust.co.uk', 'info@defichiltd.co.uk', 'info@digitalinnklimited.co.uk', 'info@dovergrammarschoolforboys.co.uk', 'info@drinksonuslimited.co.uk', 'info@eastlancashiremoneyline(ips)ltd.co.uk', 'info@ecoalbalimited.co.uk', 'info@edgeratelimited.co.uk', 'info@ekniwas.co.uk', 'info@emergencyone.co.uk', 'info@equalexpertsuklimited.co.uk', 'info@equalexpertsuklimited.co.uk', 'info@erlystagestudiosltd.co.uk', 'info@evolution(radlett)ltd.co.uk', 'info@farnworthbaptistchurch/tlgbolton.co.uk', 'info@fdlawlimitedt/ahayesconnorsolicitors.co.uk', 'info@fieldviewcarehomeltd.co.uk', 'info@foundershealthholdinglimited.co.uk', 'info@frobelindependentservices.co.uk', 'info@fronhaulandbrookfieldcarehomeltd.co.uk', 'info@fusionfleetautos(falkirk)ltd.co.uk', 'info@glasgowrepairsltd.co.uk', 'info@glenmoreconsortiumltd.co.uk', 'info@greenbirdsconstructionltd.co.uk', 'info@greytowndentalpracticeltd.co.uk', 'info@gruberlogistics(uk)limited.co.uk', 'info@gwactiveltd.co.uk', 'info@h.w.woodlimited.co.uk', 'info@h.w.woodlimited.co.uk', 'info@hahhospitalitylimitedt/aindianaffairancoats.co.uk', 'info@haliogenpowerlimited.co.uk', 'info@happyrugbyltd.co.uk', 'info@harlandservicesltd.co.uk', 'info@harveymedicalconsultinglimited.co.uk', 'info@hasthcultltdtaartoonsworld.co.uk', 'info@herculesenterprisesltd.co.uk', 'info@hhproductionsltd.co.uk', 'info@hillsidecareltd.co.uk', 'info@hobsonssoholtd.co.uk', 'info@holcimuklimited.co.uk', 'info@holcimuklimited.co.uk', 'info@holtretirementlimited.co.uk', 'info@horizonphonessalesandrepairsukltd.co.uk', 'info@houghtonpharmacyltd.co.uk', 'info@hrmot&servicesltd.co.uk', 'info@iaguk&europe.co.uk', 'info@iaguk&europe.co.uk', 'info@iaguk&europe.co.uk', 'info@iaguk&europe.co.uk', 'info@inspirationsleicestershireltd.co.uk', 'info@integratedmediasolutionsltd.co.uk', 'info@invoxbelgiumukltd.co.uk', 'info@janeplan.co.uk', 'info@jmd(london)ltdt/afratellideli.co.uk', 'info@jollyscoffeeltd.co.uk', 'info@jonathanlulimited.co.uk', 'info@joysmilelimited.co.uk', 'info@joysmotorsltd.co.uk', 'info@jpccare&supportdaycentre.co.uk', 'info@jugandbottle.co.uk', 'info@jumoukltd.co.uk', "info@junior'sdaynursery.co.uk", 'info@juretransltd.co.uk', 'info@kemsholtd.co.uk', 'info@khawajahalalpoultry(soletrader)t/akhppoultry.co.uk', 'info@khnmsltd.co.uk', 'info@kokorohounslowltd.co.uk', 'info@konesh&coltd.co.uk', 'info@ksppharmaltdt/anewroadpharmacy.co.uk', 'info@lasaluteltd.co.uk', 'info@lampardinvestmentslimited.co.uk', 'info@ldcarelimited.co.uk', 'info@leiths(scotland)ltd.co.uk', 'info@leojetgroupltd.co.uk', 'info@levelweblimited.co.uk', 'info@lgmgmachineryu.k.limited.co.uk', 'info@lgmgmachineryu.k.limited.co.uk', 'info@lifestyleflooringlimited.co.uk', 'info@lillibethouseltd.co.uk', 'info@logixfmltd.co.uk', 'info@londonbctourismandconstructiontradingcompanyltd.co.uk', 'info@londoncomputerrecycling.co.uk', 'info@lotuslounge2023ltdt/alotuslounge.co.uk', 'info@lpsdseventysixlimited.co.uk', 'info@manorinteriorsolutionslimited.co.uk', 'info@maxgconstructionltd.co.uk', 'info@maxvalelimitedt/afledgelingsdaynursery.co.uk', 'info@mdemachinerylimited.co.uk', 'info@medefineeducationgroupltd.co.uk', 'info@mintconsulting(crm)ltd.co.uk', 'info@mitchampropertiesltd.co.uk', 'info@mksupermarketstoreltd.co.uk', 'info@mobiletechcentrelimited.co.uk', 'info@montpelierhealth.co.uk', 'info@naactivityparklimited.co.uk', 'info@naagaaltd.co.uk', 'info@newlocal.co.uk', 'info@nintendoofeuropese,ukbranch.co.uk', 'info@nintendoofeuropese,ukbranch.co.uk', 'info@northrowltd.co.uk', 'info@nufoxrubberlimited.co.uk', 'info@nxpower(uk)ltdt/acyberpower.co.uk', 'info@online24/7ltd.co.uk', 'info@opendateequipmentlimited.co.uk', 'info@orangeicecreamanddessertparlourltd.co.uk', 'info@oxfordimmunoteclimitedt/arevvity.co.uk', 'info@oxfordimmunoteclimitedt/arevvity.co.uk', 'info@paradicedessertslimited.co.uk', 'info@parthserviceslimited.co.uk', 'info@peterbesttradelimited.co.uk', 'info@pingonlinecommunicationsltd.co.uk', 'info@pizzawilmslowplusltd.co.uk', 'info@ppmprojectslimited.co.uk', 'info@privilegesupportedcareltd.co.uk', 'info@pukkaartlimited.co.uk', 'info@purpledragonplaylimited.co.uk', 'info@pvdretailltd.co.uk', 'info@raccagreennews.co.uk', 'info@ramgarhiaboardnorthampton.co.uk', 'info@reactengineering.co.uk', 'info@representclothinglimited.co.uk', 'info@richlandhomesltd.co.uk', 'info@risingmedicaltechnologieslimited.co.uk', 'info@riversidelinen&laundryltd.co.uk', 'info@rowanpharmaltd.co.uk', 'info@roytoncivilandstructuralltd.co.uk', 'info@s&dsupermarketwolverhamptonltdt/as&dsupermarket.co.uk', 'info@sabacapitalmanagement(uk)limited.co.uk', 'info@safariukbidcolimited.co.uk', 'info@safeguardpmsltd.co.uk', 'info@sagatruck&vanlimited.co.uk', 'info@sahbaacademyltd.co.uk', 'info@sdrcareservices.co.uk', 'info@seachilluklimitedtradingashiltonseafooduk.co.uk', 'info@shivsailtd.co.uk', 'info@shreejisupermarketlimitedt/anisalocal.co.uk', 'info@signaturehealthcareserviceslimited.co.uk', 'info@signatureofthailtd.co.uk', 'info@skprotectionlimited.co.uk', 'info@slowtouchltd.co.uk', 'info@smallworldconsultingltd.co.uk', 'info@smartcityconsultancyltd.co.uk', 'info@smartpointgroupuklimited.co.uk', 'info@sofinishtechnologieslimited.co.uk', 'info@soloagencyltd.co.uk', 'info@specialisedpolymerengineeringltd.co.uk', "info@speed'sjuiceukltd.co.uk", 'info@springstaffinglimited.co.uk', 'info@sturrockandrobsonservicesltd.co.uk', 'info@sudburyedgelimitedt/ajilani.co.uk', 'info@surethingconstructionsltd.co.uk', "info@suthaharannadesapillait/atoday'sexpress-inglemire.co.uk", "info@sutharshantharmasekarant/asmorley's.co.uk", 'info@swspiceltdt/abombayblue.co.uk', 'info@swallowsmeadowcourt.co.uk', 'info@swiftgrouplondonlimited.co.uk', 'info@taalstoresltd.co.uk', 'info@tagaviation(uk)limited.co.uk', 'info@tapcoenproukltd.co.uk', 'info@taxeffectiveltd.co.uk', 'info@tekuchilimited.co.uk', 'info@thebatterseacliniclimited.co.uk', 'info@thegalleyfish&chipshopltd.co.uk', 'info@themaryhillgrouppractice.co.uk', 'info@theoaksspecialistcollege.co.uk', 'info@thepizzahousepeterboroughlimited.co.uk', 'info@theriversidepublichouselimited.co.uk', 'info@tierneyhomesltdt/aslieveleague.co.uk', 'info@tiyanltd.co.uk', 'info@tlscareltd.co.uk', 'info@tmtfinance.co.uk', 'info@touchofloveoutreach.co.uk', 'info@touchofloveoutreach.co.uk', 'info@towerbridgelegalltdt/atowerbridgelegal.co.uk', 'info@treeoflifeministries.co.uk', 'info@trustedtechnologylimited.co.uk', 'info@umadalimitedt/aheavenlydessertshull.co.uk', 'info@universalserviceslondonlimited.co.uk', 'info@universityhealthservicesouthampton.co.uk', 'info@universityoflancashire.co.uk', 'info@universityoflancashire.co.uk', 'info@ustmlimited.co.uk', 'info@valorhospitalityeuropelimited.co.uk', 'info@valuechainmanagementltd.co.uk', 'info@violettastarlinkltd.co.uk', 'info@watlingstreetpractice.co.uk', 'info@wbcsduk.co.uk', 'info@wedgwoodcricketclub.co.uk', 'info@windrushsurgery.co.uk', "info@wolverhamptongirls'highschool.co.uk", 'info@woodhouseconvenienceltdt/awoodhouseconveniencestore&premier.co.uk', 'info@wrenlaboratorieslimited.co.uk', 'info@wsmpartnersllp.co.uk', 'info@wysefoodltd.co.uk', 'info@yaarhaulagelimited.co.uk', 'info@ygfedinburghltd.co.uk', 'info@yghplimited.co.uk', 'info@yologrouprestaurantslimited.co.uk', 'info@y-yito(uk)ltd.co.uk', 'info@zeeconsultinglimited.co.uk', 'info@zincnetworklimited.co.uk', 'info@zpgroupltd.co.uk']
+2025-04-15 19:25:04,885 - INFO - 📨 Email sent to 276 sponsors: ['info@73stringsltd.co.uk', 'info@a&ntrimmingslimited.co.uk', 'info@abacus-69holdingslimited.co.uk', 'info@aberdeenassociationofsocialservice.co.uk', 'info@acumaticauklimited.co.uk', 'info@adaptivefinancialconsultingltd.co.uk', 'info@afc-halalmeatltd.co.uk', 'info@affle(uk)ltd..co.uk', 'info@agalretailltd.co.uk', 'info@airfiltrationsolutionsltd.co.uk', 'info@airfiltrationsolutionsltd.co.uk', 'info@airdshotel.co.uk', 'info@ajvpropertyservices(uk)ltd.co.uk', 'info@alhadisupermarketltd.co.uk', 'info@alanseliflimited.co.uk', 'info@alphaukpropertieslimited.co.uk', 'info@amvintageretailuklimited.co.uk', 'info@am2pmqualitycarelimited.co.uk', 'info@amandathompsoncoutureltd.co.uk', 'info@anacapawavepowerltd..co.uk', 'info@anacapawavepowerltd..co.uk', 'info@anotherboxstoryltd.co.uk', 'info@approvedpowerserviceslimited.co.uk', 'info@aquilainteractivelimited.co.uk', 'info@arbroathmedicalpracticellp.co.uk', 'info@artezzan.co.uk', 'info@asaexpresslimited.co.uk', 'info@ascendionengineeringsolutionseuropelimited.co.uk', 'info@ascendionengineeringsolutionseuropelimited.co.uk', 'info@asterosadvisers.co.uk', 'info@aviator75ltd.co.uk', 'info@balmoralcomteclimited.co.uk', 'info@bbfinteriorsltd.co.uk', 'info@beaconhealthkensingtonlimited.co.uk', 'info@becomfylimited.co.uk', 'info@berryworldltd.co.uk', 'info@berryworldltd.co.uk', 'info@bigleapconsultingltd.co.uk', "info@bingi'skitchenltd.co.uk", 'info@bistro1.co.uk', 'info@bizzleentertainmentltd.co.uk', 'info@blakehillhealthcarelimited.co.uk', 'info@bluestrawberryailtd.co.uk', 'info@bradfordroadcarsalesltd.co.uk', 'info@broadfieldlawukllp.co.uk', 'info@bxtechnologiesltd.co.uk', 'info@calabashmintlimited.co.uk', 'info@camberleyvisionpluslimitedt/aspecsavers.co.uk', 'info@carestaffservicesltd.co.uk', 'info@carenestsolutionsltd.co.uk', 'info@caresurelimited.co.uk', 'info@carltoncricketclub.co.uk', 'info@caruniversalltd.co.uk', 'info@caudaliegrouplimited.co.uk', 'info@caudaliegrouplimited.co.uk', 'info@centricbrandsinternationaleurope.co.uk', 'info@centricbrandsinternationaleurope.co.uk', 'info@centryserviceslimited.co.uk', 'info@ceonmachinerycontrolltd.co.uk', 'info@cggrillltd.co.uk', 'info@chaselodgehospitalltd.co.uk', 'info@chelsfieldelectricalltd.co.uk', 'info@cherrytwoltdt/abistrotpierre.co.uk', 'info@chestnutcourtcarehome.co.uk', 'info@ciaroltd.co.uk', 'info@cityleisuremanagementlimitedt/arosatwelve.co.uk', 'info@citygateautomotiveltd.co.uk', 'info@clearwatereventsltd.co.uk', 'info@cloudkeeperslondonltd.co.uk', 'info@cmtelecomukltd.co.uk', 'info@cmtelecomukltd.co.uk', 'info@countyfoodingredientsltd.co.uk', 'info@d.mcghee&sonsltd.co.uk', 'info@daclimited.co.uk', 'info@darbarartscultureheritagetrust.co.uk', 'info@defichiltd.co.uk', 'info@digitalinnklimited.co.uk', 'info@dovergrammarschoolforboys.co.uk', 'info@drinksonuslimited.co.uk', 'info@eastlancashiremoneyline(ips)ltd.co.uk', 'info@ecoalbalimited.co.uk', 'info@edgeratelimited.co.uk', 'info@ekniwas.co.uk', 'info@emergencyone.co.uk', 'info@equalexpertsuklimited.co.uk', 'info@equalexpertsuklimited.co.uk', 'info@erlystagestudiosltd.co.uk', 'info@evolution(radlett)ltd.co.uk', 'info@farnworthbaptistchurch/tlgbolton.co.uk', 'info@fdlawlimitedt/ahayesconnorsolicitors.co.uk', 'info@fieldviewcarehomeltd.co.uk', 'info@foundershealthholdinglimited.co.uk', 'info@frobelindependentservices.co.uk', 'info@fronhaulandbrookfieldcarehomeltd.co.uk', 'info@fusionfleetautos(falkirk)ltd.co.uk', 'info@glasgowrepairsltd.co.uk', 'info@glenmoreconsortiumltd.co.uk', 'info@greenbirdsconstructionltd.co.uk', 'info@greytowndentalpracticeltd.co.uk', 'info@gruberlogistics(uk)limited.co.uk', 'info@gwactiveltd.co.uk', 'info@h.w.woodlimited.co.uk', 'info@h.w.woodlimited.co.uk', 'info@hahhospitalitylimitedt/aindianaffairancoats.co.uk', 'info@haliogenpowerlimited.co.uk', 'info@happyrugbyltd.co.uk', 'info@harlandservicesltd.co.uk', 'info@harveymedicalconsultinglimited.co.uk', 'info@hasthcultltdtaartoonsworld.co.uk', 'info@herculesenterprisesltd.co.uk', 'info@hhproductionsltd.co.uk', 'info@hillsidecareltd.co.uk', 'info@hobsonssoholtd.co.uk', 'info@holcimuklimited.co.uk', 'info@holcimuklimited.co.uk', 'info@holtretirementlimited.co.uk', 'info@horizonphonessalesandrepairsukltd.co.uk', 'info@houghtonpharmacyltd.co.uk', 'info@hrmot&servicesltd.co.uk', 'info@iaguk&europe.co.uk', 'info@iaguk&europe.co.uk', 'info@iaguk&europe.co.uk', 'info@iaguk&europe.co.uk', 'info@inspirationsleicestershireltd.co.uk', 'info@integratedmediasolutionsltd.co.uk', 'info@invoxbelgiumukltd.co.uk', 'info@janeplan.co.uk', 'info@jmd(london)ltdt/afratellideli.co.uk', 'info@jollyscoffeeltd.co.uk', 'info@jonathanlulimited.co.uk', 'info@joysmilelimited.co.uk', 'info@joysmotorsltd.co.uk', 'info@jpccare&supportdaycentre.co.uk', 'info@jugandbottle.co.uk', 'info@jumoukltd.co.uk', "info@junior'sdaynursery.co.uk", 'info@juretransltd.co.uk', 'info@kemsholtd.co.uk', 'info@khawajahalalpoultry(soletrader)t/akhppoultry.co.uk', 'info@khnmsltd.co.uk', 'info@kokorohounslowltd.co.uk', 'info@konesh&coltd.co.uk', 'info@ksppharmaltdt/anewroadpharmacy.co.uk', 'info@lasaluteltd.co.uk', 'info@lampardinvestmentslimited.co.uk', 'info@ldcarelimited.co.uk', 'info@leiths(scotland)ltd.co.uk', 'info@leojetgroupltd.co.uk', 'info@levelweblimited.co.uk', 'info@lgmgmachineryu.k.limited.co.uk', 'info@lgmgmachineryu.k.limited.co.uk', 'info@lifestyleflooringlimited.co.uk', 'info@lillibethouseltd.co.uk', 'info@logixfmltd.co.uk', 'info@londonbctourismandconstructiontradingcompanyltd.co.uk', 'info@londoncomputerrecycling.co.uk', 'info@lotuslounge2023ltdt/alotuslounge.co.uk', 'info@lpsdseventysixlimited.co.uk', 'info@manorinteriorsolutionslimited.co.uk', 'info@maxgconstructionltd.co.uk', 'info@maxvalelimitedt/afledgelingsdaynursery.co.uk', 'info@mdemachinerylimited.co.uk', 'info@medefineeducationgroupltd.co.uk', 'info@mintconsulting(crm)ltd.co.uk', 'info@mitchampropertiesltd.co.uk', 'info@mksupermarketstoreltd.co.uk', 'info@mobiletechcentrelimited.co.uk', 'info@montpelierhealth.co.uk', 'info@naactivityparklimited.co.uk', 'info@naagaaltd.co.uk', 'info@newlocal.co.uk', 'info@nintendoofeuropese,ukbranch.co.uk', 'info@nintendoofeuropese,ukbranch.co.uk', 'info@northrowltd.co.uk', 'info@nufoxrubberlimited.co.uk', 'info@nxpower(uk)ltdt/acyberpower.co.uk', 'info@online24/7ltd.co.uk', 'info@opendateequipmentlimited.co.uk', 'info@orangeicecreamanddessertparlourltd.co.uk', 'info@oxfordimmunoteclimitedt/arevvity.co.uk', 'info@oxfordimmunoteclimitedt/arevvity.co.uk', 'info@paradicedessertslimited.co.uk', 'info@parthserviceslimited.co.uk', 'info@peterbesttradelimited.co.uk', 'info@pingonlinecommunicationsltd.co.uk', 'info@pizzawilmslowplusltd.co.uk', 'info@ppmprojectslimited.co.uk', 'info@privilegesupportedcareltd.co.uk', 'info@pukkaartlimited.co.uk', 'info@purpledragonplaylimited.co.uk', 'info@pvdretailltd.co.uk', 'info@raccagreennews.co.uk', 'info@ramgarhiaboardnorthampton.co.uk', 'info@reactengineering.co.uk', 'info@representclothinglimited.co.uk', 'info@richlandhomesltd.co.uk', 'info@risingmedicaltechnologieslimited.co.uk', 'info@riversidelinen&laundryltd.co.uk', 'info@rowanpharmaltd.co.uk', 'info@roytoncivilandstructuralltd.co.uk', 'info@s&dsupermarketwolverhamptonltdt/as&dsupermarket.co.uk', 'info@sabacapitalmanagement(uk)limited.co.uk', 'info@safariukbidcolimited.co.uk', 'info@safeguardpmsltd.co.uk', 'info@sagatruck&vanlimited.co.uk', 'info@sahbaacademyltd.co.uk', 'info@sdrcareservices.co.uk', 'info@seachilluklimitedtradingashiltonseafooduk.co.uk', 'info@shivsailtd.co.uk', 'info@shreejisupermarketlimitedt/anisalocal.co.uk', 'info@signaturehealthcareserviceslimited.co.uk', 'info@signatureofthailtd.co.uk', 'info@skprotectionlimited.co.uk', 'info@slowtouchltd.co.uk', 'info@smallworldconsultingltd.co.uk', 'info@smartcityconsultancyltd.co.uk', 'info@smartpointgroupuklimited.co.uk', 'info@sofinishtechnologieslimited.co.uk', 'info@soloagencyltd.co.uk', 'info@specialisedpolymerengineeringltd.co.uk', "info@speed'sjuiceukltd.co.uk", 'info@springstaffinglimited.co.uk', 'info@sturrockandrobsonservicesltd.co.uk', 'info@sudburyedgelimitedt/ajilani.co.uk', 'info@surethingconstructionsltd.co.uk', "info@suthaharannadesapillait/atoday'sexpress-inglemire.co.uk", "info@sutharshantharmasekarant/asmorley's.co.uk", 'info@swspiceltdt/abombayblue.co.uk', 'info@swallowsmeadowcourt.co.uk', 'info@swiftgrouplondonlimited.co.uk', 'info@taalstoresltd.co.uk', 'info@tagaviation(uk)limited.co.uk', 'info@tapcoenproukltd.co.uk', 'info@taxeffectiveltd.co.uk', 'info@tekuchilimited.co.uk', 'info@thebatterseacliniclimited.co.uk', 'info@thegalleyfish&chipshopltd.co.uk', 'info@themaryhillgrouppractice.co.uk', 'info@theoaksspecialistcollege.co.uk', 'info@thepizzahousepeterboroughlimited.co.uk', 'info@theriversidepublichouselimited.co.uk', 'info@tierneyhomesltdt/aslieveleague.co.uk', 'info@tiyanltd.co.uk', 'info@tlscareltd.co.uk', 'info@tmtfinance.co.uk', 'info@touchofloveoutreach.co.uk', 'info@touchofloveoutreach.co.uk', 'info@towerbridgelegalltdt/atowerbridgelegal.co.uk', 'info@treeoflifeministries.co.uk', 'info@trustedtechnologylimited.co.uk', 'info@umadalimitedt/aheavenlydessertshull.co.uk', 'info@universalserviceslondonlimited.co.uk', 'info@universityhealthservicesouthampton.co.uk', 'info@universityoflancashire.co.uk', 'info@universityoflancashire.co.uk', 'info@ustmlimited.co.uk', 'info@valorhospitalityeuropelimited.co.uk', 'info@valuechainmanagementltd.co.uk', 'info@violettastarlinkltd.co.uk', 'info@watlingstreetpractice.co.uk', 'info@wbcsduk.co.uk', 'info@wedgwoodcricketclub.co.uk', 'info@windrushsurgery.co.uk', "info@wolverhamptongirls'highschool.co.uk", 'info@woodhouseconvenienceltdt/awoodhouseconveniencestore&premier.co.uk', 'info@wrenlaboratorieslimited.co.uk', 'info@wsmpartnersllp.co.uk', 'info@wysefoodltd.co.uk', 'info@yaarhaulagelimited.co.uk', 'info@ygfedinburghltd.co.uk', 'info@yghplimited.co.uk', 'info@yologrouprestaurantslimited.co.uk', 'info@y-yito(uk)ltd.co.uk', 'info@zeeconsultinglimited.co.uk', 'info@zincnetworklimited.co.uk', 'info@zpgroupltd.co.uk']
+2025-04-15 19:25:18,118 - CRITICAL - ❌ Unexpected error: 'NoneType' object has no attribute 'get'
+Traceback (most recent call last):
+  File "/home/shayon/Documents/web/sponsor-reach/scheduler/daily_workflow.py", line 64, in daily_pipeline
+    logger.info(f"✉️ Email results: {email_stats.get('success', 0)} sent, {email_stats.get('failed', 0)} failed")
+                                     ^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'get'
+2025-04-15 19:25:18,118 - CRITICAL - ❌ Unexpected error: 'NoneType' object has no attribute 'get'
+Traceback (most recent call last):
+  File "/home/shayon/Documents/web/sponsor-reach/scheduler/daily_workflow.py", line 64, in daily_pipeline
+    logger.info(f"✉️ Email results: {email_stats.get('success', 0)} sent, {email_stats.get('failed', 0)} failed")
+                                     ^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'get'
+2025-04-15 19:25:55,996 - INFO - Logger set up successfully!
+2025-04-15 19:25:55,996 - INFO - Logger set up successfully!
+2025-04-15 19:25:55,996 - INFO - Logger set up successfully!
+2025-04-15 19:25:55,996 - INFO - 🚀 Starting UK Sponsor Reach daily pipeline
+2025-04-15 19:25:55,996 - INFO - 🚀 Starting UK Sponsor Reach daily pipeline
+2025-04-15 19:25:55,996 - INFO - ⬇️ Downloading latest sponsor CSV
+2025-04-15 19:25:55,996 - INFO - ⬇️ Downloading latest sponsor CSV
+2025-04-15 19:25:55,997 - INFO - 🔍 Preprocessing and comparing with previous data
+2025-04-15 19:25:55,997 - INFO - 🔍 Preprocessing and comparing with previous data
+2025-04-15 19:26:10,134 - INFO - Logger set up successfully!
+2025-04-15 19:26:10,134 - INFO - Logger set up successfully!
+2025-04-15 19:26:10,134 - INFO - Logger set up successfully!
+2025-04-15 19:26:10,134 - INFO - 🚀 Starting UK Sponsor Reach daily pipeline
+2025-04-15 19:26:10,134 - INFO - 🚀 Starting UK Sponsor Reach daily pipeline
+2025-04-15 19:26:10,134 - INFO - ⬇️ Downloading latest sponsor CSV
+2025-04-15 19:26:10,134 - INFO - ⬇️ Downloading latest sponsor CSV
+2025-04-15 19:26:10,135 - INFO - 🔍 Preprocessing and comparing with previous data
+2025-04-15 19:26:10,135 - INFO - 🔍 Preprocessing and comparing with previous data
+2025-04-15 19:26:13,097 - INFO - 🎯 Found 276 new sponsors
+2025-04-15 19:26:13,097 - INFO - 🎯 Found 276 new sponsors
+2025-04-15 19:26:13,097 - INFO - ✨ Enriching new sponsor data
+2025-04-15 19:26:13,097 - INFO - ✨ Enriching new sponsor data
+2025-04-15 19:26:13,097 - INFO - 🔍 Starting enrichment for new sponsors...
+2025-04-15 19:26:13,097 - INFO - 🔍 Starting enrichment for new sponsors...
+2025-04-15 19:26:13,098 - INFO - ✅ Enriched 276 companies successfully.
+2025-04-15 19:26:13,098 - INFO - ✅ Enriched 276 companies successfully.
+2025-04-15 19:26:13,098 - INFO - 📧 Sending outreach emails
+2025-04-15 19:26:13,098 - INFO - 📧 Sending outreach emails
+2025-04-15 19:26:13,098 - INFO - 🔄 Syncing with Salesforce
+2025-04-15 19:26:13,098 - INFO - 🔄 Syncing with Salesforce
+2025-04-15 19:26:41,435 - INFO - Logger set up successfully!
+2025-04-15 19:26:41,436 - INFO - Logger set up successfully!
+2025-04-15 19:26:41,436 - INFO - Logger set up successfully!
+2025-04-15 19:26:41,436 - INFO - 🚀 Starting UK Sponsor Reach daily pipeline
+2025-04-15 19:26:41,436 - INFO - 🚀 Starting UK Sponsor Reach daily pipeline
+2025-04-15 19:26:41,436 - INFO - ⬇️ Downloading latest sponsor CSV
+2025-04-15 19:26:41,436 - INFO - ⬇️ Downloading latest sponsor CSV
+2025-04-15 19:26:41,436 - INFO - 🔍 Preprocessing and comparing with previous data
+2025-04-15 19:26:41,436 - INFO - 🔍 Preprocessing and comparing with previous data
+2025-04-15 19:26:44,403 - INFO - 🎯 Found 276 new sponsors
+2025-04-15 19:26:44,403 - INFO - 🎯 Found 276 new sponsors
+2025-04-15 19:26:44,403 - INFO - ✨ Enriching new sponsor data
+2025-04-15 19:26:44,403 - INFO - ✨ Enriching new sponsor data
+2025-04-15 19:26:44,404 - INFO - 🔍 Starting enrichment for new sponsors...
+2025-04-15 19:26:44,404 - INFO - 🔍 Starting enrichment for new sponsors...
+2025-04-15 19:26:44,404 - INFO - ✅ Enriched 276 companies successfully.
+2025-04-15 19:26:44,404 - INFO - ✅ Enriched 276 companies successfully.
+2025-04-15 19:26:44,404 - INFO - 📧 Sending outreach emails
+2025-04-15 19:26:44,404 - INFO - 📧 Sending outreach emails
+2025-04-15 19:26:44,404 - INFO - 🔄 Syncing with Salesforce
+2025-04-15 19:26:44,404 - INFO - 🔄 Syncing with Salesforce
+2025-04-15 19:49:28,524 - INFO - Logger set up successfully!
+2025-04-15 19:49:28,538 - INFO - Logger set up successfully!
+2025-04-15 19:49:28,538 - INFO - Logger set up successfully!
+2025-04-15 19:49:28,539 - INFO - 🚀 Starting UK Sponsor Reach daily pipeline
+2025-04-15 19:49:28,539 - INFO - 🚀 Starting UK Sponsor Reach daily pipeline
+2025-04-15 19:49:28,539 - INFO - ⬇️ Downloading latest sponsor CSV
+2025-04-15 19:49:28,539 - INFO - ⬇️ Downloading latest sponsor CSV
+2025-04-15 19:49:28,539 - INFO - 🔍 Preprocessing and comparing with previous data
+2025-04-15 19:49:28,539 - INFO - 🔍 Preprocessing and comparing with previous data
+2025-04-15 19:49:31,454 - INFO - 🎯 Found 276 new sponsors
+2025-04-15 19:49:31,454 - INFO - 🎯 Found 276 new sponsors
+2025-04-15 19:49:31,454 - INFO - ✨ Enriching new sponsor data
+2025-04-15 19:49:31,454 - INFO - ✨ Enriching new sponsor data
+2025-04-15 19:49:31,455 - INFO - 🔍 Starting enrichment for new sponsors...
+2025-04-15 19:49:31,455 - INFO - 🔍 Starting enrichment for new sponsors...
+2025-04-15 19:49:31,455 - INFO - ✅ Enriched 276 companies successfully.
+2025-04-15 19:49:31,455 - INFO - ✅ Enriched 276 companies successfully.
+2025-04-15 19:49:31,455 - INFO - 📧 Sending outreach emails
+2025-04-15 19:49:31,455 - INFO - 📧 Sending outreach emails
+2025-04-15 19:49:31,456 - INFO - 🔄 Syncing with Salesforce
+2025-04-15 19:49:31,456 - INFO - 🔄 Syncing with Salesforce

@@ -22,31 +22,49 @@ def run_outreach(enriched_data: List[Dict]):
     """
     template = env.get_template("outreach_template.html")
 
-    success_count = 0
-    failure_count = 0
+    # success_count = 0
+    # failure_count = 0
+    #
+    # for sponsor in enriched_data:
+    #     try:
+    #         email = sponsor.get("email")
+    #         name = sponsor.get("route", "there")
+    #         company = sponsor.get("company_name", "your organization")
+    #
+    #         if not email:
+    #             logger.warning(f"Skipping sponsor with no email: {sponsor}")
+    #             continue
+    #
+    #         # Render personalized email content
+    #         subject = f"UK Sponsor Licence Opportunity – {company}"
+    #         html_content = template.render(contact_name=name, company_name=company)
+    #
+    #         # Send the email
+    #         send_email(to=email, subject=subject, html=html_content)
+    #
+    #         logger.info(f"📨 Email sent to {email}")
+    #         success_count += 1
+    #
+    #     except Exception as e:
+    #         logger.error(f"❌ Failed to send email to {sponsor.get('email')}: {str(e)}")
+    #         failure_count += 1
+    # logger.info(f"✅ Outreach Summary: {success_count} sent, {failure_count} failed.")
 
-    for sponsor in enriched_data:
-        try:
-            email = sponsor.get("email")
-            name = sponsor.get("route", "there")
-            company = sponsor.get("company_name", "your organization")
+    emails = [sponsor.get("email") for sponsor in enriched_data if sponsor.get("email")]
+    if not emails:
+        logger.warning("No valid emails found to send.")
+        return
 
-            if not email:
-                logger.warning(f"Skipping sponsor with no email: {sponsor}")
-                continue
+        # Prepare subject and content (can be generic or list the sponsors)
+    subject = "UK Sponsor Licence Opportunity"
+    html_content = template.render(contact_name="Sponsor", company_name="your organization")
 
-            # Render personalized email content
-            subject = f"UK Sponsor Licence Opportunity – {company}"
-            html_content = template.render(contact_name=name, company_name=company)
+    try:
+        # Send one email to all
+        send_email(to=emails, subject=subject, html=html_content)
+        logger.info(f"📨 Email sent to {len(emails)} sponsors: {emails}")
 
-            # Send the email
-            send_email(to=email, subject=subject, html=html_content)
+    except Exception as e:
+        logger.error(f"❌ Failed to send bulk email: {str(e)}")
 
-            logger.info(f"📨 Email sent to {email}")
-            success_count += 1
 
-        except Exception as e:
-            logger.error(f"❌ Failed to send email to {sponsor.get('email')}: {str(e)}")
-            failure_count += 1
-
-    logger.info(f"✅ Outreach Summary: {success_count} sent, {failure_count} failed.")

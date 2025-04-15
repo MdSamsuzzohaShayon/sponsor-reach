@@ -4,6 +4,7 @@ import logging
 from typing import List
 import requests
 import os
+from config.constants import ORGANIZATION_NAME
 
 # Load env variables
 SALESFORCE_API_URL = os.getenv("SALESFORCE_API_URL")
@@ -46,18 +47,18 @@ def sync_with_salesforce(new_sponsors: List[dict]) -> None:
             # Check API-specific response content if needed
             result = response.json()
             if result.get("success") is True:
-                logger.info(f"✅ Synced sponsor: {sponsor['Organisation Name']} ({sponsor['Route']})")
+                logger.info(f"✅ Synced sponsor: {sponsor[ORGANIZATION_NAME]} ({sponsor['Route']})")
                 success_count += 1
             else:
-                logger.warning(f"⚠️ Salesforce responded with failure for: {sponsor['Organisation Name']} — {result}")
+                logger.warning(f"⚠️ Salesforce responded with failure for: {sponsor[ORGANIZATION_NAME]} — {result}")
                 fail_count += 1
 
         except requests.HTTPError as http_err:
-            logger.error(f"❌ HTTP error syncing {sponsor['Organisation Name']}: {http_err}")
+            logger.error(f"❌ HTTP error syncing {sponsor[ORGANIZATION_NAME]}: {http_err}")
             fail_count += 1
 
         except Exception as err:
-            logger.error(f"❌ Unexpected error syncing {sponsor['Organisation Name']}: {err}")
+            logger.error(f"❌ Unexpected error syncing {sponsor[ORGANIZATION_NAME]}: {err}")
             fail_count += 1
 
     logger.info(f"🔄 Salesforce sync completed: {success_count} succeeded, {fail_count} failed.")
