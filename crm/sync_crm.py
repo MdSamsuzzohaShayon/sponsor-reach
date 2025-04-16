@@ -5,10 +5,11 @@ from typing import List
 import requests
 import os
 from config.constants import ORGANIZATION_NAME
+from crm.salesforce_api import load_token, get_salesforce_access_token
 
-# Load env variables
+logger = logging.getLogger("uk_sponsor_pipeline")
+
 SALESFORCE_API_URL = os.getenv("SALESFORCE_API_URL")
-SALESFORCE_ACCESS_TOKEN = os.getenv("SALESFORCE_ACCESS_TOKEN")
 
 
 def sync_with_salesforce(new_sponsors: List[dict]) -> None:
@@ -18,47 +19,66 @@ def sync_with_salesforce(new_sponsors: List[dict]) -> None:
     Args:
         new_sponsors (List[dict]): List of enriched sponsor records.
     """
-    logger = logging.getLogger("uk_sponsor_pipeline")
-
-    if not SALESFORCE_API_URL or not SALESFORCE_ACCESS_TOKEN:
-        raise ValueError("Salesforce API credentials are not properly configured.")
+    if not SALESFORCE_API_URL:
+        raise ValueError("Salesforce API URL is not properly configured.")
 
     if not new_sponsors:
         logger.info("✅ No new sponsors to sync with Salesforce.")
         return
 
+    access_token = load_token()
+    if not access_token:
+        logger.info("🔑 No saved Salesforce token found — fetching a new one.")
+        access_token = get_salesforce_access_token()
+
+    # url = f"{SALESFORCE_API_URL}/data/v63.0/sobjects/Organization_Contracts__c/"
+    url = f"{SALESFORCE_API_URL}/data/v63.0/composite/tree/Organization_Contracts__c/"
+
     headers = {
-        "Authorization": f"Bearer {SALESFORCE_ACCESS_TOKEN}",
+        "Authorization": f"Bearer {access_token}",
         "Content-Type": "application/json"
     }
 
-    success_count = 0
-    fail_count = 0
+    records = []
+    for index, sponsor in enumerate(new_sponsors, start=1):
+        record = {
+            "attributes": {
+                "type": "Organization_Contracts__c",
+                "referenceId": f"ref{index}"
+            },
+            "County__c": sponsor.get("county", "Unknown"),
+            "Email__c": sponsor.get("email"),
+            "Enriched__c": sponsor.get("enriched"),
+            "Organization__c": sponsor.get("organization"),
+            "Route__c": sponsor.get("route"),
+            "Town_City__c": sponsor.get("town_city"),
+            "Type_Rating__c": sponsor.get("type_rating")
+        }
+        records.append(record)
 
-    for sponsor in new_sponsors:
-        try:
-            response = requests.post(
-                SALESFORCE_API_URL,
-                headers=headers,
-                json=sponsor
-            )
-            response.raise_for_status()
+    payload = {"records": records}
 
-            # Check API-specific response content if needed
-            result = response.json()
-            if result.get("success") is True:
-                logger.info(f"✅ Synced sponsor: {sponsor[ORGANIZATION_NAME]} ({sponsor['Route']})")
-                success_count += 1
-            else:
-                logger.warning(f"⚠️ Salesforce responded with failure for: {sponsor[ORGANIZATION_NAME]} — {result}")
-                fail_count += 1
+    try:
+        response = requests.post(url, headers=headers, json=payload)
 
-        except requests.HTTPError as http_err:
-            logger.error(f"❌ HTTP error syncing {sponsor[ORGANIZATION_NAME]}: {http_err}")
-            fail_count += 1
+        if response.status_code == 401:
+            logger.info("🔄 Token expired — refreshing token and retrying...")
+            access_token = get_salesforce_access_token()
+            headers["Authorization"] = f"Bearer {access_token}"
+            response = requests.post(url, headers=headers, json=payload)
 
-        except Exception as err:
-            logger.error(f"❌ Unexpected error syncing {sponsor[ORGANIZATION_NAME]}: {err}")
-            fail_count += 1
+        response.raise_for_status()
 
-    logger.info(f"🔄 Salesforce sync completed: {success_count} succeeded, {fail_count} failed.")
+        result = response.json()
+        successes = [r for r in result.get("results", []) if r.get("success")]
+        failures = [r for r in result.get("results", []) if not r.get("success")]
+
+        logger.info(f"✅ Synced {len(successes)} sponsors successfully.")
+        if failures:
+            logger.warning(f"⚠️ {len(failures)} sponsors failed to sync: {failures}")
+
+    except requests.HTTPError as http_err:
+        logger.error(f"❌ HTTP error during bulk sync: {http_err}")
+    except Exception as err:
+        logger.error(f"❌ Unexpected error during bulk sync: {err}")
+

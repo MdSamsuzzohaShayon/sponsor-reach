@@ -65,8 +65,7 @@ def daily_pipeline() -> bool:
 
         # 5. Sync with Salesforce
         logger.info("🔄 Syncing with Salesforce")
-        crm_results = sync_with_salesforce(enriched_sponsors)
-        logger.info(f"✅ CRM sync: {crm_results.get('created', 0)} created, {crm_results.get('updated', 0)} updated")
+        sync_with_salesforce(enriched_sponsors)
 
         duration = (datetime.now() - start_time).total_seconds() / 60
         logger.info(f"🏁 Pipeline completed in {duration:.2f} minutes")

@@ -13,7 +13,7 @@ def mock_enrich(company: Dict) -> Dict:
     """
     # Simulated enrichment data
     company_name = company.get(ORGANIZATION_NAME, "")
-    rown_city = company.get("Town/City")
+    town_city = company.get("Town/City")
     county = company.get("County")
     type_rating = company.get("Type & Rating")
     route = company.get("Route")
@@ -21,10 +21,11 @@ def mock_enrich(company: Dict) -> Dict:
     enriched = {
         "organization": company_name,
         "route": route,
-        "rown_city": rown_city,
+        "town_city": town_city,
         "county": county,
         "type_rating": type_rating,
-        "email": f"info@{company_name.lower().replace(' ', '')}.co.uk",
+        # "email": f"info@{company_name.lower().replace(' ', '')}.co.uk",
+        "email": f"mdshayon0@gmail.com",
         "enriched": True
     }
     return enriched

@@ -31,12 +31,12 @@ def main():
             logger.info("✅ Pipeline completed successfully")
         else:
             logger.error("❌ Pipeline failed — see logs for details")
-            send_alert("UK Sponsor Reach Pipeline failed. Check logs.")
+            send_alert("Error", "UK Sponsor Reach Pipeline failed. Check logs.")
             exit(1)
 
     except Exception as e:
         logger.critical(f"💥 Fatal error occurred: {e}", exc_info=True)
-        send_alert(f"Pipeline Failure: {str(e)}")
+        send_alert("Error",f"Pipeline Failure: {str(e)}")
         exit(1)
 
 
