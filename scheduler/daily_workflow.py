@@ -11,15 +11,17 @@ Executes in order:
 """
 
 import logging
-from datetime import datetime
+import csv
+from datetime import datetime, date
 from pathlib import Path
 
 from utils.logger import setup_logger
 from utils.monitor import send_alert
 from extraction.fetch_csv import download_latest_csv
-from extraction.compare_csv import get_new_sponsors
+from extraction.compare_csv import get_new_sponsors, get_yesterday_file
 from extraction.parse_sponsors import preprocess_sponsor_data
 from enrichment.enrich_batch import enrich_companies
+from config.constants import ARCHIVE_DIR
 from outreach.outreach_runner import run_outreach
 from crm.sync_crm import sync_with_salesforce
 
@@ -39,14 +41,23 @@ def daily_pipeline() -> bool:
         if not raw_csv_path or not Path(raw_csv_path).exists():
             raise FileNotFoundError("❌ Sponsor CSV not downloaded or missing")
 
-        # 2. Preprocess and compare with previous data
+        # 2. Preprocess and Load latest and previous CSVs
         logger.info("🔍 Preprocessing and comparing with previous data")
         df_sponsors = preprocess_sponsor_data(raw_csv_path)
-        new_sponsors = get_new_sponsors(df_sponsors)
+        previous_csv_path = get_yesterday_file(ARCHIVE_DIR)
+        df_previous = preprocess_sponsor_data(previous_csv_path)
+        # Compare latest data with previous data
+        new_sponsors = get_new_sponsors(df_sponsors, df_previous)
 
         if len(new_sponsors) == 0:
             logger.info("🔄 No new sponsors found — ending pipeline")
             return True
+
+        # Temporary file create
+        with open(f"data/temp/{date.today()}-new_sponsors.csv", "w", newline="", encoding="utf-8") as f:
+            w = csv.DictWriter(f, fieldnames=new_sponsors[0].keys())
+            w.writeheader()
+            w.writerows(new_sponsors)
 
         logger.info(f"🎯 Found {len(new_sponsors)} new sponsors")
 
@@ -65,7 +76,7 @@ def daily_pipeline() -> bool:
 
         # 5. Sync with Salesforce
         logger.info("🔄 Syncing with Salesforce")
-        sync_with_salesforce(enriched_sponsors)
+        # sync_with_salesforce(enriched_sponsors)
 
         duration = (datetime.now() - start_time).total_seconds() / 60
         logger.info(f"🏁 Pipeline completed in {duration:.2f} minutes")

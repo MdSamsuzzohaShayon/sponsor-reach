@@ -1526,3 +1526,574 @@ KeyError: 'Organisation Name'
 2025-04-16 21:10:59,764 - WARNING - ⚠️ 62 sponsors failed to sync: [{'referenceId': 'ref1', 'id': 'a01gK000004I9CFQA0'}, {'referenceId': 'ref2', 'id': 'a01gK000004I9CGQA0'}, {'referenceId': 'ref3', 'id': 'a01gK000004I9CHQA0'}, {'referenceId': 'ref4', 'id': 'a01gK000004I9CIQA0'}, {'referenceId': 'ref5', 'id': 'a01gK000004I9CJQA0'}, {'referenceId': 'ref6', 'id': 'a01gK000004I9CKQA0'}, {'referenceId': 'ref7', 'id': 'a01gK000004I9CLQA0'}, {'referenceId': 'ref8', 'id': 'a01gK000004I9CMQA0'}, {'referenceId': 'ref9', 'id': 'a01gK000004I9CNQA0'}, {'referenceId': 'ref10', 'id': 'a01gK000004I9COQA0'}, {'referenceId': 'ref11', 'id': 'a01gK000004I9CPQA0'}, {'referenceId': 'ref12', 'id': 'a01gK000004I9CQQA0'}, {'referenceId': 'ref13', 'id': 'a01gK000004I9CRQA0'}, {'referenceId': 'ref14', 'id': 'a01gK000004I9CSQA0'}, {'referenceId': 'ref15', 'id': 'a01gK000004I9CTQA0'}, {'referenceId': 'ref16', 'id': 'a01gK000004I9CUQA0'}, {'referenceId': 'ref17', 'id': 'a01gK000004I9CVQA0'}, {'referenceId': 'ref18', 'id': 'a01gK000004I9CWQA0'}, {'referenceId': 'ref19', 'id': 'a01gK000004I9CXQA0'}, {'referenceId': 'ref20', 'id': 'a01gK000004I9CYQA0'}, {'referenceId': 'ref21', 'id': 'a01gK000004I9CZQA0'}, {'referenceId': 'ref22', 'id': 'a01gK000004I9CaQAK'}, {'referenceId': 'ref23', 'id': 'a01gK000004I9CbQAK'}, {'referenceId': 'ref24', 'id': 'a01gK000004I9CcQAK'}, {'referenceId': 'ref25', 'id': 'a01gK000004I9CdQAK'}, {'referenceId': 'ref26', 'id': 'a01gK000004I9CeQAK'}, {'referenceId': 'ref27', 'id': 'a01gK000004I9CfQAK'}, {'referenceId': 'ref28', 'id': 'a01gK000004I9CgQAK'}, {'referenceId': 'ref29', 'id': 'a01gK000004I9ChQAK'}, {'referenceId': 'ref30', 'id': 'a01gK000004I9CiQAK'}, {'referenceId': 'ref31', 'id': 'a01gK000004I9CjQAK'}, {'referenceId': 'ref32', 'id': 'a01gK000004I9CkQAK'}, {'referenceId': 'ref33', 'id': 'a01gK000004I9ClQAK'}, {'referenceId': 'ref34', 'id': 'a01gK000004I9CmQAK'}, {'referenceId': 'ref35', 'id': 'a01gK000004I9CnQAK'}, {'referenceId': 'ref36', 'id': 'a01gK000004I9CoQAK'}, {'referenceId': 'ref37', 'id': 'a01gK000004I9CpQAK'}, {'referenceId': 'ref38', 'id': 'a01gK000004I9CqQAK'}, {'referenceId': 'ref39', 'id': 'a01gK000004I9CrQAK'}, {'referenceId': 'ref40', 'id': 'a01gK000004I9CsQAK'}, {'referenceId': 'ref41', 'id': 'a01gK000004I9CtQAK'}, {'referenceId': 'ref42', 'id': 'a01gK000004I9CuQAK'}, {'referenceId': 'ref43', 'id': 'a01gK000004I9CvQAK'}, {'referenceId': 'ref44', 'id': 'a01gK000004I9CwQAK'}, {'referenceId': 'ref45', 'id': 'a01gK000004I9CxQAK'}, {'referenceId': 'ref46', 'id': 'a01gK000004I9CyQAK'}, {'referenceId': 'ref47', 'id': 'a01gK000004I9CzQAK'}, {'referenceId': 'ref48', 'id': 'a01gK000004I9D0QAK'}, {'referenceId': 'ref49', 'id': 'a01gK000004I9D1QAK'}, {'referenceId': 'ref50', 'id': 'a01gK000004I9D2QAK'}, {'referenceId': 'ref51', 'id': 'a01gK000004I9D3QAK'}, {'referenceId': 'ref52', 'id': 'a01gK000004I9D4QAK'}, {'referenceId': 'ref53', 'id': 'a01gK000004I9D5QAK'}, {'referenceId': 'ref54', 'id': 'a01gK000004I9D6QAK'}, {'referenceId': 'ref55', 'id': 'a01gK000004I9D7QAK'}, {'referenceId': 'ref56', 'id': 'a01gK000004I9D8QAK'}, {'referenceId': 'ref57', 'id': 'a01gK000004I9D9QAK'}, {'referenceId': 'ref58', 'id': 'a01gK000004I9DAQA0'}, {'referenceId': 'ref59', 'id': 'a01gK000004I9DBQA0'}, {'referenceId': 'ref60', 'id': 'a01gK000004I9DCQA0'}, {'referenceId': 'ref61', 'id': 'a01gK000004I9DDQA0'}, {'referenceId': 'ref62', 'id': 'a01gK000004I9DEQA0'}]
 2025-04-16 21:10:59,766 - INFO - 🏁 Pipeline completed in 1.59 minutes
 2025-04-16 21:10:59,766 - INFO - 🏁 Pipeline completed in 1.59 minutes
+2025-04-22 21:05:40,488 - INFO - Logger set up successfully!
+2025-04-22 21:05:40,488 - INFO - Logger set up successfully!
+2025-04-22 21:05:40,488 - INFO - Logger set up successfully!
+2025-04-22 21:05:40,489 - INFO - 🚀 Starting UK Sponsor Reach daily pipeline
+2025-04-22 21:05:40,489 - INFO - 🚀 Starting UK Sponsor Reach daily pipeline
+2025-04-22 21:05:40,489 - INFO - ⬇️ Downloading latest sponsor CSV
+2025-04-22 21:05:40,489 - INFO - ⬇️ Downloading latest sponsor CSV
+2025-04-22 21:05:45,895 - INFO - 🔍 Preprocessing and comparing with previous data
+2025-04-22 21:05:45,895 - INFO - 🔍 Preprocessing and comparing with previous data
+2025-04-22 21:07:11,378 - INFO - Logger set up successfully!
+2025-04-22 21:07:11,378 - INFO - Logger set up successfully!
+2025-04-22 21:07:11,378 - INFO - Logger set up successfully!
+2025-04-22 21:07:11,378 - INFO - 🚀 Starting UK Sponsor Reach daily pipeline
+2025-04-22 21:07:11,378 - INFO - 🚀 Starting UK Sponsor Reach daily pipeline
+2025-04-22 21:07:11,378 - INFO - ⬇️ Downloading latest sponsor CSV
+2025-04-22 21:07:11,378 - INFO - ⬇️ Downloading latest sponsor CSV
+2025-04-22 21:07:11,379 - INFO - 🔍 Preprocessing and comparing with previous data
+2025-04-22 21:07:11,379 - INFO - 🔍 Preprocessing and comparing with previous data
+2025-04-22 21:07:19,316 - INFO - 🔄 No new sponsors found — ending pipeline
+2025-04-22 21:07:19,316 - INFO - 🔄 No new sponsors found — ending pipeline
+2025-04-22 21:07:48,233 - INFO - Logger set up successfully!
+2025-04-22 21:07:48,233 - INFO - Logger set up successfully!
+2025-04-22 21:07:48,233 - INFO - Logger set up successfully!
+2025-04-22 21:07:48,234 - INFO - 🚀 Starting UK Sponsor Reach daily pipeline
+2025-04-22 21:07:48,234 - INFO - 🚀 Starting UK Sponsor Reach daily pipeline
+2025-04-22 21:07:48,234 - INFO - ⬇️ Downloading latest sponsor CSV
+2025-04-22 21:07:48,234 - INFO - ⬇️ Downloading latest sponsor CSV
+2025-04-22 21:07:48,234 - INFO - 🔍 Preprocessing and comparing with previous data
+2025-04-22 21:07:48,234 - INFO - 🔍 Preprocessing and comparing with previous data
+2025-04-22 21:07:50,982 - INFO - 🔄 No new sponsors found — ending pipeline
+2025-04-22 21:07:50,982 - INFO - 🔄 No new sponsors found — ending pipeline
+2025-04-22 21:08:37,034 - INFO - Logger set up successfully!
+2025-04-22 21:08:37,034 - INFO - Logger set up successfully!
+2025-04-22 21:08:37,034 - INFO - Logger set up successfully!
+2025-04-22 21:08:37,034 - INFO - 🚀 Starting UK Sponsor Reach daily pipeline
+2025-04-22 21:08:37,034 - INFO - 🚀 Starting UK Sponsor Reach daily pipeline
+2025-04-22 21:08:37,034 - INFO - ⬇️ Downloading latest sponsor CSV
+2025-04-22 21:08:37,034 - INFO - ⬇️ Downloading latest sponsor CSV
+2025-04-22 21:08:37,035 - INFO - 🔍 Preprocessing and comparing with previous data
+2025-04-22 21:08:37,035 - INFO - 🔍 Preprocessing and comparing with previous data
+2025-04-22 21:08:39,787 - INFO - 🎯 Found 536 new sponsors
+2025-04-22 21:08:39,787 - INFO - 🎯 Found 536 new sponsors
+2025-04-22 21:08:39,787 - INFO - ✨ Enriching new sponsor data
+2025-04-22 21:08:39,787 - INFO - ✨ Enriching new sponsor data
+2025-04-22 21:08:39,787 - INFO - 🔍 Starting enrichment for new sponsors...
+2025-04-22 21:08:39,787 - INFO - 🔍 Starting enrichment for new sponsors...
+2025-04-22 21:08:39,788 - INFO - ✅ Enriched 536 companies successfully.
+2025-04-22 21:08:39,788 - INFO - ✅ Enriched 536 companies successfully.
+2025-04-22 21:08:39,788 - INFO - 📧 Sending outreach emails
+2025-04-22 21:08:39,788 - INFO - 📧 Sending outreach emails
+2025-04-22 21:08:39,788 - INFO - 🔄 Syncing with Salesforce
+2025-04-22 21:08:39,788 - INFO - 🔄 Syncing with Salesforce
+2025-04-22 21:09:32,431 - INFO - Logger set up successfully!
+2025-04-22 21:09:32,431 - INFO - Logger set up successfully!
+2025-04-22 21:09:32,431 - INFO - Logger set up successfully!
+2025-04-22 21:09:32,432 - INFO - 🚀 Starting UK Sponsor Reach daily pipeline
+2025-04-22 21:09:32,432 - INFO - 🚀 Starting UK Sponsor Reach daily pipeline
+2025-04-22 21:09:32,432 - INFO - ⬇️ Downloading latest sponsor CSV
+2025-04-22 21:09:32,432 - INFO - ⬇️ Downloading latest sponsor CSV
+2025-04-22 21:09:32,432 - INFO - 🔍 Preprocessing and comparing with previous data
+2025-04-22 21:09:32,432 - INFO - 🔍 Preprocessing and comparing with previous data
+2025-04-22 21:09:35,137 - INFO - 🎯 Found 536 new sponsors
+2025-04-22 21:09:35,137 - INFO - 🎯 Found 536 new sponsors
+2025-04-22 21:09:35,138 - INFO - ✨ Enriching new sponsor data
+2025-04-22 21:09:35,138 - INFO - ✨ Enriching new sponsor data
+2025-04-22 21:10:00,983 - INFO - 🔍 Starting enrichment for new sponsors...
+2025-04-22 21:10:00,983 - INFO - 🔍 Starting enrichment for new sponsors...
+2025-04-22 21:10:04,482 - INFO - ✅ Enriched 536 companies successfully.
+2025-04-22 21:10:04,482 - INFO - ✅ Enriched 536 companies successfully.
+2025-04-22 21:10:04,482 - INFO - 📧 Sending outreach emails
+2025-04-22 21:10:04,482 - INFO - 📧 Sending outreach emails
+2025-04-22 21:10:04,482 - INFO - 🔄 Syncing with Salesforce
+2025-04-22 21:10:04,482 - INFO - 🔄 Syncing with Salesforce
+2025-04-22 21:10:04,482 - INFO - 🏁 Pipeline completed in 0.53 minutes
+2025-04-22 21:10:04,482 - INFO - 🏁 Pipeline completed in 0.53 minutes
+2025-04-22 21:10:35,297 - INFO - Logger set up successfully!
+2025-04-22 21:10:35,297 - INFO - Logger set up successfully!
+2025-04-22 21:10:35,297 - INFO - Logger set up successfully!
+2025-04-22 21:10:35,298 - INFO - 🚀 Starting UK Sponsor Reach daily pipeline
+2025-04-22 21:10:35,298 - INFO - 🚀 Starting UK Sponsor Reach daily pipeline
+2025-04-22 21:10:35,298 - INFO - ⬇️ Downloading latest sponsor CSV
+2025-04-22 21:10:35,298 - INFO - ⬇️ Downloading latest sponsor CSV
+2025-04-22 21:10:35,298 - INFO - 🔍 Preprocessing and comparing with previous data
+2025-04-22 21:10:35,298 - INFO - 🔍 Preprocessing and comparing with previous data
+2025-04-22 21:10:38,217 - INFO - 🎯 Found 536 new sponsors
+2025-04-22 21:10:38,217 - INFO - 🎯 Found 536 new sponsors
+2025-04-22 21:10:38,218 - INFO - ✨ Enriching new sponsor data
+2025-04-22 21:10:38,218 - INFO - ✨ Enriching new sponsor data
+2025-04-22 21:10:43,643 - INFO - 🔍 Starting enrichment for new sponsors...
+2025-04-22 21:10:43,643 - INFO - 🔍 Starting enrichment for new sponsors...
+2025-04-26 18:05:20,232 - INFO - Logger set up successfully!
+2025-04-26 18:05:20,232 - INFO - Logger set up successfully!
+2025-04-26 18:05:20,232 - INFO - Logger set up successfully!
+2025-04-26 18:05:20,233 - INFO - 🚀 Starting UK Sponsor Reach daily pipeline
+2025-04-26 18:05:20,233 - INFO - 🚀 Starting UK Sponsor Reach daily pipeline
+2025-04-26 18:05:20,233 - INFO - ⬇️ Downloading latest sponsor CSV
+2025-04-26 18:05:20,233 - INFO - ⬇️ Downloading latest sponsor CSV
+2025-04-26 18:05:26,016 - INFO - 🔍 Preprocessing and comparing with previous data
+2025-04-26 18:05:26,016 - INFO - 🔍 Preprocessing and comparing with previous data
+2025-04-26 18:05:28,848 - INFO - 🎯 Found 777 new sponsors
+2025-04-26 18:05:28,848 - INFO - 🎯 Found 777 new sponsors
+2025-04-26 18:05:28,848 - INFO - ✨ Enriching new sponsor data
+2025-04-26 18:05:28,848 - INFO - ✨ Enriching new sponsor data
+2025-04-26 18:05:28,848 - INFO - 🔍 Starting enrichment for new sponsors...
+2025-04-26 18:05:28,848 - INFO - 🔍 Starting enrichment for new sponsors...
+2025-04-26 18:05:42,328 - INFO - ✅ Enriched 777 companies successfully.
+2025-04-26 18:05:42,328 - INFO - ✅ Enriched 777 companies successfully.
+2025-04-26 18:05:53,671 - INFO - 📧 Sending outreach emails
+2025-04-26 18:05:53,671 - INFO - 📧 Sending outreach emails
+2025-04-26 18:05:53,672 - INFO - 🔄 Syncing with Salesforce
+2025-04-26 18:05:53,672 - INFO - 🔄 Syncing with Salesforce
+2025-04-26 18:05:53,672 - INFO - 🏁 Pipeline completed in 0.56 minutes
+2025-04-26 18:05:53,672 - INFO - 🏁 Pipeline completed in 0.56 minutes
+2025-04-26 18:06:28,504 - INFO - Logger set up successfully!
+2025-04-26 18:06:28,504 - INFO - Logger set up successfully!
+2025-04-26 18:06:28,504 - INFO - Logger set up successfully!
+2025-04-26 18:06:28,505 - INFO - 🚀 Starting UK Sponsor Reach daily pipeline
+2025-04-26 18:06:28,505 - INFO - 🚀 Starting UK Sponsor Reach daily pipeline
+2025-04-26 18:06:28,505 - INFO - ⬇️ Downloading latest sponsor CSV
+2025-04-26 18:06:28,505 - INFO - ⬇️ Downloading latest sponsor CSV
+2025-04-26 18:06:28,505 - INFO - 🔍 Preprocessing and comparing with previous data
+2025-04-26 18:06:28,505 - INFO - 🔍 Preprocessing and comparing with previous data
+2025-04-26 18:06:31,146 - INFO - 🎯 Found 777 new sponsors
+2025-04-26 18:06:31,146 - INFO - 🎯 Found 777 new sponsors
+2025-04-26 18:06:31,147 - INFO - ✨ Enriching new sponsor data
+2025-04-26 18:06:31,147 - INFO - ✨ Enriching new sponsor data
+2025-04-26 18:06:31,147 - INFO - 🔍 Starting enrichment for new sponsors...
+2025-04-26 18:06:31,147 - INFO - 🔍 Starting enrichment for new sponsors...
+2025-04-26 18:06:31,159 - INFO - ✅ Enriched 777 companies successfully.
+2025-04-26 18:06:31,159 - INFO - ✅ Enriched 777 companies successfully.
+2025-04-26 18:06:38,239 - INFO - 📧 Sending outreach emails
+2025-04-26 18:06:38,239 - INFO - 📧 Sending outreach emails
+2025-04-26 18:06:38,239 - INFO - 🔄 Syncing with Salesforce
+2025-04-26 18:06:38,239 - INFO - 🔄 Syncing with Salesforce
+2025-04-26 18:06:38,240 - INFO - 🏁 Pipeline completed in 0.16 minutes
+2025-04-26 18:06:38,240 - INFO - 🏁 Pipeline completed in 0.16 minutes
+2025-04-26 18:09:38,682 - INFO - Logger set up successfully!
+2025-04-26 18:09:38,683 - INFO - Logger set up successfully!
+2025-04-26 18:09:38,683 - INFO - Logger set up successfully!
+2025-04-26 18:09:38,683 - INFO - 🚀 Starting UK Sponsor Reach daily pipeline
+2025-04-26 18:09:38,683 - INFO - 🚀 Starting UK Sponsor Reach daily pipeline
+2025-04-26 18:09:38,683 - INFO - ⬇️ Downloading latest sponsor CSV
+2025-04-26 18:09:38,683 - INFO - ⬇️ Downloading latest sponsor CSV
+2025-04-26 18:09:40,668 - INFO - 🔍 Preprocessing and comparing with previous data
+2025-04-26 18:09:40,668 - INFO - 🔍 Preprocessing and comparing with previous data
+2025-04-26 18:10:34,352 - INFO - 🎯 Found 777 new sponsors
+2025-04-26 18:10:34,352 - INFO - 🎯 Found 777 new sponsors
+2025-04-26 18:10:43,508 - INFO - ✨ Enriching new sponsor data
+2025-04-26 18:10:43,508 - INFO - ✨ Enriching new sponsor data
+2025-04-26 18:11:09,131 - INFO - Logger set up successfully!
+2025-04-26 18:11:09,131 - INFO - Logger set up successfully!
+2025-04-26 18:11:09,131 - INFO - Logger set up successfully!
+2025-04-26 18:11:09,132 - INFO - 🚀 Starting UK Sponsor Reach daily pipeline
+2025-04-26 18:11:09,132 - INFO - 🚀 Starting UK Sponsor Reach daily pipeline
+2025-04-26 18:11:09,132 - INFO - ⬇️ Downloading latest sponsor CSV
+2025-04-26 18:11:09,132 - INFO - ⬇️ Downloading latest sponsor CSV
+2025-04-26 18:11:09,132 - INFO - 🔍 Preprocessing and comparing with previous data
+2025-04-26 18:11:09,132 - INFO - 🔍 Preprocessing and comparing with previous data
+2025-04-26 18:11:11,827 - INFO - 🎯 Found 777 new sponsors
+2025-04-26 18:11:11,827 - INFO - 🎯 Found 777 new sponsors
+2025-04-26 18:11:11,827 - INFO - ✨ Enriching new sponsor data
+2025-04-26 18:11:11,827 - INFO - ✨ Enriching new sponsor data
+2025-04-26 18:11:11,827 - INFO - 📧 Sending outreach emails
+2025-04-26 18:11:11,827 - INFO - 📧 Sending outreach emails
+2025-04-26 18:11:16,396 - INFO - 🔄 Syncing with Salesforce
+2025-04-26 18:11:16,396 - INFO - 🔄 Syncing with Salesforce
+2025-04-26 18:11:16,397 - INFO - 🏁 Pipeline completed in 0.12 minutes
+2025-04-26 18:11:16,397 - INFO - 🏁 Pipeline completed in 0.12 minutes
+2025-04-26 18:11:53,828 - INFO - Logger set up successfully!
+2025-04-26 18:11:53,828 - INFO - Logger set up successfully!
+2025-04-26 18:11:53,828 - INFO - Logger set up successfully!
+2025-04-26 18:11:53,829 - INFO - 🚀 Starting UK Sponsor Reach daily pipeline
+2025-04-26 18:11:53,829 - INFO - 🚀 Starting UK Sponsor Reach daily pipeline
+2025-04-26 18:11:53,829 - INFO - ⬇️ Downloading latest sponsor CSV
+2025-04-26 18:11:53,829 - INFO - ⬇️ Downloading latest sponsor CSV
+2025-04-26 18:11:53,829 - INFO - 🔍 Preprocessing and comparing with previous data
+2025-04-26 18:11:53,829 - INFO - 🔍 Preprocessing and comparing with previous data
+2025-04-26 18:11:54,005 - INFO - ✨ Enriching new sponsor data
+2025-04-26 18:11:54,005 - INFO - ✨ Enriching new sponsor data
+2025-04-26 18:11:54,005 - INFO - 📧 Sending outreach emails
+2025-04-26 18:11:54,005 - INFO - 📧 Sending outreach emails
+2025-04-26 18:11:54,005 - INFO - 🔄 Syncing with Salesforce
+2025-04-26 18:11:54,005 - INFO - 🔄 Syncing with Salesforce
+2025-04-26 18:11:54,006 - INFO - 🏁 Pipeline completed in 0.00 minutes
+2025-04-26 18:11:54,006 - INFO - 🏁 Pipeline completed in 0.00 minutes
+2025-04-26 18:12:18,608 - INFO - Logger set up successfully!
+2025-04-26 18:12:18,609 - INFO - Logger set up successfully!
+2025-04-26 18:12:18,609 - INFO - Logger set up successfully!
+2025-04-26 18:12:18,609 - INFO - 🚀 Starting UK Sponsor Reach daily pipeline
+2025-04-26 18:12:18,609 - INFO - 🚀 Starting UK Sponsor Reach daily pipeline
+2025-04-26 18:12:18,609 - INFO - ⬇️ Downloading latest sponsor CSV
+2025-04-26 18:12:18,609 - INFO - ⬇️ Downloading latest sponsor CSV
+2025-04-26 18:12:18,609 - INFO - 🔍 Preprocessing and comparing with previous data
+2025-04-26 18:12:18,609 - INFO - 🔍 Preprocessing and comparing with previous data
+2025-04-26 18:12:18,609 - INFO - ✨ Enriching new sponsor data
+2025-04-26 18:12:18,609 - INFO - ✨ Enriching new sponsor data
+2025-04-26 18:12:18,610 - INFO - 📧 Sending outreach emails
+2025-04-26 18:12:18,610 - INFO - 📧 Sending outreach emails
+2025-04-26 18:12:18,610 - INFO - 🔄 Syncing with Salesforce
+2025-04-26 18:12:18,610 - INFO - 🔄 Syncing with Salesforce
+2025-04-26 18:12:18,610 - INFO - 🏁 Pipeline completed in 0.00 minutes
+2025-04-26 18:12:18,610 - INFO - 🏁 Pipeline completed in 0.00 minutes
+2025-04-26 18:12:40,707 - INFO - Logger set up successfully!
+2025-04-26 18:12:40,707 - INFO - Logger set up successfully!
+2025-04-26 18:12:40,707 - INFO - Logger set up successfully!
+2025-04-26 18:12:40,707 - INFO - 🚀 Starting UK Sponsor Reach daily pipeline
+2025-04-26 18:12:40,707 - INFO - 🚀 Starting UK Sponsor Reach daily pipeline
+2025-04-26 18:12:40,707 - INFO - ⬇️ Downloading latest sponsor CSV
+2025-04-26 18:12:40,707 - INFO - ⬇️ Downloading latest sponsor CSV
+2025-04-26 18:12:40,708 - INFO - 🔍 Preprocessing and comparing with previous data
+2025-04-26 18:12:40,708 - INFO - 🔍 Preprocessing and comparing with previous data
+2025-04-26 18:12:40,708 - INFO - ✨ Enriching new sponsor data
+2025-04-26 18:12:40,708 - INFO - ✨ Enriching new sponsor data
+2025-04-26 18:12:40,708 - INFO - 📧 Sending outreach emails
+2025-04-26 18:12:40,708 - INFO - 📧 Sending outreach emails
+2025-04-26 18:12:40,708 - INFO - 🔄 Syncing with Salesforce
+2025-04-26 18:12:40,708 - INFO - 🔄 Syncing with Salesforce
+2025-04-26 18:12:40,708 - INFO - 🏁 Pipeline completed in 0.00 minutes
+2025-04-26 18:12:40,708 - INFO - 🏁 Pipeline completed in 0.00 minutes
+2025-04-26 18:13:40,574 - INFO - Logger set up successfully!
+2025-04-26 18:13:40,575 - INFO - 🚀 Starting UK Sponsor Reach daily pipeline
+2025-04-26 18:13:40,575 - INFO - ⬇️ Downloading latest sponsor CSV
+2025-04-26 18:13:40,576 - INFO - 🔍 Preprocessing and comparing with previous data
+2025-04-26 18:13:40,576 - INFO - ✨ Enriching new sponsor data
+2025-04-26 18:13:40,576 - INFO - 📧 Sending outreach emails
+2025-04-26 18:13:40,576 - INFO - 🔄 Syncing with Salesforce
+2025-04-26 18:13:40,576 - INFO - 🏁 Pipeline completed in 0.00 minutes
+2025-04-26 18:14:02,835 - INFO - Logger set up successfully!
+2025-04-26 18:14:02,835 - INFO - 🚀 Starting UK Sponsor Reach daily pipeline
+2025-04-26 18:14:02,836 - INFO - ⬇️ Downloading latest sponsor CSV
+2025-04-26 18:14:02,836 - INFO - 🔍 Preprocessing and comparing with previous data
+2025-04-26 18:14:02,837 - INFO - ✨ Enriching new sponsor data
+2025-04-26 18:14:02,837 - INFO - 📧 Sending outreach emails
+2025-04-26 18:14:02,837 - INFO - 🔄 Syncing with Salesforce
+2025-04-26 18:14:02,837 - INFO - 🏁 Pipeline completed in 0.00 minutes
+2025-04-26 18:15:16,991 - INFO - Logger set up successfully!
+2025-04-26 18:15:16,991 - INFO - Logger set up successfully!
+2025-04-26 18:15:16,991 - INFO - Logger set up successfully!
+2025-04-26 18:15:16,992 - INFO - 🚀 Starting UK Sponsor Reach daily pipeline
+2025-04-26 18:15:16,992 - INFO - 🚀 Starting UK Sponsor Reach daily pipeline
+2025-04-26 18:15:16,992 - INFO - ⬇️ Downloading latest sponsor CSV
+2025-04-26 18:15:16,992 - INFO - ⬇️ Downloading latest sponsor CSV
+2025-04-26 18:15:16,992 - INFO - 🔍 Preprocessing and comparing with previous data
+2025-04-26 18:15:16,992 - INFO - 🔍 Preprocessing and comparing with previous data
+2025-04-26 18:15:16,992 - INFO - ✨ Enriching new sponsor data
+2025-04-26 18:15:16,992 - INFO - ✨ Enriching new sponsor data
+2025-04-26 18:15:16,992 - INFO - 📧 Sending outreach emails
+2025-04-26 18:15:16,992 - INFO - 📧 Sending outreach emails
+2025-04-26 18:15:16,992 - INFO - 🔄 Syncing with Salesforce
+2025-04-26 18:15:16,992 - INFO - 🔄 Syncing with Salesforce
+2025-04-26 18:15:16,992 - INFO - 🏁 Pipeline completed in 0.00 minutes
+2025-04-26 18:15:16,992 - INFO - 🏁 Pipeline completed in 0.00 minutes
+2025-04-26 18:15:30,639 - INFO - Logger set up successfully!
+2025-04-26 18:15:30,639 - INFO - Logger set up successfully!
+2025-04-26 18:15:30,639 - INFO - Logger set up successfully!
+2025-04-26 18:15:30,639 - INFO - 🚀 Starting UK Sponsor Reach daily pipeline
+2025-04-26 18:15:30,639 - INFO - 🚀 Starting UK Sponsor Reach daily pipeline
+2025-04-26 18:15:30,639 - INFO - ⬇️ Downloading latest sponsor CSV
+2025-04-26 18:15:30,639 - INFO - ⬇️ Downloading latest sponsor CSV
+2025-04-26 18:15:30,639 - INFO - 🔍 Preprocessing and comparing with previous data
+2025-04-26 18:15:30,639 - INFO - 🔍 Preprocessing and comparing with previous data
+2025-04-26 18:15:30,639 - INFO - ✨ Enriching new sponsor data
+2025-04-26 18:15:30,639 - INFO - ✨ Enriching new sponsor data
+2025-04-26 18:15:30,639 - INFO - 📧 Sending outreach emails
+2025-04-26 18:15:30,639 - INFO - 📧 Sending outreach emails
+2025-04-26 18:15:30,639 - INFO - 🔄 Syncing with Salesforce
+2025-04-26 18:15:30,639 - INFO - 🔄 Syncing with Salesforce
+2025-04-26 18:15:30,639 - INFO - 🏁 Pipeline completed in 0.00 minutes
+2025-04-26 18:15:30,639 - INFO - 🏁 Pipeline completed in 0.00 minutes
+2025-04-26 18:15:37,757 - INFO - Logger set up successfully!
+2025-04-26 18:15:37,757 - INFO - Logger set up successfully!
+2025-04-26 18:15:37,757 - INFO - Logger set up successfully!
+2025-04-26 18:15:37,757 - INFO - 🚀 Starting UK Sponsor Reach daily pipeline
+2025-04-26 18:15:37,757 - INFO - 🚀 Starting UK Sponsor Reach daily pipeline
+2025-04-26 18:15:37,757 - INFO - ⬇️ Downloading latest sponsor CSV
+2025-04-26 18:15:37,757 - INFO - ⬇️ Downloading latest sponsor CSV
+2025-04-26 18:15:37,757 - INFO - 🔍 Preprocessing and comparing with previous data
+2025-04-26 18:15:37,757 - INFO - 🔍 Preprocessing and comparing with previous data
+2025-04-26 18:15:37,757 - INFO - ✨ Enriching new sponsor data
+2025-04-26 18:15:37,757 - INFO - ✨ Enriching new sponsor data
+2025-04-26 18:15:37,757 - INFO - 📧 Sending outreach emails
+2025-04-26 18:15:37,757 - INFO - 📧 Sending outreach emails
+2025-04-26 18:15:37,757 - INFO - 🔄 Syncing with Salesforce
+2025-04-26 18:15:37,757 - INFO - 🔄 Syncing with Salesforce
+2025-04-26 18:15:37,757 - INFO - 🏁 Pipeline completed in 0.00 minutes
+2025-04-26 18:15:37,757 - INFO - 🏁 Pipeline completed in 0.00 minutes
+2025-04-26 18:15:42,411 - INFO - Logger set up successfully!
+2025-04-26 18:15:42,412 - INFO - Logger set up successfully!
+2025-04-26 18:15:42,412 - INFO - Logger set up successfully!
+2025-04-26 18:15:42,412 - INFO - 🚀 Starting UK Sponsor Reach daily pipeline
+2025-04-26 18:15:42,412 - INFO - 🚀 Starting UK Sponsor Reach daily pipeline
+2025-04-26 18:15:42,412 - INFO - ⬇️ Downloading latest sponsor CSV
+2025-04-26 18:15:42,412 - INFO - ⬇️ Downloading latest sponsor CSV
+2025-04-26 18:15:42,412 - INFO - 🔍 Preprocessing and comparing with previous data
+2025-04-26 18:15:42,412 - INFO - 🔍 Preprocessing and comparing with previous data
+2025-04-26 18:15:42,412 - INFO - ✨ Enriching new sponsor data
+2025-04-26 18:15:42,412 - INFO - ✨ Enriching new sponsor data
+2025-04-26 18:15:42,412 - INFO - 📧 Sending outreach emails
+2025-04-26 18:15:42,412 - INFO - 📧 Sending outreach emails
+2025-04-26 18:15:42,412 - INFO - 🔄 Syncing with Salesforce
+2025-04-26 18:15:42,412 - INFO - 🔄 Syncing with Salesforce
+2025-04-26 18:15:42,412 - INFO - 🏁 Pipeline completed in 0.00 minutes
+2025-04-26 18:15:42,412 - INFO - 🏁 Pipeline completed in 0.00 minutes
+2025-04-26 18:15:54,263 - INFO - Logger set up successfully!
+2025-04-26 18:15:54,263 - INFO - Logger set up successfully!
+2025-04-26 18:15:54,263 - INFO - Logger set up successfully!
+2025-04-26 18:15:54,263 - INFO - 🚀 Starting UK Sponsor Reach daily pipeline
+2025-04-26 18:15:54,263 - INFO - 🚀 Starting UK Sponsor Reach daily pipeline
+2025-04-26 18:15:54,263 - INFO - ⬇️ Downloading latest sponsor CSV
+2025-04-26 18:15:54,263 - INFO - ⬇️ Downloading latest sponsor CSV
+2025-04-26 18:15:54,264 - INFO - 🔍 Preprocessing and comparing with previous data
+2025-04-26 18:15:54,264 - INFO - 🔍 Preprocessing and comparing with previous data
+2025-04-26 18:15:54,264 - INFO - ✨ Enriching new sponsor data
+2025-04-26 18:15:54,264 - INFO - ✨ Enriching new sponsor data
+2025-04-26 18:15:54,264 - INFO - 📧 Sending outreach emails
+2025-04-26 18:15:54,264 - INFO - 📧 Sending outreach emails
+2025-04-26 18:15:54,264 - INFO - 🔄 Syncing with Salesforce
+2025-04-26 18:15:54,264 - INFO - 🔄 Syncing with Salesforce
+2025-04-26 18:15:54,264 - INFO - 🏁 Pipeline completed in 0.00 minutes
+2025-04-26 18:15:54,264 - INFO - 🏁 Pipeline completed in 0.00 minutes
+2025-04-26 18:16:08,089 - INFO - Logger set up successfully!
+2025-04-26 18:16:08,090 - INFO - Logger set up successfully!
+2025-04-26 18:16:08,090 - INFO - Logger set up successfully!
+2025-04-26 18:16:08,090 - INFO - 🚀 Starting UK Sponsor Reach daily pipeline
+2025-04-26 18:16:08,090 - INFO - 🚀 Starting UK Sponsor Reach daily pipeline
+2025-04-26 18:16:08,090 - INFO - ⬇️ Downloading latest sponsor CSV
+2025-04-26 18:16:08,090 - INFO - ⬇️ Downloading latest sponsor CSV
+2025-04-26 18:16:08,090 - INFO - 🔍 Preprocessing and comparing with previous data
+2025-04-26 18:16:08,090 - INFO - 🔍 Preprocessing and comparing with previous data
+2025-04-26 18:16:10,789 - INFO - ✨ Enriching new sponsor data
+2025-04-26 18:16:10,789 - INFO - ✨ Enriching new sponsor data
+2025-04-26 18:16:10,790 - INFO - 📧 Sending outreach emails
+2025-04-26 18:16:10,790 - INFO - 📧 Sending outreach emails
+2025-04-26 18:16:10,790 - INFO - 🔄 Syncing with Salesforce
+2025-04-26 18:16:10,790 - INFO - 🔄 Syncing with Salesforce
+2025-04-26 18:16:10,790 - INFO - 🏁 Pipeline completed in 0.05 minutes
+2025-04-26 18:16:10,790 - INFO - 🏁 Pipeline completed in 0.05 minutes
+2025-04-26 18:16:19,758 - INFO - Logger set up successfully!
+2025-04-26 18:16:19,759 - INFO - Logger set up successfully!
+2025-04-26 18:16:19,759 - INFO - Logger set up successfully!
+2025-04-26 18:16:19,759 - INFO - 🚀 Starting UK Sponsor Reach daily pipeline
+2025-04-26 18:16:19,759 - INFO - 🚀 Starting UK Sponsor Reach daily pipeline
+2025-04-26 18:16:19,759 - INFO - ⬇️ Downloading latest sponsor CSV
+2025-04-26 18:16:19,759 - INFO - ⬇️ Downloading latest sponsor CSV
+2025-04-26 18:16:19,759 - INFO - 🔍 Preprocessing and comparing with previous data
+2025-04-26 18:16:19,759 - INFO - 🔍 Preprocessing and comparing with previous data
+2025-04-26 18:16:22,552 - INFO - ✨ Enriching new sponsor data
+2025-04-26 18:16:22,552 - INFO - ✨ Enriching new sponsor data
+2025-04-26 18:16:22,552 - INFO - 📧 Sending outreach emails
+2025-04-26 18:16:22,552 - INFO - 📧 Sending outreach emails
+2025-04-26 18:16:22,552 - INFO - 🔄 Syncing with Salesforce
+2025-04-26 18:16:22,552 - INFO - 🔄 Syncing with Salesforce
+2025-04-26 18:16:22,552 - INFO - 🏁 Pipeline completed in 0.05 minutes
+2025-04-26 18:16:22,552 - INFO - 🏁 Pipeline completed in 0.05 minutes
+2025-04-26 18:16:41,476 - INFO - Logger set up successfully!
+2025-04-26 18:16:41,476 - INFO - Logger set up successfully!
+2025-04-26 18:16:41,476 - INFO - Logger set up successfully!
+2025-04-26 18:16:41,476 - INFO - 🚀 Starting UK Sponsor Reach daily pipeline
+2025-04-26 18:16:41,476 - INFO - 🚀 Starting UK Sponsor Reach daily pipeline
+2025-04-26 18:16:41,476 - INFO - ⬇️ Downloading latest sponsor CSV
+2025-04-26 18:16:41,476 - INFO - ⬇️ Downloading latest sponsor CSV
+2025-04-26 18:16:41,477 - INFO - 🔍 Preprocessing and comparing with previous data
+2025-04-26 18:16:41,477 - INFO - 🔍 Preprocessing and comparing with previous data
+2025-04-26 18:16:44,161 - INFO - 🎯 Found 777 new sponsors
+2025-04-26 18:16:44,161 - INFO - 🎯 Found 777 new sponsors
+2025-04-26 18:16:44,161 - INFO - ✨ Enriching new sponsor data
+2025-04-26 18:16:44,161 - INFO - ✨ Enriching new sponsor data
+2025-04-26 18:16:44,161 - INFO - 📧 Sending outreach emails
+2025-04-26 18:16:44,161 - INFO - 📧 Sending outreach emails
+2025-04-26 18:16:44,161 - INFO - 🔄 Syncing with Salesforce
+2025-04-26 18:16:44,161 - INFO - 🔄 Syncing with Salesforce
+2025-04-26 18:16:44,161 - INFO - 🏁 Pipeline completed in 0.04 minutes
+2025-04-26 18:16:44,161 - INFO - 🏁 Pipeline completed in 0.04 minutes
+2025-04-26 18:16:58,592 - INFO - Logger set up successfully!
+2025-04-26 18:16:58,592 - INFO - Logger set up successfully!
+2025-04-26 18:16:58,592 - INFO - Logger set up successfully!
+2025-04-26 18:16:58,592 - INFO - 🚀 Starting UK Sponsor Reach daily pipeline
+2025-04-26 18:16:58,592 - INFO - 🚀 Starting UK Sponsor Reach daily pipeline
+2025-04-26 18:16:58,593 - INFO - ⬇️ Downloading latest sponsor CSV
+2025-04-26 18:16:58,593 - INFO - ⬇️ Downloading latest sponsor CSV
+2025-04-26 18:16:58,593 - INFO - 🔍 Preprocessing and comparing with previous data
+2025-04-26 18:16:58,593 - INFO - 🔍 Preprocessing and comparing with previous data
+2025-04-26 18:17:01,246 - INFO - 🎯 Found 777 new sponsors
+2025-04-26 18:17:01,246 - INFO - 🎯 Found 777 new sponsors
+2025-04-26 18:17:01,246 - INFO - ✨ Enriching new sponsor data
+2025-04-26 18:17:01,246 - INFO - ✨ Enriching new sponsor data
+2025-04-26 18:17:01,246 - INFO - 📧 Sending outreach emails
+2025-04-26 18:17:01,246 - INFO - 📧 Sending outreach emails
+2025-04-26 18:17:01,246 - INFO - 🔄 Syncing with Salesforce
+2025-04-26 18:17:01,246 - INFO - 🔄 Syncing with Salesforce
+2025-04-26 18:17:01,246 - INFO - 🏁 Pipeline completed in 0.04 minutes
+2025-04-26 18:17:01,246 - INFO - 🏁 Pipeline completed in 0.04 minutes
+2025-04-26 18:17:35,746 - INFO - Logger set up successfully!
+2025-04-26 18:17:35,746 - INFO - Logger set up successfully!
+2025-04-26 18:17:35,746 - INFO - Logger set up successfully!
+2025-04-26 18:17:35,746 - INFO - 🚀 Starting UK Sponsor Reach daily pipeline
+2025-04-26 18:17:35,746 - INFO - 🚀 Starting UK Sponsor Reach daily pipeline
+2025-04-26 18:17:35,746 - INFO - ⬇️ Downloading latest sponsor CSV
+2025-04-26 18:17:35,746 - INFO - ⬇️ Downloading latest sponsor CSV
+2025-04-26 18:17:35,747 - INFO - 🔍 Preprocessing and comparing with previous data
+2025-04-26 18:17:35,747 - INFO - 🔍 Preprocessing and comparing with previous data
+2025-04-26 18:17:38,526 - INFO - 🎯 Found 777 new sponsors
+2025-04-26 18:17:38,526 - INFO - 🎯 Found 777 new sponsors
+2025-04-26 18:17:38,526 - INFO - ✨ Enriching new sponsor data
+2025-04-26 18:17:38,526 - INFO - ✨ Enriching new sponsor data
+2025-04-26 18:17:38,527 - INFO - 🔍 Starting enrichment for new sponsors...
+2025-04-26 18:17:38,527 - INFO - 🔍 Starting enrichment for new sponsors...
+2025-04-26 18:17:38,539 - INFO - ✅ Enriched 777 companies successfully.
+2025-04-26 18:17:38,539 - INFO - ✅ Enriched 777 companies successfully.
+2025-04-26 18:17:38,539 - INFO - 📧 Sending outreach emails
+2025-04-26 18:17:38,539 - INFO - 📧 Sending outreach emails
+2025-04-26 18:17:38,539 - INFO - 🔄 Syncing with Salesforce
+2025-04-26 18:17:38,539 - INFO - 🔄 Syncing with Salesforce
+2025-04-26 18:17:38,539 - INFO - 🏁 Pipeline completed in 0.05 minutes
+2025-04-26 18:17:38,539 - INFO - 🏁 Pipeline completed in 0.05 minutes
+2025-04-26 18:17:55,615 - INFO - Logger set up successfully!
+2025-04-26 18:17:55,615 - INFO - Logger set up successfully!
+2025-04-26 18:17:55,615 - INFO - Logger set up successfully!
+2025-04-26 18:17:55,615 - INFO - 🚀 Starting UK Sponsor Reach daily pipeline
+2025-04-26 18:17:55,615 - INFO - 🚀 Starting UK Sponsor Reach daily pipeline
+2025-04-26 18:17:55,615 - INFO - ⬇️ Downloading latest sponsor CSV
+2025-04-26 18:17:55,615 - INFO - ⬇️ Downloading latest sponsor CSV
+2025-04-26 18:17:55,616 - INFO - 🔍 Preprocessing and comparing with previous data
+2025-04-26 18:17:55,616 - INFO - 🔍 Preprocessing and comparing with previous data
+2025-04-26 18:17:58,337 - INFO - 🎯 Found 777 new sponsors
+2025-04-26 18:17:58,337 - INFO - 🎯 Found 777 new sponsors
+2025-04-26 18:17:58,337 - INFO - ✨ Enriching new sponsor data
+2025-04-26 18:17:58,337 - INFO - ✨ Enriching new sponsor data
+2025-04-26 18:18:04,198 - INFO - 🔍 Starting enrichment for new sponsors...
+2025-04-26 18:18:04,198 - INFO - 🔍 Starting enrichment for new sponsors...
+2025-04-26 18:18:04,225 - INFO - ✅ Enriched 777 companies successfully.
+2025-04-26 18:18:04,225 - INFO - ✅ Enriched 777 companies successfully.
+2025-04-26 18:18:09,960 - INFO - 📧 Sending outreach emails
+2025-04-26 18:18:09,960 - INFO - 📧 Sending outreach emails
+2025-04-26 18:18:09,962 - INFO - 🔄 Syncing with Salesforce
+2025-04-26 18:18:09,962 - INFO - 🔄 Syncing with Salesforce
+2025-04-26 18:18:09,962 - INFO - 🏁 Pipeline completed in 0.24 minutes
+2025-04-26 18:18:09,962 - INFO - 🏁 Pipeline completed in 0.24 minutes
+2025-04-26 18:18:14,380 - INFO - Logger set up successfully!
+2025-04-26 18:18:14,380 - INFO - Logger set up successfully!
+2025-04-26 18:18:14,380 - INFO - Logger set up successfully!
+2025-04-26 18:18:14,380 - INFO - 🚀 Starting UK Sponsor Reach daily pipeline
+2025-04-26 18:18:14,380 - INFO - 🚀 Starting UK Sponsor Reach daily pipeline
+2025-04-26 18:18:14,380 - INFO - ⬇️ Downloading latest sponsor CSV
+2025-04-26 18:18:14,380 - INFO - ⬇️ Downloading latest sponsor CSV
+2025-04-26 18:18:14,380 - INFO - 🔍 Preprocessing and comparing with previous data
+2025-04-26 18:18:14,380 - INFO - 🔍 Preprocessing and comparing with previous data
+2025-04-26 18:18:15,253 - INFO - 🎯 Found 777 new sponsors
+2025-04-26 18:18:15,253 - INFO - 🎯 Found 777 new sponsors
+2025-04-26 18:18:15,253 - INFO - ✨ Enriching new sponsor data
+2025-04-26 18:18:15,253 - INFO - ✨ Enriching new sponsor data
+2025-04-26 18:18:15,254 - INFO - 🔍 Starting enrichment for new sponsors...
+2025-04-26 18:18:15,254 - INFO - 🔍 Starting enrichment for new sponsors...
+2025-04-26 18:18:15,254 - INFO - ✅ Enriched 777 companies successfully.
+2025-04-26 18:18:15,254 - INFO - ✅ Enriched 777 companies successfully.
+2025-04-26 18:18:15,254 - INFO - 📧 Sending outreach emails
+2025-04-26 18:18:15,254 - INFO - 📧 Sending outreach emails
+2025-04-26 18:18:15,254 - INFO - 🔄 Syncing with Salesforce
+2025-04-26 18:18:15,254 - INFO - 🔄 Syncing with Salesforce
+2025-04-26 18:18:15,254 - INFO - 🏁 Pipeline completed in 0.01 minutes
+2025-04-26 18:18:15,254 - INFO - 🏁 Pipeline completed in 0.01 minutes
+2025-04-26 18:23:33,799 - INFO - Logger set up successfully!
+2025-04-26 18:23:33,799 - INFO - Logger set up successfully!
+2025-04-26 18:23:33,799 - INFO - Logger set up successfully!
+2025-04-26 18:23:33,799 - INFO - 🚀 Starting UK Sponsor Reach daily pipeline
+2025-04-26 18:23:33,799 - INFO - 🚀 Starting UK Sponsor Reach daily pipeline
+2025-04-26 18:23:33,800 - INFO - ⬇️ Downloading latest sponsor CSV
+2025-04-26 18:23:33,800 - INFO - ⬇️ Downloading latest sponsor CSV
+2025-04-26 18:23:33,800 - INFO - 🔍 Preprocessing and comparing with previous data
+2025-04-26 18:23:33,800 - INFO - 🔍 Preprocessing and comparing with previous data
+2025-04-26 18:23:42,346 - INFO - Logger set up successfully!
+2025-04-26 18:23:42,346 - INFO - Logger set up successfully!
+2025-04-26 18:23:42,346 - INFO - Logger set up successfully!
+2025-04-26 18:23:42,346 - INFO - 🚀 Starting UK Sponsor Reach daily pipeline
+2025-04-26 18:23:42,346 - INFO - 🚀 Starting UK Sponsor Reach daily pipeline
+2025-04-26 18:23:42,346 - INFO - ⬇️ Downloading latest sponsor CSV
+2025-04-26 18:23:42,346 - INFO - ⬇️ Downloading latest sponsor CSV
+2025-04-26 18:23:42,346 - INFO - 🔍 Preprocessing and comparing with previous data
+2025-04-26 18:23:42,346 - INFO - 🔍 Preprocessing and comparing with previous data
+2025-04-26 18:23:50,322 - INFO - 🎯 Found 777 new sponsors
+2025-04-26 18:23:50,322 - INFO - 🎯 Found 777 new sponsors
+2025-04-26 18:23:50,323 - INFO - ✨ Enriching new sponsor data
+2025-04-26 18:23:50,323 - INFO - ✨ Enriching new sponsor data
+2025-04-26 18:23:53,198 - INFO - 🔍 Starting enrichment for new sponsors...
+2025-04-26 18:23:53,198 - INFO - 🔍 Starting enrichment for new sponsors...
+2025-04-26 18:23:53,212 - INFO - ✅ Enriched 777 companies successfully.
+2025-04-26 18:23:53,212 - INFO - ✅ Enriched 777 companies successfully.
+2025-04-26 18:23:53,213 - INFO - 📧 Sending outreach emails
+2025-04-26 18:23:53,213 - INFO - 📧 Sending outreach emails
+2025-04-26 18:23:53,213 - INFO - 🔄 Syncing with Salesforce
+2025-04-26 18:23:53,213 - INFO - 🔄 Syncing with Salesforce
+2025-04-26 18:23:53,213 - INFO - 🏁 Pipeline completed in 0.18 minutes
+2025-04-26 18:23:53,213 - INFO - 🏁 Pipeline completed in 0.18 minutes
+2025-04-26 18:23:55,847 - INFO - Logger set up successfully!
+2025-04-26 18:23:55,848 - INFO - Logger set up successfully!
+2025-04-26 18:23:55,848 - INFO - Logger set up successfully!
+2025-04-26 18:23:55,848 - INFO - 🚀 Starting UK Sponsor Reach daily pipeline
+2025-04-26 18:23:55,848 - INFO - 🚀 Starting UK Sponsor Reach daily pipeline
+2025-04-26 18:23:55,848 - INFO - ⬇️ Downloading latest sponsor CSV
+2025-04-26 18:23:55,848 - INFO - ⬇️ Downloading latest sponsor CSV
+2025-04-26 18:23:55,848 - INFO - 🔍 Preprocessing and comparing with previous data
+2025-04-26 18:23:55,848 - INFO - 🔍 Preprocessing and comparing with previous data
+2025-04-26 18:23:56,720 - INFO - 🎯 Found 777 new sponsors
+2025-04-26 18:23:56,720 - INFO - 🎯 Found 777 new sponsors
+2025-04-26 18:23:56,720 - INFO - ✨ Enriching new sponsor data
+2025-04-26 18:23:56,720 - INFO - ✨ Enriching new sponsor data
+2025-04-26 18:23:56,720 - INFO - 🔍 Starting enrichment for new sponsors...
+2025-04-26 18:23:56,720 - INFO - 🔍 Starting enrichment for new sponsors...
+2025-04-26 18:23:56,720 - INFO - ✅ Enriched 777 companies successfully.
+2025-04-26 18:23:56,720 - INFO - ✅ Enriched 777 companies successfully.
+2025-04-26 18:23:56,720 - INFO - 📧 Sending outreach emails
+2025-04-26 18:23:56,720 - INFO - 📧 Sending outreach emails
+2025-04-26 18:23:56,720 - INFO - 🔄 Syncing with Salesforce
+2025-04-26 18:23:56,720 - INFO - 🔄 Syncing with Salesforce
+2025-04-26 18:23:56,720 - INFO - 🏁 Pipeline completed in 0.01 minutes
+2025-04-26 18:23:56,720 - INFO - 🏁 Pipeline completed in 0.01 minutes
+2025-04-26 18:27:59,831 - INFO - Logger set up successfully!
+2025-04-26 18:27:59,831 - INFO - Logger set up successfully!
+2025-04-26 18:27:59,831 - INFO - Logger set up successfully!
+2025-04-26 18:27:59,832 - INFO - 🚀 Starting UK Sponsor Reach daily pipeline
+2025-04-26 18:27:59,832 - INFO - 🚀 Starting UK Sponsor Reach daily pipeline
+2025-04-26 18:27:59,832 - INFO - ⬇️ Downloading latest sponsor CSV
+2025-04-26 18:27:59,832 - INFO - ⬇️ Downloading latest sponsor CSV
+2025-04-26 18:27:59,832 - INFO - 🔍 Preprocessing and comparing with previous data
+2025-04-26 18:27:59,832 - INFO - 🔍 Preprocessing and comparing with previous data
+2025-04-26 18:38:33,528 - INFO - Logger set up successfully!
+2025-04-26 18:38:33,529 - INFO - Logger set up successfully!
+2025-04-26 18:38:33,529 - INFO - Logger set up successfully!
+2025-04-26 18:38:33,529 - INFO - 🚀 Starting UK Sponsor Reach daily pipeline
+2025-04-26 18:38:33,529 - INFO - 🚀 Starting UK Sponsor Reach daily pipeline
+2025-04-26 18:38:33,529 - INFO - ⬇️ Downloading latest sponsor CSV
+2025-04-26 18:38:33,529 - INFO - ⬇️ Downloading latest sponsor CSV
+2025-04-26 18:38:33,530 - INFO - 🔍 Preprocessing and comparing with previous data
+2025-04-26 18:38:33,530 - INFO - 🔍 Preprocessing and comparing with previous data
+2025-04-26 18:38:41,019 - INFO - 🎯 Found 777 new sponsors
+2025-04-26 18:38:41,019 - INFO - 🎯 Found 777 new sponsors
+2025-04-26 18:38:41,019 - INFO - ✨ Enriching new sponsor data
+2025-04-26 18:38:41,019 - INFO - ✨ Enriching new sponsor data
+2025-04-26 18:39:01,278 - INFO - 🔍 Starting enrichment for new sponsors...
+2025-04-26 18:39:01,278 - INFO - 🔍 Starting enrichment for new sponsors...
+2025-04-26 18:39:01,306 - INFO - ✅ Enriched 777 companies successfully.
+2025-04-26 18:39:01,306 - INFO - ✅ Enriched 777 companies successfully.
+2025-04-26 18:39:01,307 - INFO - 📧 Sending outreach emails
+2025-04-26 18:39:01,307 - INFO - 📧 Sending outreach emails
+2025-04-26 18:39:01,307 - INFO - 🔄 Syncing with Salesforce
+2025-04-26 18:39:01,307 - INFO - 🔄 Syncing with Salesforce
+2025-04-26 18:39:01,307 - INFO - 🏁 Pipeline completed in 0.46 minutes
+2025-04-26 18:39:01,307 - INFO - 🏁 Pipeline completed in 0.46 minutes
+2025-04-26 18:39:45,151 - INFO - Logger set up successfully!
+2025-04-26 18:39:45,151 - INFO - Logger set up successfully!
+2025-04-26 18:39:45,151 - INFO - Logger set up successfully!
+2025-04-26 18:39:45,151 - INFO - 🚀 Starting UK Sponsor Reach daily pipeline
+2025-04-26 18:39:45,151 - INFO - 🚀 Starting UK Sponsor Reach daily pipeline
+2025-04-26 18:39:45,152 - INFO - ⬇️ Downloading latest sponsor CSV
+2025-04-26 18:39:45,152 - INFO - ⬇️ Downloading latest sponsor CSV
+2025-04-26 18:39:45,152 - INFO - 🔍 Preprocessing and comparing with previous data
+2025-04-26 18:39:45,152 - INFO - 🔍 Preprocessing and comparing with previous data
+2025-04-26 18:39:46,462 - INFO - 🎯 Found 777 new sponsors
+2025-04-26 18:39:46,462 - INFO - 🎯 Found 777 new sponsors
+2025-04-26 18:39:46,462 - INFO - ✨ Enriching new sponsor data
+2025-04-26 18:39:46,462 - INFO - ✨ Enriching new sponsor data
+2025-04-26 18:39:46,462 - INFO - 🔍 Starting enrichment for new sponsors...
+2025-04-26 18:39:46,462 - INFO - 🔍 Starting enrichment for new sponsors...
+2025-04-26 18:39:46,462 - INFO - ✅ Enriched 777 companies successfully.
+2025-04-26 18:39:46,462 - INFO - ✅ Enriched 777 companies successfully.
+2025-04-26 18:39:46,462 - INFO - 📧 Sending outreach emails
+2025-04-26 18:39:46,462 - INFO - 📧 Sending outreach emails
+2025-04-26 18:39:46,462 - INFO - 🔄 Syncing with Salesforce
+2025-04-26 18:39:46,462 - INFO - 🔄 Syncing with Salesforce
+2025-04-26 18:39:46,463 - INFO - 🏁 Pipeline completed in 0.02 minutes
+2025-04-26 18:39:46,463 - INFO - 🏁 Pipeline completed in 0.02 minutes

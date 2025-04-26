@@ -6,10 +6,10 @@ import shutil
 import pandas as pd
 from datetime import datetime, timedelta
 from typing import Optional
-from config.constants import REQUIRED_COLS, ORGANIZATION_NAME
+from config.constants import REQUIRED_COLS, ORGANIZATION_NAME, ARCHIVE_DIR
 from extraction.parse_sponsors import preprocess_sponsor_data
 
-archive_dir = './data/archive'
+
 raw_dir = './data/raw'
 
 
@@ -44,7 +44,6 @@ def get_yesterday_file(directory: str) -> str:
     3. Then check archive for files from the 4 days before yesterday.
     4. Delete all archive files older than last 5 days.
     """
-    archive_dir = './data/archive'
     raw_dir = './data/raw'
 
     # Build date strings for yesterday and the last 5 days (including yesterday)
@@ -52,46 +51,41 @@ def get_yesterday_file(directory: str) -> str:
     yesterday_str = date_strs[0]
 
     # ✅ Logic 1: Check yesterday's file in archive
-    file_in_archive = find_file_with_date(archive_dir, yesterday_str)
+    file_in_archive = find_file_with_date(ARCHIVE_DIR, yesterday_str)
     if file_in_archive:
-        clean_old_files(archive_dir, set(date_strs))
+        clean_old_files(ARCHIVE_DIR, set(date_strs))
         return file_in_archive
 
     # ✅ Logic 2: Check yesterday's file in raw and move it to archive
     file_in_raw = find_file_with_date(raw_dir, yesterday_str)
     if file_in_raw:
-        if not os.path.exists(archive_dir):
-            os.makedirs(archive_dir)
+        if not os.path.exists(ARCHIVE_DIR):
+            os.makedirs(ARCHIVE_DIR)
         file_name = os.path.basename(file_in_raw)
-        archive_path = os.path.join(archive_dir, file_name)
+        archive_path = os.path.join(ARCHIVE_DIR, file_name)
         shutil.move(file_in_raw, archive_path)
         print(f"Moved yesterday's file from raw to archive: {archive_path}")
-        clean_old_files(archive_dir, set(date_strs))
+        clean_old_files(ARCHIVE_DIR, set(date_strs))
         return archive_path
 
     # ✅ Logic 3: Check last 4 days before yesterday in archive
     for date_str in date_strs[1:]:  # Skipping yesterday_str (already checked)
-        file_in_archive = find_file_with_date(archive_dir, date_str)
+        file_in_archive = find_file_with_date(ARCHIVE_DIR, date_str)
         if file_in_archive:
-            clean_old_files(archive_dir, set(date_strs))
+            clean_old_files(ARCHIVE_DIR, set(date_strs))
             return file_in_archive
 
     # ✅ Clean up old files anyway
-    clean_old_files(archive_dir, set(date_strs))
+    clean_old_files(ARCHIVE_DIR, set(date_strs))
     raise FileNotFoundError("No CSV file from the last 5 days found in either archive or raw directories.")
 
 
-def get_new_sponsors(df_latest: list[dict]) -> list[dict]:
+def get_new_sponsors(df_latest: pd.DataFrame, df_previous: pd.DataFrame) -> list[dict]:
     """
     Compare today's CSV with yesterday's and return list of new sponsor rows (as dicts),
     based on unique combination of Organisation Name and Route.
     """
 
-    # Load latest and previous CSVs
-    archive_dir = './data/archive'
-    previous_csv_path = get_yesterday_file(archive_dir)
-    df_previous = preprocess_sponsor_data(previous_csv_path)
-    # df_previous = pd.read_csv(previous_csv_path)
 
     # Ensure the necessary columns exist
     if not REQUIRED_COLS.issubset(df_latest.columns) or not REQUIRED_COLS.issubset(df_previous.columns):
