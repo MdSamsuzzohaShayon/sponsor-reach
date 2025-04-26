@@ -1,0 +1,74 @@
+We're looking for a skilled developer or data automation expert to help us with a two-stage project focused on extracting and enriching data from the UK government's sponsorship licence register and integrating it with our Salesforce CRM.
+
+Stage 1: Data Extraction, Enrichment & Outreach Automation
+Objective:
+We want to track and act on changes to the official UK Government Worker and Temporary Worker Sponsor Licence register.
+
+Core Data Source:
+The official data is published and updated here:
+🔗 UK Gov CSV – Sponsor Licences
+
+This website provides a cleaner visual of the updates, which reflects the data we want to work with (but we don’t want to rely on this site for automation):
+🔗 Reference Only: licensed-sponsors-uk.com
+
+Tasks:
+
+Set up a system to daily monitor changes/updates in the UK Gov CSV file (new companies added, changes, or removed).
+
+Identify newly added sponsors.
+
+Automate data enrichment for each sponsor company, including:
+
+Company Owner Name
+
+HR Director Name
+
+Company Email(s)
+
+Contact Number(s)
+
+Industry Type
+
+Website URL
+
+Automatically send personalized outreach emails to relevant contacts (owner, HR, etc.) offering our services.
+
+Stage 2: CRM Integration with Salesforce
+Objective:
+Keep our Salesforce CRM in sync with the latest sponsor data.
+
+Tasks:
+
+Automatically add new sponsor companies with enriched details to Salesforce.
+
+Update records with any changes (e.g., contact details or licence status).
+
+Remove or archive companies no longer listed on the sponsor register.
+
+Ongoing Maintenance & Support
+We want this system to run reliably long-term.
+Please also include:
+
+A monthly or quarterly maintenance cost to ensure the solution continues to work as expected
+
+Support for handling potential data structure changes from the UK Government site
+
+Monitoring, logging, and error alerts
+
+Proposal Requirements:
+Please include the following in your proposal:
+
+A breakdown of your approach for both Stage 1 and Stage 2
+
+Tools/languages/frameworks you plan to use
+
+Estimated timeline for each stage
+
+Your total price, with a breakdown by stage
+
+Your proposed ongoing maintenance cost
+
+Any relevant experience or examples of similar projects
+
+This is a key automation project for our team and could lead to ongoing work if successful.
+Looking forward to reviewing your proposal!
