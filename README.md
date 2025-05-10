@@ -6,6 +6,7 @@ This project automates the process of monitoring, enriching, and syncing the UK 
 
 ### Table of Contents
 - [Overview](#overview)
+- [Prerequisites](#prerequisites)
 - [Installation](#installation)
 - [Configuration](#configuration)
 - [Usage](#usage)
@@ -25,19 +26,30 @@ The pipeline performs the following steps:
 
 ---
 
+## Prerequisites
+
+1. Python 3.8 or higher
+2. Git
+3. A Salesforce account with API access (Optional for now)
+4. Valid SMTP credentials for email sending (Optional for now)
+5. AWS credentials (optional, for cloud deployment) 
+
+---
+
 ## Installation
 
 ### 1. Clone the repository
 ```bash
-git clone https://github.com/yourusername/uk_sponsor_pipeline.git
-cd uk_sponsor_pipeline
+git clone https://github.com/mdsamsuzzohashayon/sponsor-reach.git
+cd sponsor-reach
 ```
 
 ### 2. Set up a virtual environment
 We recommend using a virtual environment to manage dependencies.
 ```bash
-python3 -m venv venv
-source venv/bin/activate  # On Windows, use `venv\Scripts\activate`
+python3 -m venv .venv
+source .venv/bin/activate  
+# On Windows, use `.venv\Scripts\activate`
 ```
 
 ### 3. Install dependencies
@@ -50,24 +62,8 @@ pip install -r requirements.txt
 ## Configuration
 
 ### 1. Create a `.env` file
-This file will store your sensitive data like API keys, credentials, and other environment variables.
+Copy the `.env.example` file to create your own `.env` file and update the values with your credentials:
 
-```env
-# .env file example
-SALESFORCE_API_KEY=your_salesforce_api_key
-SENDGRID_API_KEY=your_sendgrid_api_key
-CLEARBIT_API_KEY=your_clearbit_api_key
-```
-
-### 2. Edit `config/settings.py`
-Modify the configuration file to set up paths, API keys, email settings, and other constants that the pipeline will use.
-
-```python
-# Example: config/settings.py
-DOWNLOAD_PATH = './data/raw'
-ENRICHED_PATH = './data/enriched'
-SALESFORCE_OBJECT = 'Sponsor'
-```
 
 ---
 
@@ -81,18 +77,6 @@ To start the pipeline and execute all stages (download, comparison, enrichment, 
 python main.py
 ```
 
-### 2. Scheduling with `cron`
-To automate the execution of this pipeline, you can add it to a cron job. For example, to run it daily at midnight, add the following to your crontab:
-
-```bash
-crontab -e
-```
-
-Then add the following line:
-
-```bash
-0 0 * * * /path/to/python3 /path/to/uk_sponsor_pipeline/main.py >> /path/to/uk_sponsor_pipeline/logs/pipeline.log 2>&1
-```
 
 ---
 
