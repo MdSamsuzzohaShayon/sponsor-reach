@@ -1,0 +1,16 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+}
+
+table th, table td {
+  vertical-align: middle;
+}
+
+h1 {
+  color: #212529;
+}
+
+#loadMoreBtn {
+  padding: 10px 30px;
+  font-size: 1rem;
+}

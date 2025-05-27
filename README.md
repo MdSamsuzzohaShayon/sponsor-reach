@@ -40,8 +40,8 @@ The pipeline performs the following steps:
 
 ### 1. Clone the repository
 ```bash
-git clone https://github.com/mdsamsuzzohashayon/sponsor-reach.git
-cd sponsor-reach
+git clone https://github.com/yourusername/uk_sponsor_pipeline.git
+cd uk_sponsor_pipeline
 ```
 
 ### 2. Set up a virtual environment
