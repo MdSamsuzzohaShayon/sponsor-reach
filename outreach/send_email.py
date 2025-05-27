@@ -20,9 +20,10 @@ def send_email(
     """Tries sending email using SES first, then SMTP as fallback"""
     try:
         # send_email_ses(to, subject, html, cc, bcc)
-        send_email_native(to, subject, html, cc, bcc)
+        # send_email_native(to, subject, html, cc, bcc)
+        logger.info(f"To: {to},\n Subject: {subject},\n HTML: {html},\n CC: {cc},\n BCC: {bcc}")
     except Exception as e:
-        logger.error(f"Failed to send email via SES: {e}, falling back to SMTP.")
+        logger.error(f"Failed to send email: {e}, falling back to SMTP.")
         # send_email_native(to, subject, html, cc, bcc)
 
 

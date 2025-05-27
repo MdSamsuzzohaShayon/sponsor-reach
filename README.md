@@ -36,8 +36,8 @@ cd uk_sponsor_pipeline
 ### 2. Set up a virtual environment
 We recommend using a virtual environment to manage dependencies.
 ```bash
-python3 -m venv venv
-source venv/bin/activate  # On Windows, use `venv\Scripts\activate`
+python3 -m venv .venv
+source .venv/bin/activate  # On Windows, use `venv\Scripts\activate`
 ```
 
 ### 3. Install dependencies

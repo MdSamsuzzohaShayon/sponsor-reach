@@ -2097,3 +2097,250 @@ KeyError: 'Organisation Name'
 2025-04-26 18:39:46,462 - INFO - 🔄 Syncing with Salesforce
 2025-04-26 18:39:46,463 - INFO - 🏁 Pipeline completed in 0.02 minutes
 2025-04-26 18:39:46,463 - INFO - 🏁 Pipeline completed in 0.02 minutes
+2025-05-28 01:19:26,226 - INFO - Logger set up successfully!
+2025-05-28 01:19:26,227 - INFO - Logger set up successfully!
+2025-05-28 01:19:26,227 - INFO - Logger set up successfully!
+2025-05-28 01:19:26,227 - INFO - 🚀 Starting UK Sponsor Reach daily pipeline
+2025-05-28 01:19:26,227 - INFO - 🚀 Starting UK Sponsor Reach daily pipeline
+2025-05-28 01:19:26,227 - INFO - ⬇️ Downloading latest sponsor CSV
+2025-05-28 01:19:26,227 - INFO - ⬇️ Downloading latest sponsor CSV
+2025-05-28 01:19:30,995 - INFO - 🔍 Preprocessing and comparing with previous data
+2025-05-28 01:19:30,995 - INFO - 🔍 Preprocessing and comparing with previous data
+2025-05-28 01:20:05,058 - ERROR - ❌ File error: No CSV file from the last 5 days found in either archive or raw directories.
+Traceback (most recent call last):
+  File "/home/shayon/Documents/web/sponsor-reach/scheduler/daily_workflow.py", line 47, in daily_pipeline
+    previous_csv_path = get_yesterday_file(ARCHIVE_DIR)
+  File "/home/shayon/Documents/web/sponsor-reach/extraction/compare_csv.py", line 80, in get_yesterday_file
+    raise FileNotFoundError("No CSV file from the last 5 days found in either archive or raw directories.")
+FileNotFoundError: No CSV file from the last 5 days found in either archive or raw directories.
+2025-05-28 01:20:05,058 - ERROR - ❌ File error: No CSV file from the last 5 days found in either archive or raw directories.
+Traceback (most recent call last):
+  File "/home/shayon/Documents/web/sponsor-reach/scheduler/daily_workflow.py", line 47, in daily_pipeline
+    previous_csv_path = get_yesterday_file(ARCHIVE_DIR)
+  File "/home/shayon/Documents/web/sponsor-reach/extraction/compare_csv.py", line 80, in get_yesterday_file
+    raise FileNotFoundError("No CSV file from the last 5 days found in either archive or raw directories.")
+FileNotFoundError: No CSV file from the last 5 days found in either archive or raw directories.
+2025-05-28 01:23:05,843 - INFO - Logger set up successfully!
+2025-05-28 01:23:05,843 - INFO - Logger set up successfully!
+2025-05-28 01:23:05,843 - INFO - Logger set up successfully!
+2025-05-28 01:23:05,843 - INFO - 🚀 Starting UK Sponsor Reach daily pipeline
+2025-05-28 01:23:05,843 - INFO - 🚀 Starting UK Sponsor Reach daily pipeline
+2025-05-28 01:23:05,843 - INFO - ⬇️ Downloading latest sponsor CSV
+2025-05-28 01:23:05,843 - INFO - ⬇️ Downloading latest sponsor CSV
+2025-05-28 01:23:05,843 - INFO - 🔍 Preprocessing and comparing with previous data
+2025-05-28 01:23:05,843 - INFO - 🔍 Preprocessing and comparing with previous data
+2025-05-28 01:23:09,817 - ERROR - ❌ File error: No CSV file from the last 5 days found in either archive or raw directories.
+Traceback (most recent call last):
+  File "/home/shayon/Documents/web/sponsor-reach/scheduler/daily_workflow.py", line 47, in daily_pipeline
+    previous_csv_path = get_yesterday_file(ARCHIVE_DIR)
+  File "/home/shayon/Documents/web/sponsor-reach/extraction/compare_csv.py", line 80, in get_yesterday_file
+    raise FileNotFoundError("No CSV file from the last 5 days found in either archive or raw directories.")
+FileNotFoundError: No CSV file from the last 5 days found in either archive or raw directories.
+2025-05-28 01:23:09,817 - ERROR - ❌ File error: No CSV file from the last 5 days found in either archive or raw directories.
+Traceback (most recent call last):
+  File "/home/shayon/Documents/web/sponsor-reach/scheduler/daily_workflow.py", line 47, in daily_pipeline
+    previous_csv_path = get_yesterday_file(ARCHIVE_DIR)
+  File "/home/shayon/Documents/web/sponsor-reach/extraction/compare_csv.py", line 80, in get_yesterday_file
+    raise FileNotFoundError("No CSV file from the last 5 days found in either archive or raw directories.")
+FileNotFoundError: No CSV file from the last 5 days found in either archive or raw directories.
+2025-05-28 01:24:24,833 - INFO - Logger set up successfully!
+2025-05-28 01:24:39,034 - INFO - Logger set up successfully!
+2025-05-28 01:24:39,034 - INFO - Logger set up successfully!
+2025-05-28 01:24:42,694 - INFO - 🚀 Starting UK Sponsor Reach daily pipeline
+2025-05-28 01:24:42,694 - INFO - 🚀 Starting UK Sponsor Reach daily pipeline
+2025-05-28 01:24:47,599 - INFO - ⬇️ Downloading latest sponsor CSV
+2025-05-28 01:24:47,599 - INFO - ⬇️ Downloading latest sponsor CSV
+2025-05-28 01:24:58,520 - INFO - 🔍 Preprocessing and comparing with previous data
+2025-05-28 01:24:58,520 - INFO - 🔍 Preprocessing and comparing with previous data
+2025-05-28 01:25:26,824 - ERROR - ❌ File error: No CSV file from the last 5 days found in either archive or raw directories.
+Traceback (most recent call last):
+  File "/home/shayon/Documents/web/sponsor-reach/scheduler/daily_workflow.py", line 47, in daily_pipeline
+    previous_csv_path = get_yesterday_file(ARCHIVE_DIR)
+  File "/home/shayon/Documents/web/sponsor-reach/extraction/compare_csv.py", line 80, in get_yesterday_file
+    raise FileNotFoundError("No CSV file from the last 5 days found in either archive or raw directories.")
+FileNotFoundError: No CSV file from the last 5 days found in either archive or raw directories.
+2025-05-28 01:25:26,824 - ERROR - ❌ File error: No CSV file from the last 5 days found in either archive or raw directories.
+Traceback (most recent call last):
+  File "/home/shayon/Documents/web/sponsor-reach/scheduler/daily_workflow.py", line 47, in daily_pipeline
+    previous_csv_path = get_yesterday_file(ARCHIVE_DIR)
+  File "/home/shayon/Documents/web/sponsor-reach/extraction/compare_csv.py", line 80, in get_yesterday_file
+    raise FileNotFoundError("No CSV file from the last 5 days found in either archive or raw directories.")
+FileNotFoundError: No CSV file from the last 5 days found in either archive or raw directories.
+2025-05-28 01:26:03,659 - INFO - Logger set up successfully!
+2025-05-28 01:26:03,660 - INFO - Logger set up successfully!
+2025-05-28 01:26:03,660 - INFO - Logger set up successfully!
+2025-05-28 01:26:03,660 - INFO - 🚀 Starting UK Sponsor Reach daily pipeline
+2025-05-28 01:26:03,660 - INFO - 🚀 Starting UK Sponsor Reach daily pipeline
+2025-05-28 01:26:03,660 - INFO - ⬇️ Downloading latest sponsor CSV
+2025-05-28 01:26:03,660 - INFO - ⬇️ Downloading latest sponsor CSV
+2025-05-28 01:26:03,660 - INFO - 🔍 Preprocessing and comparing with previous data
+2025-05-28 01:26:03,660 - INFO - 🔍 Preprocessing and comparing with previous data
+2025-05-28 01:26:24,677 - INFO - Logger set up successfully!
+2025-05-28 01:26:24,677 - INFO - Logger set up successfully!
+2025-05-28 01:26:24,677 - INFO - Logger set up successfully!
+2025-05-28 01:26:24,677 - INFO - 🚀 Starting UK Sponsor Reach daily pipeline
+2025-05-28 01:26:24,677 - INFO - 🚀 Starting UK Sponsor Reach daily pipeline
+2025-05-28 01:26:24,677 - INFO - ⬇️ Downloading latest sponsor CSV
+2025-05-28 01:26:24,677 - INFO - ⬇️ Downloading latest sponsor CSV
+2025-05-28 01:26:24,678 - INFO - 🔍 Preprocessing and comparing with previous data
+2025-05-28 01:26:24,678 - INFO - 🔍 Preprocessing and comparing with previous data
+2025-05-28 01:29:14,130 - ERROR - ❌ File error: No CSV file from the last 5 days found in either archive or raw directories.
+Traceback (most recent call last):
+  File "/home/shayon/Documents/web/sponsor-reach/scheduler/daily_workflow.py", line 47, in daily_pipeline
+    previous_csv_path = get_yesterday_file(ARCHIVE_DIR)
+  File "/home/shayon/Documents/web/sponsor-reach/extraction/compare_csv.py", line 80, in get_yesterday_file
+    raise FileNotFoundError("No CSV file from the last 5 days found in either archive or raw directories.")
+FileNotFoundError: No CSV file from the last 5 days found in either archive or raw directories.
+2025-05-28 01:29:14,130 - ERROR - ❌ File error: No CSV file from the last 5 days found in either archive or raw directories.
+Traceback (most recent call last):
+  File "/home/shayon/Documents/web/sponsor-reach/scheduler/daily_workflow.py", line 47, in daily_pipeline
+    previous_csv_path = get_yesterday_file(ARCHIVE_DIR)
+  File "/home/shayon/Documents/web/sponsor-reach/extraction/compare_csv.py", line 80, in get_yesterday_file
+    raise FileNotFoundError("No CSV file from the last 5 days found in either archive or raw directories.")
+FileNotFoundError: No CSV file from the last 5 days found in either archive or raw directories.
+2025-05-28 01:30:50,400 - INFO - Logger set up successfully!
+2025-05-28 01:30:50,401 - INFO - Logger set up successfully!
+2025-05-28 01:30:50,401 - INFO - Logger set up successfully!
+2025-05-28 01:30:50,401 - INFO - 🚀 Starting UK Sponsor Reach daily pipeline
+2025-05-28 01:30:50,401 - INFO - 🚀 Starting UK Sponsor Reach daily pipeline
+2025-05-28 01:30:50,401 - INFO - ⬇️ Downloading latest sponsor CSV
+2025-05-28 01:30:50,401 - INFO - ⬇️ Downloading latest sponsor CSV
+2025-05-28 01:30:50,401 - INFO - 🔍 Preprocessing and comparing with previous data
+2025-05-28 01:30:50,401 - INFO - 🔍 Preprocessing and comparing with previous data
+2025-05-28 01:31:20,909 - INFO - 🎯 Found 1842 new sponsors
+2025-05-28 01:31:20,909 - INFO - 🎯 Found 1842 new sponsors
+2025-05-28 01:31:21,646 - INFO - ✨ Enriching new sponsor data
+2025-05-28 01:31:21,646 - INFO - ✨ Enriching new sponsor data
+2025-05-28 01:31:23,603 - INFO - 🔍 Starting enrichment for new sponsors...
+2025-05-28 01:31:23,603 - INFO - 🔍 Starting enrichment for new sponsors...
+2025-05-28 01:31:23,775 - INFO - ✅ Enriched 1842 companies successfully.
+2025-05-28 01:31:23,775 - INFO - ✅ Enriched 1842 companies successfully.
+2025-05-28 01:31:27,550 - INFO - 📧 Sending outreach emails
+2025-05-28 01:31:27,550 - INFO - 📧 Sending outreach emails
+2025-05-28 01:31:30,071 - INFO - 🔄 Syncing with Salesforce
+2025-05-28 01:31:30,071 - INFO - 🔄 Syncing with Salesforce
+2025-05-28 01:31:34,068 - INFO - 🏁 Pipeline completed in 0.69 minutes
+2025-05-28 01:31:34,068 - INFO - 🏁 Pipeline completed in 0.69 minutes
+2025-05-28 01:32:18,580 - INFO - Logger set up successfully!
+2025-05-28 01:32:18,581 - INFO - Logger set up successfully!
+2025-05-28 01:32:18,581 - INFO - Logger set up successfully!
+2025-05-28 01:32:18,581 - INFO - 🚀 Starting UK Sponsor Reach daily pipeline
+2025-05-28 01:32:18,581 - INFO - 🚀 Starting UK Sponsor Reach daily pipeline
+2025-05-28 01:32:18,581 - INFO - ⬇️ Downloading latest sponsor CSV
+2025-05-28 01:32:18,581 - INFO - ⬇️ Downloading latest sponsor CSV
+2025-05-28 01:32:18,581 - INFO - 🔍 Preprocessing and comparing with previous data
+2025-05-28 01:32:18,581 - INFO - 🔍 Preprocessing and comparing with previous data
+2025-05-28 01:32:28,788 - INFO - 🎯 Found 1842 new sponsors
+2025-05-28 01:32:28,788 - INFO - 🎯 Found 1842 new sponsors
+2025-05-28 01:32:28,789 - INFO - ✨ Enriching new sponsor data
+2025-05-28 01:32:28,789 - INFO - ✨ Enriching new sponsor data
+2025-05-28 01:32:28,790 - INFO - 🔍 Starting enrichment for new sponsors...
+2025-05-28 01:32:28,790 - INFO - 🔍 Starting enrichment for new sponsors...
+2025-05-28 01:32:28,950 - INFO - ✅ Enriched 1842 companies successfully.
+2025-05-28 01:32:28,950 - INFO - ✅ Enriched 1842 companies successfully.
+2025-05-28 01:32:28,950 - INFO - 📧 Sending outreach emails
+2025-05-28 01:32:28,950 - INFO - 📧 Sending outreach emails
+2025-05-28 01:32:28,951 - INFO - 🔄 Syncing with Salesforce
+2025-05-28 01:32:28,951 - INFO - 🔄 Syncing with Salesforce
+2025-05-28 01:32:28,952 - INFO - 🏁 Pipeline completed in 0.17 minutes
+2025-05-28 01:32:28,952 - INFO - 🏁 Pipeline completed in 0.17 minutes
+2025-05-28 01:33:19,041 - INFO - Logger set up successfully!
+2025-05-28 01:33:19,041 - INFO - Logger set up successfully!
+2025-05-28 01:33:19,041 - INFO - Logger set up successfully!
+2025-05-28 01:33:19,041 - INFO - 🚀 Starting UK Sponsor Reach daily pipeline
+2025-05-28 01:33:19,041 - INFO - 🚀 Starting UK Sponsor Reach daily pipeline
+2025-05-28 01:33:19,041 - INFO - ⬇️ Downloading latest sponsor CSV
+2025-05-28 01:33:19,041 - INFO - ⬇️ Downloading latest sponsor CSV
+2025-05-28 01:33:19,041 - INFO - 🔍 Preprocessing and comparing with previous data
+2025-05-28 01:33:19,041 - INFO - 🔍 Preprocessing and comparing with previous data
+2025-05-28 01:33:38,974 - INFO - Logger set up successfully!
+2025-05-28 01:33:38,974 - INFO - Logger set up successfully!
+2025-05-28 01:33:38,974 - INFO - Logger set up successfully!
+2025-05-28 01:33:38,974 - INFO - 🚀 Starting UK Sponsor Reach daily pipeline
+2025-05-28 01:33:38,974 - INFO - 🚀 Starting UK Sponsor Reach daily pipeline
+2025-05-28 01:33:38,974 - INFO - ⬇️ Downloading latest sponsor CSV
+2025-05-28 01:33:38,974 - INFO - ⬇️ Downloading latest sponsor CSV
+2025-05-28 01:33:38,975 - INFO - 🔍 Preprocessing and comparing with previous data
+2025-05-28 01:33:38,975 - INFO - 🔍 Preprocessing and comparing with previous data
+2025-05-28 01:33:42,226 - INFO - 🎯 Found 1842 new sponsors
+2025-05-28 01:33:42,226 - INFO - 🎯 Found 1842 new sponsors
+2025-05-28 01:34:21,358 - INFO - Logger set up successfully!
+2025-05-28 01:34:21,358 - INFO - Logger set up successfully!
+2025-05-28 01:34:21,358 - INFO - Logger set up successfully!
+2025-05-28 01:34:21,358 - INFO - 🚀 Starting UK Sponsor Reach daily pipeline
+2025-05-28 01:34:21,358 - INFO - 🚀 Starting UK Sponsor Reach daily pipeline
+2025-05-28 01:34:21,358 - INFO - ⬇️ Downloading latest sponsor CSV
+2025-05-28 01:34:21,358 - INFO - ⬇️ Downloading latest sponsor CSV
+2025-05-28 01:34:21,359 - INFO - 🔍 Preprocessing and comparing with previous data
+2025-05-28 01:34:21,359 - INFO - 🔍 Preprocessing and comparing with previous data
+2025-05-28 01:34:24,633 - INFO - 🎯 Found 1842 new sponsors
+2025-05-28 01:34:24,633 - INFO - 🎯 Found 1842 new sponsors
+2025-05-28 01:34:24,634 - INFO - ✨ Enriching new sponsor data
+2025-05-28 01:34:24,634 - INFO - ✨ Enriching new sponsor data
+2025-05-28 01:34:24,634 - INFO - 🏁 Pipeline completed in 0.05 minutes
+2025-05-28 01:34:24,634 - INFO - 🏁 Pipeline completed in 0.05 minutes
+2025-05-28 01:34:37,420 - INFO - Logger set up successfully!
+2025-05-28 01:34:37,421 - INFO - Logger set up successfully!
+2025-05-28 01:34:37,421 - INFO - Logger set up successfully!
+2025-05-28 01:34:37,421 - INFO - 🚀 Starting UK Sponsor Reach daily pipeline
+2025-05-28 01:34:37,421 - INFO - 🚀 Starting UK Sponsor Reach daily pipeline
+2025-05-28 01:34:37,421 - INFO - ⬇️ Downloading latest sponsor CSV
+2025-05-28 01:34:37,421 - INFO - ⬇️ Downloading latest sponsor CSV
+2025-05-28 01:34:37,421 - INFO - 🔍 Preprocessing and comparing with previous data
+2025-05-28 01:34:37,421 - INFO - 🔍 Preprocessing and comparing with previous data
+2025-05-28 01:34:40,385 - INFO - 🎯 Found 1842 new sponsors
+2025-05-28 01:34:40,385 - INFO - 🎯 Found 1842 new sponsors
+2025-05-28 01:34:40,386 - INFO - ✨ Enriching new sponsor data
+2025-05-28 01:34:40,386 - INFO - ✨ Enriching new sponsor data
+2025-05-28 01:34:40,386 - INFO - 🔍 Starting enrichment for new sponsors...
+2025-05-28 01:34:40,386 - INFO - 🔍 Starting enrichment for new sponsors...
+2025-05-28 01:34:40,413 - INFO - ✅ Enriched 1842 companies successfully.
+2025-05-28 01:34:40,413 - INFO - ✅ Enriched 1842 companies successfully.
+2025-05-28 01:34:40,413 - INFO - 🏁 Pipeline completed in 0.05 minutes
+2025-05-28 01:34:40,413 - INFO - 🏁 Pipeline completed in 0.05 minutes
+2025-05-28 01:35:05,490 - INFO - Logger set up successfully!
+2025-05-28 01:35:05,490 - INFO - Logger set up successfully!
+2025-05-28 01:35:05,490 - INFO - Logger set up successfully!
+2025-05-28 01:35:05,490 - INFO - 🚀 Starting UK Sponsor Reach daily pipeline
+2025-05-28 01:35:05,490 - INFO - 🚀 Starting UK Sponsor Reach daily pipeline
+2025-05-28 01:35:05,490 - INFO - ⬇️ Downloading latest sponsor CSV
+2025-05-28 01:35:05,490 - INFO - ⬇️ Downloading latest sponsor CSV
+2025-05-28 01:35:05,490 - INFO - 🔍 Preprocessing and comparing with previous data
+2025-05-28 01:35:05,490 - INFO - 🔍 Preprocessing and comparing with previous data
+2025-05-28 01:35:08,873 - INFO - 🎯 Found 1842 new sponsors
+2025-05-28 01:35:08,873 - INFO - 🎯 Found 1842 new sponsors
+2025-05-28 01:35:08,873 - INFO - ✨ Enriching new sponsor data
+2025-05-28 01:35:08,873 - INFO - ✨ Enriching new sponsor data
+2025-05-28 01:35:08,873 - INFO - 🔍 Starting enrichment for new sponsors...
+2025-05-28 01:35:08,873 - INFO - 🔍 Starting enrichment for new sponsors...
+2025-05-28 01:35:08,900 - INFO - ✅ Enriched 1842 companies successfully.
+2025-05-28 01:35:08,900 - INFO - ✅ Enriched 1842 companies successfully.
+2025-05-28 01:35:08,900 - INFO - 📧 Sending outreach emails
+2025-05-28 01:35:08,900 - INFO - 📧 Sending outreach emails
+2025-05-28 01:35:08,901 - INFO - 🔄 Syncing with Salesforce
+2025-05-28 01:35:08,901 - INFO - 🔄 Syncing with Salesforce
+2025-05-28 01:35:08,901 - INFO - 🏁 Pipeline completed in 0.06 minutes
+2025-05-28 01:35:08,901 - INFO - 🏁 Pipeline completed in 0.06 minutes
+2025-05-28 01:35:22,301 - INFO - Logger set up successfully!
+2025-05-28 01:35:22,302 - INFO - Logger set up successfully!
+2025-05-28 01:35:22,302 - INFO - Logger set up successfully!
+2025-05-28 01:35:22,302 - INFO - 🚀 Starting UK Sponsor Reach daily pipeline
+2025-05-28 01:35:22,302 - INFO - 🚀 Starting UK Sponsor Reach daily pipeline
+2025-05-28 01:35:22,302 - INFO - ⬇️ Downloading latest sponsor CSV
+2025-05-28 01:35:22,302 - INFO - ⬇️ Downloading latest sponsor CSV
+2025-05-28 01:35:22,302 - INFO - 🔍 Preprocessing and comparing with previous data
+2025-05-28 01:35:22,302 - INFO - 🔍 Preprocessing and comparing with previous data
+2025-05-28 01:35:25,735 - INFO - 🎯 Found 1842 new sponsors
+2025-05-28 01:35:25,735 - INFO - 🎯 Found 1842 new sponsors
+2025-05-28 01:35:25,735 - INFO - ✨ Enriching new sponsor data
+2025-05-28 01:35:25,735 - INFO - ✨ Enriching new sponsor data
+2025-05-28 01:35:25,736 - INFO - 🔍 Starting enrichment for new sponsors...
+2025-05-28 01:35:25,736 - INFO - 🔍 Starting enrichment for new sponsors...
+2025-05-28 01:35:25,766 - INFO - ✅ Enriched 1842 companies successfully.
+2025-05-28 01:35:25,766 - INFO - ✅ Enriched 1842 companies successfully.
+2025-05-28 01:35:25,766 - INFO - 📧 Sending outreach emails
+2025-05-28 01:35:25,766 - INFO - 📧 Sending outreach emails
+2025-05-28 01:35:25,766 - INFO - 🔄 Syncing with Salesforce
+2025-05-28 01:35:25,766 - INFO - 🔄 Syncing with Salesforce
+2025-05-28 01:35:25,766 - INFO - 🏁 Pipeline completed in 0.06 minutes
+2025-05-28 01:35:25,766 - INFO - 🏁 Pipeline completed in 0.06 minutes

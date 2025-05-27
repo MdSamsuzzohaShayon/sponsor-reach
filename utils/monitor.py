@@ -20,7 +20,7 @@ def send_alert(subject: str, message: str = None, priority: str = "normal"):
     message = message or "An alert was triggered, but no additional details were provided."
 
     try:
-        send_email(to=alert_email, subject=subject, html=message)
+        # send_email(to=alert_email, subject=subject, html=message)
         logger.info(f"Alert sent to {alert_email}: {subject}")
     except Exception as e:
         logger.error(f"Failed to send alert: {e}")

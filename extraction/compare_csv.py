@@ -36,7 +36,7 @@ def clean_old_files(dir_path: str, keep_dates: set):
 
 
 
-def get_yesterday_file(directory: str) -> str:
+def get_yesterday_file(directory: str) -> str | None:
     """
     Implements:
     1. Check if yesterday's file exists in archive.
