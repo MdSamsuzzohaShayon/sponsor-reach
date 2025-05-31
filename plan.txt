@@ -1,0 +1,4 @@
+1. Test auto deploy script
+2. Copy new data to client folder (/var/www/client/csv)
+3. Dynamically show latest data in frontend
+4. Get emails for all for each individual company (Location must be UK)

@@ -1,9 +1,8 @@
 [Unit]
-Description=Runs UK Sponsor Reach Script Daily
+Description=Run Sponsor Reach Daily at 5 AM
 
 [Timer]
-OnBootSec=10min
-OnUnitActiveSec=1d
+OnCalendar=*-*-* 05:00:00
 Persistent=true
 
 [Install]

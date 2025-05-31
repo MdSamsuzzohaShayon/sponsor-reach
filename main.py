@@ -18,9 +18,9 @@ from scheduler.daily_workflow import daily_pipeline
 def main():
     """Main execution function."""
 
-
     setup_logger()
     logger = logging.getLogger("main")
+
 
     logger.info("🚀 Starting UK Sponsor Reach pipeline")
 
@@ -41,4 +41,10 @@ def main():
 
 
 if __name__ == "__main__":
+    print("##########################################################")
+    print("######################## Start ###########################")
+    print("##########################################################")
     main()
+    print("##########################################################")
+    print("######################## End #############################")
+    print("##########################################################")

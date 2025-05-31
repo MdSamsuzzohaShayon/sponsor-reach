@@ -2344,3 +2344,35 @@ FileNotFoundError: No CSV file from the last 5 days found in either archive or r
 2025-05-28 01:35:25,766 - INFO - 🔄 Syncing with Salesforce
 2025-05-28 01:35:25,766 - INFO - 🏁 Pipeline completed in 0.06 minutes
 2025-05-28 01:35:25,766 - INFO - 🏁 Pipeline completed in 0.06 minutes
+2025-06-01 03:52:46,082 - INFO - Logger set up successfully!
+2025-06-01 03:52:46,084 - INFO - Logger set up successfully!
+2025-06-01 03:52:46,084 - INFO - Logger set up successfully!
+2025-06-01 03:52:46,085 - INFO - 🚀 Starting UK Sponsor Reach daily pipeline
+2025-06-01 03:52:46,085 - INFO - 🚀 Starting UK Sponsor Reach daily pipeline
+2025-06-01 03:52:46,086 - INFO - ⬇️ Downloading latest sponsor CSV
+2025-06-01 03:52:46,086 - INFO - ⬇️ Downloading latest sponsor CSV
+2025-06-01 03:52:51,323 - INFO - 🔍 Preprocessing and comparing with previous data
+2025-06-01 03:52:51,323 - INFO - 🔍 Preprocessing and comparing with previous data
+2025-06-01 03:53:53,644 - INFO - Logger set up successfully!
+2025-06-01 03:53:53,644 - INFO - Logger set up successfully!
+2025-06-01 03:53:53,644 - INFO - Logger set up successfully!
+2025-06-01 03:53:53,644 - INFO - 🚀 Starting UK Sponsor Reach daily pipeline
+2025-06-01 03:53:53,644 - INFO - 🚀 Starting UK Sponsor Reach daily pipeline
+2025-06-01 03:53:53,644 - INFO - ⬇️ Downloading latest sponsor CSV
+2025-06-01 03:53:53,644 - INFO - ⬇️ Downloading latest sponsor CSV
+2025-06-01 03:53:53,644 - INFO - 🔍 Preprocessing and comparing with previous data
+2025-06-01 03:53:53,644 - INFO - 🔍 Preprocessing and comparing with previous data
+2025-06-01 03:53:56,348 - INFO - 🎯 Found 199 new sponsors
+2025-06-01 03:53:56,348 - INFO - 🎯 Found 199 new sponsors
+2025-06-01 03:53:56,348 - INFO - ✨ Enriching new sponsor data
+2025-06-01 03:53:56,348 - INFO - ✨ Enriching new sponsor data
+2025-06-01 03:53:56,349 - INFO - 🔍 Starting enrichment for new sponsors...
+2025-06-01 03:53:56,349 - INFO - 🔍 Starting enrichment for new sponsors...
+2025-06-01 03:53:56,353 - INFO - ✅ Enriched 199 companies successfully.
+2025-06-01 03:53:56,353 - INFO - ✅ Enriched 199 companies successfully.
+2025-06-01 03:53:56,353 - INFO - 📧 Sending outreach emails
+2025-06-01 03:53:56,353 - INFO - 📧 Sending outreach emails
+2025-06-01 03:53:56,353 - INFO - 🔄 Syncing with Salesforce
+2025-06-01 03:53:56,353 - INFO - 🔄 Syncing with Salesforce
+2025-06-01 03:53:56,354 - INFO - 🏁 Pipeline completed in 0.05 minutes
+2025-06-01 03:53:56,354 - INFO - 🏁 Pipeline completed in 0.05 minutes
