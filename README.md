@@ -40,8 +40,8 @@ The pipeline performs the following steps:
 
 ### 1. Clone the repository
 ```bash
-git clone https://github.com/yourusername/uk_sponsor_pipeline.git
-cd uk_sponsor_pipeline
+git clone https://github.com/yourusername/sponsor-reach.git
+cd sponsor-reach
 ```
 
 ### 2. Set up a virtual environment
@@ -83,7 +83,7 @@ python main.py
 ## File Structure
 
 ```
-uk_sponsor_pipeline/
+sponsor-reach/
 │
 ├── config/
 │   └── settings.py              # Configuration for API keys, file paths, etc.
