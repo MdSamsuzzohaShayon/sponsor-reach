@@ -16,52 +16,65 @@ error_exit() {
     exit 1
 }
 
-# Log current journal output
+# Log previous service output
 echo "[INFO] Logging previous service logs..." | tee -a "$LOG_FILE"
 journalctl -u sponsor_reach.service -n 50 --no-pager | tee -a "$LOG_FILE" || echo "[WARN] Unable to read journal logs"
 
-# Clean previous files
+# Remove old project directory
 echo "[INFO] Cleaning old project..." | tee -a "$LOG_FILE"
 rm -rf "$PROJECT_DIR" || error_exit "Failed to remove old project directory"
 
-# Clone the repository
+# Clone the latest repo
 echo "[INFO] Cloning repository..." | tee -a "$LOG_FILE"
 git clone "$REPO_URL" "$PROJECT_DIR" || error_exit "Failed to clone repository"
 
-# Copy client folder to /var/www
+# Move into the project directory
+cd "$PROJECT_DIR" || error_exit "Failed to cd into project directory"
+
+# Show last 10 commits
+echo "[INFO] Showing last 10 Git commits..." | tee -a "$LOG_FILE"
+git log --oneline --decorate --graph -n 10 | tee -a "$LOG_FILE"
+
+# Create/Edit .env file manually
+echo "[INFO] Please enter environment variables..." | tee -a "$LOG_FILE"
+nano "$ENV_FILE" || error_exit "Failed to open .env file"
+
+# Copy client to web destination
 echo "[INFO] Copying client folder..." | tee -a "$LOG_FILE"
 sudo cp -r "$PROJECT_DIR/client" "$CLIENT_DEST" || error_exit "Failed to copy client folder"
 
-# Activate virtual environment
-cd "$PROJECT_DIR" || error_exit "Failed to cd into project directory"
-
+# Switch to master branch
 echo "[INFO] Switching to master branch..." | tee -a "$LOG_FILE"
 git switch master || error_exit "Failed to switch to master branch"
 
+# Setup virtual environment
 echo "[INFO] Creating virtual environment..." | tee -a "$LOG_FILE"
 python3 -m venv .venv || error_exit "Failed to create virtual environment"
 
+echo "[INFO] Activating virtual environment..." | tee -a "$LOG_FILE"
 source .venv/bin/activate || error_exit "Failed to activate virtual environment"
 
-# Create .env file
-nano $ENV_FILE || error_exit "Failed to create dot env file"
 
-pip install -r requirements.txt || error_exit "Failed to install required files"
+# Install Python dependencies
+echo "[INFO] Installing dependencies..." | tee -a "$LOG_FILE"
+pip install -r requirements.txt || error_exit "Failed to install requirements"
 
-# Restart systemd service
+# Restart the service
 echo "[INFO] Reloading systemd and restarting service..." | tee -a "$LOG_FILE"
 sudo systemctl daemon-reexec
 sudo systemctl daemon-reload
 sudo systemctl restart sponsor_reach.service || error_exit "Failed to restart sponsor_reach.service"
+sudo systemctl start sponsor_reach.timer || error_exit "Failed to start sponsor_reach.timer"
 
-# Final status and logs
-echo "[INFO] Service status:" | tee -a "$LOG_FILE"
+# Show service status
+echo "[INFO] Current service status:" | tee -a "$LOG_FILE"
 systemctl status sponsor_reach.service --no-pager | tee -a "$LOG_FILE"
 
+# Show latest logs
 echo "[INFO] Latest service logs:" | tee -a "$LOG_FILE"
 journalctl -u sponsor_reach.service -n 30 --no-pager | tee -a "$LOG_FILE"
 
-echo "===== $(date): sponsor_reach update completed =====" | tee -a "$LOG_FILE"
+echo "===== $(date): sponsor_reach update completed successfully =====" | tee -a "$LOG_FILE"
 
 
 # To Edit
