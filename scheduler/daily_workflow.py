@@ -53,8 +53,8 @@ def daily_pipeline() -> bool:
             logger.info("🔄 No new sponsors found — ending pipeline")
             return True
 
-        # Temporary file create
-        with open(f"data/temp/{date.today()}-new_sponsors.csv", "w", newline="", encoding="utf-8") as f:
+        # New file create
+        with open(f"data/new/{date.today()}-new_sponsors.csv", "w", newline="", encoding="utf-8") as f:
             w = csv.DictWriter(f, fieldnames=new_sponsors[0].keys())
             w.writeheader()
             w.writerows(new_sponsors)

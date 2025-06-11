@@ -20,6 +20,7 @@ This project automates the process of monitoring, enriching, and syncing the UK 
 The pipeline performs the following steps:
 1. **Download the latest CSV** from the UK Government's Sponsor Licence Register.
 2. **Compare** the new CSV to the previous one to detect newly added sponsors.
+3. **Email** Collect company email addresses if they are missing.
 3. **Enrich** sponsor data (e.g., owner, HR contact, industry type, etc.) using third-party APIs.
 4. **Send personalized outreach emails** to relevant contacts (owners, HR directors, etc.).
 5. **Sync** the enriched data to Salesforce CRM, adding new records, updating existing records, and archiving those that are no longer listed.
@@ -32,7 +33,6 @@ The pipeline performs the following steps:
 2. Git
 3. A Salesforce account with API access (Optional for now)
 4. Valid SMTP credentials for email sending (Optional for now)
-5. AWS credentials (optional, for cloud deployment) 
 
 ---
 
@@ -77,6 +77,8 @@ To start the pipeline and execute all stages (download, comparison, enrichment, 
 python main.py
 ```
 
+### 2. Client to see new entry
+There is a simple html page to show all new companies. From **client** folder, open index.html with a browser
 
 ---
 
@@ -86,16 +88,17 @@ python main.py
 sponsor-reach/
 │
 ├── config/
-│   └── settings.py              # Configuration for API keys, file paths, etc.
+│   └── constants.py             # Column names, industry mappings, email templates etc.
 │
 ├── data/
 │   ├── raw/                     # Downloaded CSVs from UK Gov (daily snapshots)
 │   ├── enriched/                # Cleaned & enriched sponsor data
 │   ├── logs/                    # Daily run logs, error logs
 │   └── archive/                 # Archived CSVs after processing
+│   └── new/                     # CSVs of everydays new sponsors
 │
 ├── extraction/
-│   ├── download_csv.py          # Downloads latest UK Gov CSV
+│   ├── fetch_csv.py          # Downloads latest UK Gov CSV
 │   ├── compare_csv.py           # Compares today's vs previous CSV to detect changes
 │   └── parse_sponsors.py        # Preprocesses CSV using pandas
 │
@@ -114,8 +117,7 @@ sponsor-reach/
 │   └── sync_crm.py              # Handles syncing pipeline from enriched data to Salesforce
 │
 ├── scheduler/
-│   ├── daily_workflow.py        # Main runner: extraction → enrichment → email → CRM
-│   └── cronjob.sh               # Shell script to run via cron / task scheduler
+│   └── daily_workflow.py        # Main runner: extraction → enrichment → email → CRM
 │
 ├── utils/
 │   ├── logger.py                # Central logging and error handling

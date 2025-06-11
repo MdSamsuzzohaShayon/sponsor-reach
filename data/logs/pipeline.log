@@ -2376,3 +2376,49 @@ FileNotFoundError: No CSV file from the last 5 days found in either archive or r
 2025-06-01 03:53:56,353 - INFO - 🔄 Syncing with Salesforce
 2025-06-01 03:53:56,354 - INFO - 🏁 Pipeline completed in 0.05 minutes
 2025-06-01 03:53:56,354 - INFO - 🏁 Pipeline completed in 0.05 minutes
+2025-06-11 15:42:56,816 - INFO - Logger set up successfully!
+2025-06-11 15:42:56,818 - INFO - Logger set up successfully!
+2025-06-11 15:42:56,818 - INFO - Logger set up successfully!
+2025-06-11 15:42:56,819 - INFO - 🚀 Starting UK Sponsor Reach daily pipeline
+2025-06-11 15:42:56,819 - INFO - 🚀 Starting UK Sponsor Reach daily pipeline
+2025-06-11 15:42:56,820 - INFO - ⬇️ Downloading latest sponsor CSV
+2025-06-11 15:42:56,820 - INFO - ⬇️ Downloading latest sponsor CSV
+2025-06-11 15:43:01,038 - INFO - 🔍 Preprocessing and comparing with previous data
+2025-06-11 15:43:01,038 - INFO - 🔍 Preprocessing and comparing with previous data
+2025-06-11 15:43:06,465 - ERROR - ❌ File error: No CSV file from the last 5 days found in either archive or raw directories.
+Traceback (most recent call last):
+  File "/home/shayon/Documents/web/sponsor-reach/scheduler/daily_workflow.py", line 47, in daily_pipeline
+    previous_csv_path = get_yesterday_file(ARCHIVE_DIR)
+  File "/home/shayon/Documents/web/sponsor-reach/extraction/compare_csv.py", line 80, in get_yesterday_file
+    raise FileNotFoundError("No CSV file from the last 5 days found in either archive or raw directories.")
+FileNotFoundError: No CSV file from the last 5 days found in either archive or raw directories.
+2025-06-11 15:43:06,465 - ERROR - ❌ File error: No CSV file from the last 5 days found in either archive or raw directories.
+Traceback (most recent call last):
+  File "/home/shayon/Documents/web/sponsor-reach/scheduler/daily_workflow.py", line 47, in daily_pipeline
+    previous_csv_path = get_yesterday_file(ARCHIVE_DIR)
+  File "/home/shayon/Documents/web/sponsor-reach/extraction/compare_csv.py", line 80, in get_yesterday_file
+    raise FileNotFoundError("No CSV file from the last 5 days found in either archive or raw directories.")
+FileNotFoundError: No CSV file from the last 5 days found in either archive or raw directories.
+2025-06-11 15:44:08,290 - INFO - Logger set up successfully!
+2025-06-11 15:44:08,290 - INFO - Logger set up successfully!
+2025-06-11 15:44:08,290 - INFO - Logger set up successfully!
+2025-06-11 15:44:08,290 - INFO - 🚀 Starting UK Sponsor Reach daily pipeline
+2025-06-11 15:44:08,290 - INFO - 🚀 Starting UK Sponsor Reach daily pipeline
+2025-06-11 15:44:08,290 - INFO - ⬇️ Downloading latest sponsor CSV
+2025-06-11 15:44:08,290 - INFO - ⬇️ Downloading latest sponsor CSV
+2025-06-11 15:44:08,290 - INFO - 🔍 Preprocessing and comparing with previous data
+2025-06-11 15:44:08,290 - INFO - 🔍 Preprocessing and comparing with previous data
+2025-06-11 15:44:11,957 - INFO - 🎯 Found 677 new sponsors
+2025-06-11 15:44:11,957 - INFO - 🎯 Found 677 new sponsors
+2025-06-11 15:44:11,957 - INFO - ✨ Enriching new sponsor data
+2025-06-11 15:44:11,957 - INFO - ✨ Enriching new sponsor data
+2025-06-11 15:44:11,957 - INFO - 🔍 Starting enrichment for new sponsors...
+2025-06-11 15:44:11,957 - INFO - 🔍 Starting enrichment for new sponsors...
+2025-06-11 15:44:11,971 - INFO - ✅ Enriched 677 companies successfully.
+2025-06-11 15:44:11,971 - INFO - ✅ Enriched 677 companies successfully.
+2025-06-11 15:44:11,971 - INFO - 📧 Sending outreach emails
+2025-06-11 15:44:11,971 - INFO - 📧 Sending outreach emails
+2025-06-11 15:44:11,971 - INFO - 🔄 Syncing with Salesforce
+2025-06-11 15:44:11,971 - INFO - 🔄 Syncing with Salesforce
+2025-06-11 15:44:11,971 - INFO - 🏁 Pipeline completed in 0.06 minutes
+2025-06-11 15:44:11,971 - INFO - 🏁 Pipeline completed in 0.06 minutes
